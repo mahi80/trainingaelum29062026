@@ -1,0 +1,150 @@
+openapi: 3.1.0
+info:
+  title: AutoLoan-DocIntel API
+  version: "1.0.0"
+  description: >
+    Fixed serving contract for the AutoLoan-DocIntel assistant. Candidates MUST
+    implement these endpoints unchanged (uniform grading). Redis backs caching,
+    rate-limiting, idempotency, sessions, and async ingestion (Redis Streams).
+servers:
+  - url: http://localhost:8000
+tags: [{name: chat}, {name: search}, {name: ingest}, {name: feedback}, {name: ops}]
+
+components:
+  securitySchemes:
+    bearerAuth: {type: http, scheme: bearer}
+    cookieAuth: {type: apiKey, in: cookie, name: session}
+  parameters:
+    IdempotencyKey:
+      name: Idempotency-Key
+      in: header
+      required: false
+      schema: {type: string, maxLength: 128}
+      description: Dedupe POSTs; result cached in Redis 24-48h (SHA-256 of body).
+    CorrelationId:
+      name: X-Correlation-ID
+      in: header
+      required: false
+      schema: {type: string}
+  schemas:
+    Problem:    # RFC 7807
+      type: object
+      properties:
+        type: {type: string}
+        title: {type: string}
+        status: {type: integer}
+        detail: {type: string}
+        instance: {type: string}
+      required: [title, status]
+    ChatRequest:
+      type: object
+      required: [message]
+      properties:
+        message: {type: string}
+        session_id: {type: string}
+        stream: {type: boolean, default: true}
+    Citation:
+      type: object
+      properties:
+        source_id: {type: string}
+        type: {type: string, enum: [document, table, row, policy]}
+        page: {type: integer}
+        score: {type: number}
+    ChatResponse:
+      type: object
+      properties:
+        answer: {type: string}
+        route: {type: string, enum: [sql, sparql, vector, underwrite, hybrid]}
+        sql: {type: string}
+        citations: {type: array, items: {$ref: '#/components/schemas/Citation'}}
+        decision: {type: string, enum: [approve, refer, deny]}
+        usage: {type: object, properties: {input_tokens: {type: integer}, output_tokens: {type: integer}, cost_usd: {type: number}}}
+    SearchHit:
+      type: object
+      properties:
+        chunk_id: {type: integer}
+        content: {type: string}
+        score: {type: number}
+        rerank_score: {type: number}
+        page: {type: integer}
+    IngestRequest:
+      type: object
+      required: [paths]
+      properties:
+        paths: {type: array, items: {type: string}}
+    JobAccepted:
+      type: object
+      properties:
+        job_id: {type: string}
+        status: {type: string, enum: [queued]}
+
+security: [{bearerAuth: []}, {cookieAuth: []}]
+
+paths:
+  /v1/chat:
+    post:
+      tags: [chat]
+      summary: Ask a question; SSE token stream when stream=true.
+      parameters: [{$ref: '#/components/parameters/IdempotencyKey'}, {$ref: '#/components/parameters/CorrelationId'}]
+      requestBody:
+        required: true
+        content: {application/json: {schema: {$ref: '#/components/schemas/ChatRequest'}}}
+      responses:
+        '200':
+          description: Full answer (stream=false) or SSE stream (stream=true).
+          content:
+            application/json: {schema: {$ref: '#/components/schemas/ChatResponse'}}
+            text/event-stream: {schema: {type: string}}
+        '429': {description: Rate limited, content: {application/problem+json: {schema: {$ref: '#/components/schemas/Problem'}}}}
+        '400': {description: Bad request, content: {application/problem+json: {schema: {$ref: '#/components/schemas/Problem'}}}}
+  /v1/search:
+    get:
+      tags: [search]
+      summary: Hybrid retrieval over the page index (cursor pagination).
+      parameters:
+        - {name: q, in: query, required: true, schema: {type: string}}
+        - {name: k, in: query, schema: {type: integer, default: 10, maximum: 100}}
+        - {name: cursor, in: query, schema: {type: string}}
+        - {name: rerank, in: query, schema: {type: boolean, default: true}}
+      responses:
+        '200':
+          description: Ranked hits.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  hits: {type: array, items: {$ref: '#/components/schemas/SearchHit'}}
+                  next_cursor: {type: string, nullable: true}
+  /v1/ingest:
+    post:
+      tags: [ingest]
+      summary: Enqueue documents for async OCR+embedding (Redis Streams). Returns 202.
+      parameters: [{$ref: '#/components/parameters/IdempotencyKey'}]
+      requestBody:
+        required: true
+        content: {application/json: {schema: {$ref: '#/components/schemas/IngestRequest'}}}
+      responses:
+        '202':
+          description: Accepted.
+          content: {application/json: {schema: {$ref: '#/components/schemas/JobAccepted'}}}
+  /v1/ingest/{job_id}:
+    get:
+      tags: [ingest]
+      parameters: [{name: job_id, in: path, required: true, schema: {type: string}}]
+      responses:
+        '200':
+          description: Job status.
+          content: {application/json: {schema: {type: object, properties: {job_id: {type: string}, status: {type: string, enum: [queued, running, done, error]}, processed: {type: integer}, total: {type: integer}}}}}
+        '404': {description: Unknown job, content: {application/problem+json: {schema: {$ref: '#/components/schemas/Problem'}}}}
+  /v1/feedback:
+    post:
+      tags: [feedback]
+      requestBody:
+        required: true
+        content: {application/json: {schema: {type: object, properties: {session_id: {type: string}, rating: {type: integer, minimum: 1, maximum: 5}, comment: {type: string}}}}}
+      responses: {'204': {description: Recorded}}
+  /healthz:
+    get: {tags: [ops], security: [], summary: Liveness, responses: {'200': {description: OK}}}
+  /readyz:
+    get: {tags: [ops], security: [], summary: Readiness (Redis+Postgres+Ollama reachable), responses: {'200': {description: Ready}, '503': {description: Not ready}}}
