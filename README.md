@@ -10,6 +10,7 @@ This repository has two halves:
 | [`challenge-pack/`](challenge-pack/) | **Candidate** (public) | The brief, the OSS docker stack, the labeled corpus, the ~100-table schema, the ontology, the FastAPI/HTMX app shell, the LangGraph skeleton, the API contract, and runnable eval CLIs. |
 | [`grading-kit/`](grading-kit/) | **Evaluators** (private) | Hidden test set + answer keys, the automated grading harness (`scorecard.json`), the reference solution, the rubric, and the grader runbook. |
 | [`challenge-wbs.xlsx`](challenge-wbs.xlsx) | Both | The work-breakdown structure: candidate 2h/day × 14-day plan, author prep plan, rubric, rollup. |
+| [`consultant-weekly-tracker.xlsx`](consultant-weekly-tracker.xlsx) | Evaluators | Per-consultant weekly status (Week-1/Week-2 RAG, tier, score) + cohort dashboard. Auto-fill with [`grading-kit/harness/consultant_status.py`](grading-kit/harness/consultant_status.py). |
 
 ## What the candidate builds
 

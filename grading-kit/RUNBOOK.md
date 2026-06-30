@@ -124,3 +124,25 @@ and note answer quality + citation correctness; this informs `rag`, `nl2sql`,
 - Tear down: `docker compose down -v` in `challenge-pack/`.
 - Record: commit SHA graded, final score, one-paragraph rationale, and any line where
   you overrode the auto value (with reason).
+
+## 8. Weekly tracking (during the 14 days)
+Track each consultant's progress at the two weekly check-ins, not just at the end.
+
+1. **Auto-pull status** — from the repo root, after `git fetch --all --prune`:
+   ```bash
+   python grading-kit/harness/consultant_status.py --csv status.csv
+   # or pin a common cohort start date:
+   python grading-kit/harness/consultant_status.py --start 2026-07-01 --csv status.csv
+   ```
+   For every `solution/<name>` branch it reports **commits in Week 1 vs Week 2**, total
+   commits ahead of `main`, last activity, open **PR + CI** status (if `gh` is installed),
+   and **flags any branch that modified `grading-kit/`** (candidates must not — red flag).
+   Output is a Markdown table + a CSV.
+2. **Update the tracker** — open [`../consultant-weekly-tracker.xlsx`](../consultant-weekly-tracker.xlsx)
+   (repo root). One row per consultant: paste the commit columns from `status.csv`, then set
+   the **Wk1 / Wk2 RAG** (Green/Amber/Red), `% complete`, and blockers. Expected weekly
+   milestones are on the **Weekly Checklist** tab (Week 1 → MUST slice; Week 2 → Target+).
+3. **Read the cohort Dashboard** tab (on-track / at-risk / behind, passing count, average
+   score) to decide who needs a nudge or an early conversation.
+4. At the end, enter **Tier reached** + **Score /100** (from §7) per consultant; `Pass?`
+   computes automatically (>= 70).
