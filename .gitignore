@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Data / large binaries (regenerate via tools/docgen; keep generators + GT + manifests)
+*.pdf
+*.parquet
+*.onnx
+*.bin
+*.pt
+*.gguf
+models/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Build / logs
+dist/
+build/
+*.log
+scorecard.json
+
+# Docker volumes
+.pgdata/
+.redisdata/
+.omdata/
