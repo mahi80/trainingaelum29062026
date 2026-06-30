@@ -1,0 +1,34 @@
+[
+  {
+    "nl": "Which policy rules are (directly or transitively) superseded by the 2023 LTV rule?",
+    "sparql": "PREFIX al: <https://autoloan-docintel.example/ontology#>\nSELECT ?code WHERE {\n  ?head al:ruleCode \"LTV-2023\" .\n  ?head al:supersedes+ ?superseded .\n  ?superseded al:ruleCode ?code .\n}\nORDER BY ?code"
+  },
+  {
+    "nl": "For each policy rule, find the original (root) rule it ultimately supersedes - the rule that itself supersedes nothing.",
+    "sparql": "PREFIX al: <https://autoloan-docintel.example/ontology#>\nSELECT ?ruleCode ?rootCode WHERE {\n  ?rule al:ruleCode ?ruleCode .\n  ?rule al:supersedes+ ?root .\n  ?root al:ruleCode ?rootCode .\n  FILTER NOT EXISTS { ?root al:supersedes ?older . }\n}\nORDER BY ?ruleCode"
+  },
+  {
+    "nl": "List applications governed by a rule that applies to the Northeast region.",
+    "sparql": "PREFIX al: <https://autoloan-docintel.example/ontology#>\nSELECT DISTINCT ?app WHERE {\n  ?app a al:Application ;\n       al:governedBy ?rule .\n  ?rule al:appliesToRegion ?region .\n  ?region al:regionName \"Northeast\" .\n}\nORDER BY ?app"
+  },
+  {
+    "nl": "Find applications whose governing rule has been superseded by a newer rule (i.e. they are governed by an out-of-date policy).",
+    "sparql": "PREFIX al: <https://autoloan-docintel.example/ontology#>\nSELECT ?app ?staleRuleCode WHERE {\n  ?app a al:Application ;\n       al:governedBy ?rule .\n  ?rule al:ruleCode ?staleRuleCode .\n  ?newer al:supersedes+ ?rule .\n}\nORDER BY ?app"
+  },
+  {
+    "nl": "Which borrowers submitted an application in the Northeast region, and what is their FICO band?",
+    "sparql": "PREFIX al: <https://autoloan-docintel.example/ontology#>\nSELECT ?borrower ?ficoBand WHERE {\n  ?app a al:Application ;\n       al:submittedBy ?borrower ;\n       al:inRegion ?region .\n  ?region al:regionName \"Northeast\" .\n  ?borrower al:hasCreditProfile ?cp .\n  ?cp al:ficoBand ?ficoBand .\n}\nORDER BY ?borrower"
+  },
+  {
+    "nl": "For decisions, show the decision outcome and the rule code of the policy rule they were derived from, including any rule it transitively supersedes.",
+    "sparql": "PREFIX al: <https://autoloan-docintel.example/ontology#>\nSELECT ?outcome ?ancestorCode WHERE {\n  ?d a al:Decision ;\n     al:decisionOutcome ?outcome ;\n     al:derivedFrom ?rule .\n  ?rule al:supersedes* ?ancestor .\n  ?ancestor al:ruleCode ?ancestorCode .\n}\nORDER BY ?outcome ?ancestorCode"
+  },
+  {
+    "nl": "Count how many distinct policy rules apply to each region.",
+    "sparql": "PREFIX al: <https://autoloan-docintel.example/ontology#>\nSELECT ?regionName (COUNT(DISTINCT ?rule) AS ?ruleCount) WHERE {\n  ?rule a al:PolicyRule ;\n        al:appliesToRegion ?region .\n  ?region al:regionName ?regionName .\n}\nGROUP BY ?regionName\nORDER BY ?regionName"
+  },
+  {
+    "nl": "Find applications on used-vehicle collateral older than 5 years that are governed by a rule applying to the Southeast region.",
+    "sparql": "PREFIX al: <https://autoloan-docintel.example/ontology#>\nSELECT ?app ?vehicleAge WHERE {\n  ?app a al:Application ;\n       al:hasCollateral ?v ;\n       al:governedBy ?rule .\n  ?v a al:Vehicle ;\n     al:vehicleAge ?vehicleAge .\n  FILTER(?vehicleAge > 5)\n  ?rule al:appliesToRegion ?region .\n  ?region al:regionName \"Southeast\" .\n}\nORDER BY ?app"
+  }
+]

@@ -1,0 +1,302 @@
+@prefix al:   <https://autoloan-docintel.example/ontology#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+#  AutoLoan-DocIntel ontology (TBox + a small ABox of instances)
+#
+#  The ABox below is hand-authored demo data used by the PUBLIC
+#  sample queries and the HIDDEN gold queries. It is intentionally
+#  small and self-contained so that SPARQL answers are deterministic
+#  WITHOUT a running database. The ETL script (etl_from_postgres.py)
+#  emits a *larger* instances.ttl from the real warehouse; queries
+#  in sparql_samples.json are written to run against either graph.
+#################################################################
+
+<https://autoloan-docintel.example/ontology>
+    a owl:Ontology ;
+    rdfs:label "AutoLoan-DocIntel Ontology" ;
+    rdfs:comment "OWL/RDFS vocabulary for auto-loan origination, collateral, policy and underwriting reasoning." ;
+    owl:versionInfo "1.0.0" .
+
+#################################################################
+#  Classes
+#################################################################
+
+al:Borrower a owl:Class ;
+    rdfs:label "Borrower" ;
+    rdfs:comment "A primary applicant on an auto-loan application." .
+
+al:CoBorrower a owl:Class ;
+    rdfs:subClassOf al:Borrower ;
+    rdfs:label "Co-Borrower" ;
+    rdfs:comment "A secondary borrower jointly responsible for the loan." .
+
+al:Application a owl:Class ;
+    rdfs:label "Application" ;
+    rdfs:comment "An auto-loan application (loan.loan_application)." .
+
+al:Collateral a owl:Class ;
+    rdfs:label "Collateral" ;
+    rdfs:comment "An asset pledged to secure a loan." .
+
+al:Vehicle a owl:Class ;
+    rdfs:subClassOf al:Collateral ;
+    rdfs:label "Vehicle" ;
+    rdfs:comment "A motor vehicle serving as loan collateral (loan.vehicle)." .
+
+al:LoanProduct a owl:Class ;
+    rdfs:label "Loan Product" ;
+    rdfs:comment "A lending product / program (ref.loan_product)." .
+
+al:Decision a owl:Class ;
+    rdfs:label "Underwriting Decision" ;
+    rdfs:comment "An underwriting outcome for an application (loan.underwriting_decision)." .
+
+al:PolicyRule a owl:Class ;
+    rdfs:label "Policy Rule" ;
+    rdfs:comment "A credit-policy rule that governs applications and may supersede prior rules (loan.policy_rule)." .
+
+al:Region a owl:Class ;
+    rdfs:label "Region" ;
+    rdfs:comment "A geographic region (ref.region) to which rules/branches apply." .
+
+al:IncomeSource a owl:Class ;
+    rdfs:label "Income Source" ;
+    rdfs:comment "A source of borrower income (loan.income_source)." .
+
+al:CreditProfile a owl:Class ;
+    rdfs:label "Credit Profile" ;
+    rdfs:comment "A borrower's credit standing (credit band / FICO band)." .
+
+#################################################################
+#  Object properties
+#################################################################
+
+al:hasCollateral a owl:ObjectProperty ;
+    rdfs:label "has collateral" ;
+    rdfs:domain al:Application ;
+    rdfs:range  al:Collateral .
+
+al:submittedBy a owl:ObjectProperty ;
+    rdfs:label "submitted by" ;
+    rdfs:domain al:Application ;
+    rdfs:range  al:Borrower .
+
+al:governedBy a owl:ObjectProperty ;
+    rdfs:label "governed by" ;
+    rdfs:domain al:Application ;
+    rdfs:range  al:PolicyRule .
+
+al:supersedes a owl:ObjectProperty , owl:TransitiveProperty ;
+    rdfs:label "supersedes" ;
+    rdfs:comment "Transitive: if A supersedes B and B supersedes C, then A supersedes C." ;
+    rdfs:domain al:PolicyRule ;
+    rdfs:range  al:PolicyRule .
+
+al:appliesToRegion a owl:ObjectProperty ;
+    rdfs:label "applies to region" ;
+    rdfs:domain al:PolicyRule ;
+    rdfs:range  al:Region .
+
+al:resultsIn a owl:ObjectProperty ;
+    rdfs:label "results in" ;
+    rdfs:domain al:Application ;
+    rdfs:range  al:Decision .
+
+al:derivedFrom a owl:ObjectProperty ;
+    rdfs:label "derived from" ;
+    rdfs:comment "Provenance: a decision/metric derived from a document, rule or other entity." ;
+    rdfs:domain al:Decision .
+
+al:hasIncomeSource a owl:ObjectProperty ;
+    rdfs:label "has income source" ;
+    rdfs:domain al:Borrower ;
+    rdfs:range  al:IncomeSource .
+
+al:hasCreditProfile a owl:ObjectProperty ;
+    rdfs:label "has credit profile" ;
+    rdfs:domain al:Borrower ;
+    rdfs:range  al:CreditProfile .
+
+al:usesProduct a owl:ObjectProperty ;
+    rdfs:label "uses product" ;
+    rdfs:domain al:Application ;
+    rdfs:range  al:LoanProduct .
+
+al:inRegion a owl:ObjectProperty ;
+    rdfs:label "in region" ;
+    rdfs:comment "Region in which the application/branch is located." ;
+    rdfs:domain al:Application ;
+    rdfs:range  al:Region .
+
+#################################################################
+#  Datatype properties
+#################################################################
+
+al:ltv a owl:DatatypeProperty ;
+    rdfs:label "loan-to-value ratio" ;
+    rdfs:domain al:Decision ;
+    rdfs:range  xsd:decimal .
+
+al:dti a owl:DatatypeProperty ;
+    rdfs:label "debt-to-income ratio" ;
+    rdfs:domain al:Decision ;
+    rdfs:range  xsd:decimal .
+
+al:ficoBand a owl:DatatypeProperty ;
+    rdfs:label "FICO / credit band" ;
+    rdfs:domain al:CreditProfile ;
+    rdfs:range  xsd:string .
+
+al:loanAmount a owl:DatatypeProperty ;
+    rdfs:label "requested loan amount" ;
+    rdfs:domain al:Application ;
+    rdfs:range  xsd:decimal .
+
+al:term a owl:DatatypeProperty ;
+    rdfs:label "term in months" ;
+    rdfs:domain al:Application ;
+    rdfs:range  xsd:integer .
+
+al:vehicleAge a owl:DatatypeProperty ;
+    rdfs:label "vehicle age in years" ;
+    rdfs:domain al:Vehicle ;
+    rdfs:range  xsd:integer .
+
+al:ruleCode a owl:DatatypeProperty ;
+    rdfs:label "rule code" ;
+    rdfs:domain al:PolicyRule ;
+    rdfs:range  xsd:string .
+
+al:decisionOutcome a owl:DatatypeProperty ;
+    rdfs:label "decision outcome" ;
+    rdfs:domain al:Decision ;
+    rdfs:range  xsd:string .
+
+al:regionName a owl:DatatypeProperty ;
+    rdfs:label "region name" ;
+    rdfs:domain al:Region ;
+    rdfs:range  xsd:string .
+
+#################################################################
+#  ABox — instances (~25+ triples)
+#################################################################
+
+# --- Regions ---
+al:region-NE  a al:Region ; al:regionName "Northeast" .
+al:region-SE  a al:Region ; al:regionName "Southeast" .
+al:region-WEST a al:Region ; al:regionName "West" .
+
+# --- Loan products ---
+al:product-NEW a al:LoanProduct ; rdfs:label "New Vehicle" .
+al:product-USED a al:LoanProduct ; rdfs:label "Used Vehicle" .
+
+# --- Policy rules: a 3-level supersedes chain (R3 -> R2 -> R1) ---
+# R1 is the original; R2 supersedes R1; R3 supersedes R2.
+# By transitivity R3 supersedes R1 as well.
+al:rule-LTV-R1 a al:PolicyRule ;
+    al:ruleCode "LTV-2019" ;
+    rdfs:label "Max LTV policy (2019)" ;
+    al:appliesToRegion al:region-NE .
+
+al:rule-LTV-R2 a al:PolicyRule ;
+    al:ruleCode "LTV-2021" ;
+    rdfs:label "Max LTV policy (2021)" ;
+    al:supersedes al:rule-LTV-R1 ;
+    al:appliesToRegion al:region-NE .
+
+al:rule-LTV-R3 a al:PolicyRule ;
+    al:ruleCode "LTV-2023" ;
+    rdfs:label "Max LTV policy (2023)" ;
+    al:supersedes al:rule-LTV-R2 ;
+    al:appliesToRegion al:region-NE .
+
+# A separate single-level chain in another region (used by multi-hop tests)
+al:rule-DTI-R1 a al:PolicyRule ;
+    al:ruleCode "DTI-2020" ;
+    rdfs:label "Max DTI policy (2020)" ;
+    al:appliesToRegion al:region-SE .
+
+al:rule-DTI-R2 a al:PolicyRule ;
+    al:ruleCode "DTI-2022" ;
+    rdfs:label "Max DTI policy (2022)" ;
+    al:supersedes al:rule-DTI-R1 ;
+    al:appliesToRegion al:region-SE .
+
+# --- Credit profiles ---
+al:credit-001 a al:CreditProfile ; al:ficoBand "PRIME" .
+al:credit-002 a al:CreditProfile ; al:ficoBand "NEAR_PRIME" .
+al:credit-003 a al:CreditProfile ; al:ficoBand "SUBPRIME" .
+
+# --- Income sources ---
+al:income-001 a al:IncomeSource ; rdfs:label "W2 Salary" .
+al:income-002 a al:IncomeSource ; rdfs:label "Self-Employed" .
+
+# --- Borrowers / co-borrowers ---
+al:borrower-001 a al:Borrower ;
+    rdfs:label "Alice Nguyen" ;
+    al:hasCreditProfile al:credit-001 ;
+    al:hasIncomeSource al:income-001 .
+
+al:borrower-002 a al:Borrower ;
+    rdfs:label "Bob Martin" ;
+    al:hasCreditProfile al:credit-002 ;
+    al:hasIncomeSource al:income-002 .
+
+al:borrower-003 a al:CoBorrower ;
+    rdfs:label "Carla Ruiz" ;
+    al:hasCreditProfile al:credit-003 ;
+    al:hasIncomeSource al:income-001 .
+
+# --- Vehicles (collateral) ---
+al:vehicle-001 a al:Vehicle ; rdfs:label "2022 Toyota RAV4" ; al:vehicleAge 3 .
+al:vehicle-002 a al:Vehicle ; rdfs:label "2016 Ford F-150" ; al:vehicleAge 9 .
+
+# --- Decisions ---
+al:decision-001 a al:Decision ;
+    al:decisionOutcome "approved" ;
+    al:ltv "0.82"^^xsd:decimal ;
+    al:dti "0.31"^^xsd:decimal ;
+    al:derivedFrom al:rule-LTV-R3 .
+
+al:decision-002 a al:Decision ;
+    al:decisionOutcome "declined" ;
+    al:ltv "1.05"^^xsd:decimal ;
+    al:dti "0.47"^^xsd:decimal ;
+    al:derivedFrom al:rule-DTI-R2 .
+
+# --- Applications (governedBy rules that appliesToRegion some Region) ---
+al:app-001 a al:Application ;
+    rdfs:label "APP-1001" ;
+    al:submittedBy al:borrower-001 ;
+    al:hasCollateral al:vehicle-001 ;
+    al:usesProduct al:product-NEW ;
+    al:governedBy al:rule-LTV-R3 ;
+    al:inRegion al:region-NE ;
+    al:resultsIn al:decision-001 ;
+    al:loanAmount "32000.00"^^xsd:decimal ;
+    al:term 60 .
+
+al:app-002 a al:Application ;
+    rdfs:label "APP-1002" ;
+    al:submittedBy al:borrower-002 ;
+    al:hasCollateral al:vehicle-002 ;
+    al:usesProduct al:product-USED ;
+    al:governedBy al:rule-DTI-R2 ;
+    al:inRegion al:region-SE ;
+    al:resultsIn al:decision-002 ;
+    al:loanAmount "18500.00"^^xsd:decimal ;
+    al:term 72 .
+
+al:app-003 a al:Application ;
+    rdfs:label "APP-1003" ;
+    al:submittedBy al:borrower-003 ;
+    al:hasCollateral al:vehicle-001 ;
+    al:usesProduct al:product-NEW ;
+    al:governedBy al:rule-LTV-R1 ;
+    al:inRegion al:region-NE ;
+    al:loanAmount "27000.00"^^xsd:decimal ;
+    al:term 48 .

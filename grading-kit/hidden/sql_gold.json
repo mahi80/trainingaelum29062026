@@ -1,0 +1,102 @@
+[
+  {
+    "difficulty": "easy",
+    "question": "How many loan applications are currently in 'submitted' status?",
+    "gold_sql": "SELECT COUNT(*) AS n FROM loan.loan_application WHERE status = 'submitted';"
+  },
+  {
+    "difficulty": "easy",
+    "question": "List all branch names that are active.",
+    "gold_sql": "SELECT name FROM loan.branch WHERE is_active = true ORDER BY name;"
+  },
+  {
+    "difficulty": "easy",
+    "question": "What is the maximum requested loan amount across all applications?",
+    "gold_sql": "SELECT MAX(requested_amount) AS max_requested FROM loan.loan_application;"
+  },
+  {
+    "difficulty": "easy",
+    "question": "Count vehicles by condition.",
+    "gold_sql": "SELECT condition, COUNT(*) AS n FROM loan.vehicle GROUP BY condition ORDER BY condition;"
+  },
+  {
+    "difficulty": "medium",
+    "question": "Return the application number and decision outcome label for every application that has an underwriting decision.",
+    "gold_sql": "SELECT la.application_no, do.label AS decision_label FROM loan.loan_application la JOIN loan.underwriting_decision ud ON ud.application_id = la.application_id JOIN ref.decision_outcome do ON do.code = ud.decision ORDER BY la.application_no;"
+  },
+  {
+    "difficulty": "medium",
+    "question": "For each credit band, count the borrowers assigned to it. Return the band label and the count.",
+    "gold_sql": "SELECT cb.label AS band, COUNT(*) AS borrowers FROM loan.borrower bo JOIN ref.credit_band cb ON cb.code = bo.credit_band GROUP BY cb.label ORDER BY borrowers DESC;"
+  },
+  {
+    "difficulty": "medium",
+    "question": "List the make and model name of every vehicle whose fuel type is 'EV'.",
+    "gold_sql": "SELECT mk.name AS make, md.name AS model FROM loan.vehicle v JOIN ref.vehicle_make mk ON mk.make_id = v.make_id JOIN ref.vehicle_model md ON md.model_id = v.model_id WHERE v.fuel_type = 'EV';"
+  },
+  {
+    "difficulty": "medium",
+    "question": "Return each branch name and the count of applications submitted there, including branches with zero applications.",
+    "gold_sql": "SELECT b.name AS branch_name, COUNT(la.application_id) AS applications FROM loan.branch b LEFT JOIN loan.loan_application la ON la.branch_id = b.branch_id GROUP BY b.name ORDER BY applications DESC;"
+  },
+  {
+    "difficulty": "medium",
+    "question": "Show the application number and the monthly income recorded on the borrower's primary income source.",
+    "gold_sql": "SELECT la.application_no, isr.monthly_amount FROM loan.loan_application la JOIN loan.income_source isr ON isr.borrower_id = la.borrower_id WHERE isr.is_primary = true ORDER BY la.application_no;"
+  },
+  {
+    "difficulty": "medium",
+    "question": "Which loan officers belong to branches in regions with risk_tier 'high'? Return officer name and branch name.",
+    "gold_sql": "SELECT lo.full_name AS officer, b.name AS branch FROM loan.loan_officer lo JOIN loan.branch b ON b.branch_id = lo.branch_id JOIN ref.region r ON r.region_id = b.region_id WHERE r.risk_tier = 'high' ORDER BY officer;"
+  },
+  {
+    "difficulty": "hard",
+    "question": "For each region, return the region name and the average DTI ratio of approved underwriting decisions for applications originated by branches in that region.",
+    "gold_sql": "SELECT r.name AS region, AVG(ud.dti_ratio) AS avg_dti FROM loan.underwriting_decision ud JOIN loan.loan_application la ON la.application_id = ud.application_id JOIN loan.branch b ON b.branch_id = la.branch_id JOIN ref.region r ON r.region_id = b.region_id WHERE ud.decision = 'approve' GROUP BY r.name ORDER BY avg_dti DESC;"
+  },
+  {
+    "difficulty": "hard",
+    "question": "Find borrowers who have more than one loan application. Return the borrower full name and the number of applications.",
+    "gold_sql": "SELECT p.first_name || ' ' || p.last_name AS borrower_name, COUNT(*) AS n_apps FROM loan.loan_application la JOIN loan.borrower bo ON bo.borrower_id = la.borrower_id JOIN loan.party p ON p.party_id = bo.party_id GROUP BY p.first_name, p.last_name, la.borrower_id HAVING COUNT(*) > 1 ORDER BY n_apps DESC;"
+  },
+  {
+    "difficulty": "hard",
+    "question": "Return the application number, requested amount, and approved amount for applications where the approved amount is less than the requested amount.",
+    "gold_sql": "SELECT la.application_no, la.requested_amount, ud.approved_amount FROM loan.loan_application la JOIN loan.underwriting_decision ud ON ud.application_id = la.application_id WHERE ud.approved_amount IS NOT NULL AND ud.approved_amount < la.requested_amount ORDER BY la.application_no;"
+  },
+  {
+    "difficulty": "hard",
+    "question": "For each loan product, return the product label and the average APR of booked loans under that product.",
+    "gold_sql": "SELECT lp.label AS product, AVG(l.apr) AS avg_apr FROM loan.loan l JOIN loan.loan_application la ON la.application_id = l.application_id JOIN ref.loan_product lp ON lp.code = la.product_code GROUP BY lp.label ORDER BY avg_apr DESC;"
+  },
+  {
+    "difficulty": "hard",
+    "question": "List the application number and risk rating label for applications whose underwriting PD score is above 0.2.",
+    "gold_sql": "SELECT la.application_no, rr.label AS risk_rating FROM loan.underwriting_decision ud JOIN loan.loan_application la ON la.application_id = ud.application_id JOIN ref.risk_rating rr ON rr.code = ud.risk_rating WHERE ud.pd_score > 0.2 ORDER BY la.application_no;"
+  },
+  {
+    "difficulty": "hard",
+    "question": "Return each underwriter's name and the total approved amount they have authorized, only for underwriters whose total approved amount exceeds their authority limit.",
+    "gold_sql": "SELECT u.full_name AS underwriter, SUM(ud.approved_amount) AS total_approved FROM loan.underwriter u JOIN loan.underwriting_decision ud ON ud.underwriter_id = u.underwriter_id WHERE ud.approved_amount IS NOT NULL GROUP BY u.full_name, u.authority_limit HAVING SUM(ud.approved_amount) > u.authority_limit ORDER BY total_approved DESC;"
+  },
+  {
+    "difficulty": "expert",
+    "question": "For each borrower, return the full name and the count of loans that have at least one late payment.",
+    "gold_sql": "SELECT p.first_name || ' ' || p.last_name AS borrower_name, COUNT(DISTINCT l.loan_id) AS loans_with_late FROM loan.loan l JOIN loan.payment pay ON pay.loan_id = l.loan_id JOIN loan.loan_application la ON la.application_id = l.application_id JOIN loan.borrower bo ON bo.borrower_id = la.borrower_id JOIN loan.party p ON p.party_id = bo.party_id WHERE pay.is_late = true GROUP BY p.first_name, p.last_name, bo.borrower_id ORDER BY loans_with_late DESC;"
+  },
+  {
+    "difficulty": "expert",
+    "question": "Return the application number of applications whose requested amount is greater than the average requested amount across all applications.",
+    "gold_sql": "SELECT application_no FROM loan.loan_application WHERE requested_amount > (SELECT AVG(requested_amount) FROM loan.loan_application) ORDER BY application_no;"
+  },
+  {
+    "difficulty": "expert",
+    "question": "For each region, return the region name and the approval rate (approved decisions divided by total decisions) for applications originated in that region, as a percentage rounded to one decimal.",
+    "gold_sql": "SELECT r.name AS region, ROUND(100.0 * SUM(CASE WHEN ud.decision = 'approve' THEN 1 ELSE 0 END) / COUNT(*), 1) AS approval_rate_pct FROM loan.underwriting_decision ud JOIN loan.loan_application la ON la.application_id = ud.application_id JOIN loan.branch b ON b.branch_id = la.branch_id JOIN ref.region r ON r.region_id = b.region_id GROUP BY r.name ORDER BY approval_rate_pct DESC;"
+  },
+  {
+    "difficulty": "expert",
+    "question": "Find the most recent credit pull per borrower and return the borrower full name and that pull's FICO score, considering only borrowers who have at least one credit pull.",
+    "gold_sql": "SELECT p.first_name || ' ' || p.last_name AS borrower_name, cp.fico_score FROM loan.credit_pull cp JOIN loan.borrower bo ON bo.borrower_id = cp.borrower_id JOIN loan.party p ON p.party_id = bo.party_id WHERE cp.pulled_at = (SELECT MAX(cp2.pulled_at) FROM loan.credit_pull cp2 WHERE cp2.borrower_id = cp.borrower_id) ORDER BY borrower_name;"
+  }
+]

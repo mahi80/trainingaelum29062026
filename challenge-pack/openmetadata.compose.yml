@@ -1,0 +1,145 @@
+# OpenMetadata override — OPTIONAL and HEAVY.
+# =============================================================================
+# NOTE: This stack is large. OpenMetadata = a server JVM + its own MySQL +
+# OpenSearch (each multi-hundred-MB images, ~4-6 GB RAM combined). Do NOT start
+# it unless your solution actually exercises catalog / lineage / data-discovery
+# features. It is kept in a separate override file (behind the `catalog` profile)
+# so the default `docker compose up` stays lean.
+#
+# Start it as an OVERRIDE on top of the base stack:
+#   docker compose -f docker-compose.yml -f openmetadata.compose.yml \
+#     --profile catalog up -d
+#
+# Stop just the catalog without touching the base stack:
+#   docker compose -f docker-compose.yml -f openmetadata.compose.yml \
+#     --profile catalog down
+#
+# -----------------------------------------------------------------------------
+# Ingesting the loan Postgres (so the warehouse shows up in the catalog)
+# -----------------------------------------------------------------------------
+# Two equivalent options:
+#
+# A) UI: open http://localhost:8585 (admin / admin), then
+#    Settings -> Services -> Databases -> Add New Service -> Postgres,
+#    with connection:
+#      host/port: postgres:5432   (reachable on the shared compose network)
+#      database:  autoloan
+#      user/pass: ${POSTGRES_USER} / ${POSTGRES_PASSWORD}
+#    Deploy the "Metadata" ingestion pipeline; it crawls ref/loan/doc/app
+#    schemas (~100 tables) and registers columns, FKs, and sample data.
+#
+# B) CLI (reproducible, commit the YAML): a metadata-ingestion config like:
+#      source:
+#        type: postgres
+#        serviceName: autoloan-warehouse
+#        serviceConnection:
+#          config:
+#            type: Postgres
+#            username: ${POSTGRES_USER}
+#            authType: {password: ${POSTGRES_PASSWORD}}
+#            hostPort: postgres:5432
+#            database: autoloan
+#        sourceConfig:
+#          config:
+#            type: DatabaseMetadata
+#            schemaFilterPattern: {includes: ["ref", "loan", "doc", "app"]}
+#      sink: {type: metadata-rest, config: {}}
+#      workflowConfig:
+#        openMetadataServerConfig:
+#          hostPort: http://openmetadata-server:8585/api
+#          authProvider: openmetadata
+#          securityConfig: {jwtToken: <bot-token-from-UI>}
+#    Run with:  metadata ingest -c postgres-ingest.yaml
+#
+# -----------------------------------------------------------------------------
+# Registering the example PAGES as a custom "page index" catalog asset
+# -----------------------------------------------------------------------------
+# The 100 scanned pages in ./example are not a SQL table, so model them as a
+# Custom Database Service ("page-index") whose one logical table `example.pages`
+# has columns {page_no, doc_id, doc_class, page_in_doc, table_uid, split,
+# image, has_handwriting}. Populate it from example/manifest.jsonl via the
+# OpenMetadata REST API (POST /api/v1/tables) or a small CSV/Glue-style custom
+# connector. This lets graders see document lineage (page -> chunk -> embedding)
+# alongside the relational warehouse. Keep it lightweight: one service, one
+# table, rows == manifest lines.
+# =============================================================================
+
+name: autoloan-docintel
+
+services:
+  om-mysql:
+    image: mysql:8
+    container_name: aldi-om-mysql
+    profiles: ["catalog"]
+    command:
+      - "--sort_buffer_size=10485760"
+      - "--default-authentication-plugin=mysql_native_password"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${OM_MYSQL_PASSWORD:-password}
+      MYSQL_DATABASE: openmetadata_db
+      MYSQL_USER: openmetadata_user
+      MYSQL_PASSWORD: ${OM_MYSQL_PASSWORD:-password}
+    volumes:
+      - om_mysql:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -p${OM_MYSQL_PASSWORD:-password} | grep -q alive"]
+      interval: 15s
+      timeout: 10s
+      retries: 20
+      start_period: 40s
+
+  om-opensearch:
+    image: opensearchproject/opensearch:2.11.1
+    container_name: aldi-om-opensearch
+    profiles: ["catalog"]
+    environment:
+      - discovery.type=single-node
+      - plugins.security.disabled=true
+      - "OPENSEARCH_JAVA_OPTS=-Xms1g -Xmx1g"
+      - DISABLE_INSTALL_DEMO_CONFIG=true
+    ulimits:
+      memlock: {soft: -1, hard: -1}
+      nofile: {soft: 65536, hard: 65536}
+    volumes:
+      - om_opensearch:/usr/share/opensearch/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -s http://localhost:9200/_cluster/health | grep -q '\"status\"'"]
+      interval: 15s
+      timeout: 10s
+      retries: 20
+      start_period: 40s
+
+  openmetadata-server:
+    image: docker.getcollate.io/openmetadata/server:1.5.6
+    container_name: aldi-openmetadata
+    profiles: ["catalog"]
+    depends_on:
+      om-mysql:
+        condition: service_healthy
+      om-opensearch:
+        condition: service_healthy
+    environment:
+      DB_HOST: om-mysql
+      DB_PORT: "3306"
+      OM_DATABASE: openmetadata_db
+      DB_USER: openmetadata_user
+      DB_USER_PASSWORD: ${OM_MYSQL_PASSWORD:-password}
+      DB_DRIVER_CLASS: com.mysql.cj.jdbc.Driver
+      DB_SCHEME: mysql
+      ELASTICSEARCH_HOST: om-opensearch
+      ELASTICSEARCH_PORT: "9200"
+      SEARCH_TYPE: opensearch
+      AUTHENTICATION_PROVIDER: basic
+    ports:
+      - "${OM_PORT:-8585}:8585"
+      - "${OM_ADMIN_PORT:-8586}:8586"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -s http://localhost:8586/healthcheck | grep -q '\"healthy\":true'"]
+      interval: 20s
+      timeout: 10s
+      retries: 30
+      start_period: 90s
+
+volumes:
+  om_mysql:
+  om_opensearch:

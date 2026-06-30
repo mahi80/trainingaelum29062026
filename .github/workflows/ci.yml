@@ -1,0 +1,91 @@
+name: ci
+
+# Root CI for the authoring repo (challenge-pack + grading-kit). Offline only —
+# no Postgres/Redis/Ollama. The candidate-facing template lives at
+# challenge-pack/.github/workflows/ci.yml (becomes their repo root on handout).
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: ruff lint (whole repo)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install ruff
+      - run: ruff check .
+
+  py-compile:
+    name: py_compile (syntax)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: python -m compileall -q challenge-pack/src challenge-pack/tools challenge-pack/app challenge-pack/eval grading-kit
+
+  schema-size:
+    name: schema size (>=100 tables / >=200 cols)
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: challenge-pack } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: python tools/schemagen/expand.py --ddl db/ddl
+
+  docgen-smoke:
+    name: docgen smoke (4 pages)
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: challenge-pack } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install pillow numpy
+      - run: python tools/docgen/generate.py --out /tmp/ex --limit 4
+      - run: test -f /tmp/ex/manifest.jsonl
+
+  import-test:
+    name: src import (no heavy deps)
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: challenge-pack } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: python -c "import src.graph, src.nodes, src.llm; print('ok')"
+
+  contract-validate:
+    name: OpenAPI contract valid
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: challenge-pack } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install pyyaml openapi-spec-validator
+      - run: python -c "from openapi_spec_validator import validate; import yaml; validate(yaml.safe_load(open('openapi/contract.yaml'))); print('openapi ok')"
+
+  conformance:
+    name: grading harness conformance
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install pytest sqlglot
+      - run: python -m pytest grading-kit/harness/test_conformance.py -q

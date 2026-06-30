@@ -47,7 +47,7 @@ def main():
 
     rng = random.Random(args.seed + 7)  # disjoint from generation seed
     man_path = os.path.join(args.example, "manifest.jsonl")
-    rows = [json.loads(l) for l in open(man_path, encoding="utf-8") if l.strip()]
+    rows = [json.loads(ln) for ln in open(man_path, encoding="utf-8") if ln.strip()]
 
     n_test = max(1, round(len(rows) * args.frac))
     ranked = sorted(rows, key=lambda r: hardness(r, rng.random()), reverse=True)

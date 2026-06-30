@@ -1,0 +1,21 @@
+# Dependencies for the candidate-runnable evaluation CLIs (challenge-pack/eval).
+#
+# The metric math is pure-python; these libraries are only needed for specific
+# CLIs and are imported lazily, so a CLI you are not using will not force its dep.
+#
+#   sqlglot   -> eval/sql_eval.py    : SQL parsing for valid-SQL rate + Exact-Set-Match.
+#   lxml      -> eval/ocr_eval.py    : HTML table parsing for TEDS / TEDS-Struct.
+#   numpy     -> optional speedups / convenience for ad-hoc analysis (not required).
+#
+# Execution Accuracy in sql_eval additionally needs a Postgres driver
+# (psycopg or psycopg2) and a reachable DATABASE_URL; install whichever your
+# environment already provides. The k6 load test (eval/loadtest) needs the k6
+# binary, which is installed separately (see eval/loadtest/README.md).
+
+sqlglot>=23.0,<27.0
+lxml>=5.0,<6.0
+numpy>=1.26,<3.0
+
+# Optional Postgres driver for sql_eval Execution Accuracy (uncomment one):
+# psycopg[binary]>=3.1
+# psycopg2-binary>=2.9

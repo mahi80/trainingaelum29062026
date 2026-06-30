@@ -1,0 +1,190 @@
+# AutoLoan-DocIntel — local development stack (OSS-first).
+#
+# Quick start:
+#   cp .env.example .env          # then edit secrets if you like
+#   docker compose up -d          # postgres + redis + ollama + ollama-pull + app
+#   docker compose logs -f app
+#
+# The DDL in ./db/ddl is mounted into Postgres' init dir, so schemas
+# (ref/loan/doc/app) + pgvector are created on first boot of a fresh volume.
+# The one-shot `ollama-pull` service downloads the three models the app needs
+# and then exits 0; `app` waits only for postgres+redis to be healthy.
+#
+# Optional / heavy add-ons (NOT started by default):
+#   * MinIO (S3-compatible object store for page images) lives behind the
+#     `storage` profile:  docker compose --profile storage up -d minio
+#   * OpenMetadata (data catalog / lineage / page-index governance) is large
+#     (server + its own MySQL + OpenSearch). It is intentionally kept OUT of
+#     this file. See ./openmetadata.compose.yml for a runnable-shaped override
+#     and ingestion notes. Start it only if your solution exercises catalog
+#     features:
+#       docker compose -f docker-compose.yml -f openmetadata.compose.yml \
+#         --profile catalog up -d
+#
+# Service map
+#   postgres     5432  pgvector/pgvector:pg16   loan warehouse + vectors + sessions
+#   redis        6379  redis:7-alpine           cache / rate-limit / idempotency / streams
+#   ollama      11434  ollama/ollama            local LLM + embedding server
+#   ollama-pull   -    ollama/ollama            one-shot model puller (exits 0)
+#   app          8000  build ./app              FastAPI + HTMX serving the contract
+#   minio    9000/9001 minio/minio              optional object store (profile: storage)
+
+name: autoloan-docintel
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: aldi-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-aldi}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-aldi}
+      POSTGRES_DB: ${POSTGRES_DB:-autoloan}
+      # Deterministic init ordering; files run in lexical order.
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      # DDL runs ONCE, on a fresh data volume, in filename order.
+      - ./db/ddl:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-aldi} -d ${POSTGRES_DB:-autoloan}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
+
+  redis:
+    image: redis:7-alpine
+    container_name: aldi-redis
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes", "--save", "60", "1000"]
+    ports:
+      - "${REDIS_PORT:-6379}:6379"
+    volumes:
+      - redisdata:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 5s
+
+  ollama:
+    image: ollama/ollama
+    container_name: aldi-ollama
+    restart: unless-stopped
+    ports:
+      - "${OLLAMA_PORT:-11434}:11434"
+    volumes:
+      - ollama:/root/.ollama
+    healthcheck:
+      # `ollama list` succeeds only once the server is accepting requests.
+      test: ["CMD-SHELL", "ollama list >/dev/null 2>&1 || exit 1"]
+      interval: 10s
+      timeout: 10s
+      retries: 30
+      start_period: 20s
+
+  # One-shot: pull the three models, then exit 0. Re-runnable; pulls are cached
+  # in the shared `ollama` volume. The `app` does NOT depend on this completing,
+  # so the API comes up immediately; first LLM call simply blocks on the pull.
+  ollama-pull:
+    image: ollama/ollama
+    container_name: aldi-ollama-pull
+    depends_on:
+      ollama:
+        condition: service_healthy
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        set -e
+        for m in ${LLM_MODEL:-llama3.1:8b} ${SQL_MODEL:-qwen2.5-coder:7b} ${EMBED_MODEL:-nomic-embed-text}; do
+          echo "pulling $$m ...";
+          ollama pull "$$m";
+        done
+        echo "all models present";
+    restart: "no"
+
+  app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    container_name: aldi-app
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-aldi}:${POSTGRES_PASSWORD:-aldi}@postgres:5432/${POSTGRES_DB:-autoloan}
+      REDIS_URL: redis://redis:6379/0
+      OLLAMA_HOST: http://ollama:11434
+      LLM_PROVIDER: ${LLM_PROVIDER:-ollama}
+      LLM_MODEL: ${LLM_MODEL:-llama3.1:8b}
+      SQL_MODEL: ${SQL_MODEL:-qwen2.5-coder:7b}
+      EMBED_MODEL: ${EMBED_MODEL:-nomic-embed-text}
+      SECRET_KEY: ${SECRET_KEY:-dev-only-change-me}
+      ACCESS_TOKEN_EXPIRE_MINUTES: ${ACCESS_TOKEN_EXPIRE_MINUTES:-60}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      LOG_FORMAT: ${LOG_FORMAT:-json}
+    ports:
+      - "${APP_PORT:-8000}:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8000/healthz').status==200 else 1)\""]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 20s
+
+  # Optional object store for page images (profile: storage).
+  minio:
+    image: minio/minio
+    container_name: aldi-minio
+    profiles: ["storage"]
+    command: ["server", "/data", "--console-address", ":9001"]
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-minio}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:-minio123}
+    ports:
+      - "${MINIO_PORT:-9000}:9000"
+      - "${MINIO_CONSOLE_PORT:-9001}:9001"
+    volumes:
+      - miniodata:/data
+    healthcheck:
+      test: ["CMD-SHELL", "mc ready local || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  # One-shot seeder (profile: seed). Run ONCE after a fresh `up`:
+  #   docker compose --profile seed run --rm seed
+  # Re-running on an already-seeded DB will fail on unique/PK conflicts — that's
+  # intentional (seed once on a fresh volume). Maps the 100 example pages to
+  # doc.document / doc.document_page rows.
+  seed:
+    image: python:3.11-slim
+    profiles: ["seed"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-aldi}:${POSTGRES_PASSWORD:-aldi}@postgres:5432/${POSTGRES_DB:-autoloan}
+    working_dir: /pack
+    volumes:
+      - ./:/pack:ro
+    command:
+      - "sh"
+      - "-c"
+      - "pip install -q 'psycopg[binary]' Faker argon2-cffi && python db/seed/seed.py --seed 1337 --example example"
+    restart: "no"
+
+volumes:
+  pgdata:
+  redisdata:
+  ollama:
+  miniodata:

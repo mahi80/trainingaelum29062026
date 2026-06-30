@@ -239,7 +239,7 @@ def main():
     # documents/pages from manifest -> link to example images
     man = os.path.join(args.example, "manifest.jsonl")
     docs = {}
-    rows = [json.loads(l) for l in open(man, encoding="utf-8")] if os.path.exists(man) else []
+    rows = [json.loads(ln) for ln in open(man, encoding="utf-8")] if os.path.exists(man) else []
     for r in rows:
         docs.setdefault(r["doc_id"], []).append(r)
     for doc_id, pages in docs.items():

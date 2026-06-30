@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Underwriting {{ application_id }} · {{ app_name }}{% endblock %}
+{% block content %}
+<div class="panel">
+  <h2 style="margin-top:0;">Underwriting · application #{{ application_id }}</h2>
+  <p class="muted">Read-only view over seeded data.</p>
+</div>
+
+{% if db_error %}
+  <div class="panel"><p class="error">Database unavailable: {{ db_error }}</p></div>
+{% elif not application %}
+  <div class="panel"><p class="muted">No application found.</p></div>
+{% else %}
+  <div class="panel">
+    <h3 style="margin-top:0;">Application</h3>
+    <table>
+      <tr><th>Application no</th><td>{{ application.application_no }}</td></tr>
+      <tr><th>Borrower</th><td>{{ application.first_name }} {{ application.last_name }}</td></tr>
+      <tr><th>Credit band</th><td>{{ application.credit_band }}</td></tr>
+      <tr><th>Branch</th><td>{{ application.branch_name }}</td></tr>
+      <tr><th>Product</th><td>{{ application.product_code }}</td></tr>
+      <tr><th>Requested</th><td>{{ application.requested_amount }} over {{ application.requested_term_months }} mo</td></tr>
+      <tr><th>Status</th><td>{{ application.status }}</td></tr>
+      <tr><th>Vehicle</th><td>{{ application.model_year }} · {{ application.fuel_type }} · {{ application.condition }} · VIN {{ application.vin }}</td></tr>
+      <tr><th>Submitted</th><td>{{ application.submitted_at }}</td></tr>
+    </table>
+  </div>
+
+  <div class="panel">
+    <h3 style="margin-top:0;">Latest decision</h3>
+    {% if decision %}
+      <table>
+        <tr><th>Decision</th><td>{{ decision.decision }}</td></tr>
+        <tr><th>Approved amount</th><td>{{ decision.approved_amount }}</td></tr>
+        <tr><th>Approved APR</th><td>{{ decision.approved_apr }}</td></tr>
+        <tr><th>DTI ratio</th><td>{{ decision.dti_ratio }}</td></tr>
+        <tr><th>LTV ratio</th><td>{{ decision.ltv_ratio }}</td></tr>
+        <tr><th>PD score</th><td>{{ decision.pd_score }}</td></tr>
+        <tr><th>Risk rating</th><td>{{ decision.risk_rating }}</td></tr>
+        <tr><th>Decided at</th><td>{{ decision.decided_at }}</td></tr>
+      </table>
+    {% else %}
+      <p class="muted">No decision recorded yet.</p>
+    {% endif %}
+  </div>
+{% endif %}
+{% endblock %}

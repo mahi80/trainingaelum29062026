@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% block title %}Chat · {{ app_name }}{% endblock %}
+{% block content %}
+<div class="panel">
+  <h2 style="margin-top:0;">Assistant console</h2>
+  <p class="muted">
+    Ask about applications, documents, policies, or underwriting. Streaming over
+    Server-Sent Events. PROVIDED transport; answers appear once the LangGraph nodes
+    are implemented.
+  </p>
+</div>
+
+<div style="display:grid; grid-template-columns: 2fr 1fr; gap:1rem;">
+  <!-- conversation column -->
+  <div class="panel">
+    <div id="answer" aria-live="polite"
+         style="white-space:pre-wrap; min-height:8rem;"></div>
+    <div id="status" class="muted" style="margin-top:.5rem;"></div>
+
+    <div style="height:1rem"></div>
+    <form id="ask">
+      <textarea id="message" name="message" rows="3"
+                placeholder="e.g. What is the DTI for application APP-0001?"></textarea>
+      <div style="height:.6rem"></div>
+      <button type="submit" id="send">Send</button>
+    </form>
+  </div>
+
+  <!-- side panels: route/SQL + citations -->
+  <div>
+    <div class="panel">
+      <h3 style="margin-top:0;">Route &amp; SQL</h3>
+      <div class="muted" id="route">route: —</div>
+      <pre id="sql" style="display:none; margin-top:.5rem;"></pre>
+    </div>
+    <div class="panel">
+      <h3 style="margin-top:0;">Citations</h3>
+      <ol id="citations" class="muted" style="margin:0; padding-left:1.1rem;"></ol>
+    </div>
+    <div class="panel">
+      <h3 style="margin-top:0;">Decision</h3>
+      <div class="muted" id="decision">—</div>
+    </div>
+  </div>
+</div>
+
+<script>
+// PROVIDED: SSE client for POST /v1/chat (stream=true). Listens for the event
+// names the server emits: meta, token, citation, error, done.
+(function () {
+  const form = document.getElementById('ask');
+  const sendBtn = document.getElementById('send');
+  const elAnswer = document.getElementById('answer');
+  const elStatus = document.getElementById('status');
+  const elRoute = document.getElementById('route');
+  const elSql = document.getElementById('sql');
+  const elCites = document.getElementById('citations');
+  const elDecision = document.getElementById('decision');
+
+  let sessionId = sessionStorage.getItem('chat_session') || null;
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const message = document.getElementById('message').value.trim();
+    if (!message) return;
+
+    elAnswer.textContent = '';
+    elCites.innerHTML = '';
+    elSql.style.display = 'none';
+    elRoute.textContent = 'route: …';
+    elDecision.textContent = '—';
+    elStatus.textContent = 'thinking…';
+    sendBtn.disabled = true;
+
+    try {
+      const resp = await fetch('/v1/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message, session_id: sessionId, stream: true })
+      });
+      if (!resp.ok || !resp.body) {
+        elStatus.innerHTML = '<span class="error">request failed (' + resp.status + ')</span>';
+        sendBtn.disabled = false;
+        return;
+      }
+      const reader = resp.body.getReader();
+      const decoder = new TextDecoder();
+      let buf = '';
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        buf += decoder.decode(value, { stream: true });
+        let idx;
+        while ((idx = buf.indexOf('\n\n')) !== -1) {
+          const frame = buf.slice(0, idx);
+          buf = buf.slice(idx + 2);
+          handleFrame(frame);
+        }
+      }
+    } catch (err) {
+      elStatus.innerHTML = '<span class="error">' + err + '</span>';
+    } finally {
+      sendBtn.disabled = false;
+    }
+  });
+
+  function handleFrame(frame) {
+    if (frame.startsWith(':')) return; // heartbeat comment
+    let event = 'message', data = '';
+    frame.split('\n').forEach(function (line) {
+      if (line.startsWith('event:')) event = line.slice(6).trim();
+      else if (line.startsWith('data:')) data += line.slice(5).trim();
+    });
+    let parsed = data;
+    try { parsed = JSON.parse(data); } catch (_) {}
+
+    if (event === 'token') {
+      elAnswer.textContent += (typeof parsed === 'string' ? parsed : data);
+    } else if (event === 'meta') {
+      if (parsed.session_id) { sessionId = parsed.session_id; sessionStorage.setItem('chat_session', sessionId); }
+      if (parsed.route) elRoute.textContent = 'route: ' + parsed.route;
+      if (parsed.sql) { elSql.textContent = parsed.sql; elSql.style.display = 'block'; }
+      if (parsed.decision) elDecision.textContent = parsed.decision;
+    } else if (event === 'citation') {
+      const li = document.createElement('li');
+      li.textContent = (parsed.source_id || '?') + ' · ' + (parsed.type || '') +
+                       (parsed.page ? ' p.' + parsed.page : '');
+      elCites.appendChild(li);
+    } else if (event === 'error') {
+      elStatus.innerHTML = '<span class="error">' + (parsed.message || data) + '</span>';
+    } else if (event === 'done') {
+      elStatus.textContent = 'done';
+    }
+  }
+})();
+</script>
+{% endblock %}

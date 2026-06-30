@@ -420,7 +420,6 @@ def gen_policy(doc_id, n_pages, rng):
             chunk = [fico_bands[-1]]
         rows = []
         for band in chunk:
-            base = 4.0 + (fico_bands.index(band) and 0)
             rows.append([band] + [f"{round(rng.uniform(3.5, 13.5),2)}%"
                                   for _ in ltv_tiers])
         cells, tb = draw_table(cv, MARGIN, 174, col_w, header, rows, rng,

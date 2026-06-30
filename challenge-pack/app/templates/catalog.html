@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}Catalog · {{ app_name }}{% endblock %}
+{% block content %}
+<div class="panel">
+  <h2 style="margin-top:0;">Data catalog</h2>
+  <p class="muted">Schemas, tables, and the bundled page index ({{ page_count }} pages).</p>
+</div>
+
+<div class="panel">
+  <h3 style="margin-top:0;">Tables</h3>
+  {% if db_error %}
+    <p class="error">Database unavailable: {{ db_error }}</p>
+  {% else %}
+    {% for schema, tables in by_schema.items() %}
+      <h4>{{ schema }}</h4>
+      <table>
+        <thead><tr><th>table</th><th>approx rows</th></tr></thead>
+        <tbody>
+          {% for t in tables %}
+            <tr><td><code>{{ schema }}.{{ t.table_name }}</code></td><td>{{ t.approx_rows }}</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% endfor %}
+  {% endif %}
+</div>
+
+<div class="panel">
+  <h3 style="margin-top:0;">Page index</h3>
+  <table>
+    <thead><tr><th>page</th><th>doc_id</th><th>class</th><th>split</th><th></th></tr></thead>
+    <tbody>
+      {% for p in page_index %}
+        <tr>
+          <td>{{ p.page_no }}</td>
+          <td><code>{{ p.doc_id }}</code></td>
+          <td>{{ p.doc_class }}</td>
+          <td>{{ p.split }}</td>
+          <td><a href="/documents/{{ p.doc_id }}">view</a></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

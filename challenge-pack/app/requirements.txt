@@ -1,0 +1,35 @@
+# AutoLoan-DocIntel app runtime dependencies (target Python 3.11).
+# Pins are loose minimums; lock as you see fit. Heavy/optional libs are
+# imported lazily in code so modules import even if a dep is missing.
+
+# --- web / serving ---
+fastapi>=0.110
+uvicorn[standard]>=0.29
+jinja2>=3.1            # HTMX templates
+python-multipart>=0.0.9
+sse-starlette>=2.0     # SSE for /v1/chat stream=true
+
+# --- auth / security ---
+argon2-cffi>=23.1      # password hashing
+python-jose[cryptography]>=3.3  # OAuth2 / JWT
+passlib>=1.7
+
+# --- data / storage ---
+psycopg[binary]>=3.1   # Postgres (sync / candidate use)
+asyncpg>=0.29          # async driver used by app/db.py (SQLAlchemy asyncio)
+pgvector>=0.2          # vector type adapter
+redis>=5.0             # cache / streams / sessions backing (sessions in PG)
+sqlalchemy[asyncio]>=2.0
+
+# --- agent / llm ---
+langgraph>=0.2
+httpx>=0.27            # Ollama HTTP client
+pydantic>=2.6
+pydantic-settings>=2.2
+
+# --- observability ---
+structlog>=24.1        # JSON logs with request_id + correlation_id
+
+# --- doc intelligence (lazy-imported) ---
+pillow>=10.0
+numpy>=1.26

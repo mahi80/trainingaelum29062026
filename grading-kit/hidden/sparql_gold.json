@@ -1,0 +1,77 @@
+[
+  {
+    "nl": "All rules transitively superseded by the 2023 LTV rule.",
+    "sparql": "PREFIX al: <https://autoloan-docintel.example/ontology#>\nSELECT ?code WHERE { ?h al:ruleCode \"LTV-2023\" . ?h al:supersedes+ ?s . ?s al:ruleCode ?code . }",
+    "expected_count": 2
+  },
+  {
+    "nl": "All rules transitively superseded by the 2022 DTI rule.",
+    "sparql": "PREFIX al: <https://autoloan-docintel.example/ontology#>\nSELECT ?code WHERE { ?h al:ruleCode \"DTI-2022\" . ?h al:supersedes+ ?s . ?s al:ruleCode ?code . }",
+    "expected_count": 1
+  },
+  {
+    "nl": "Every (newer, older) pair of policy rules connected by the transitive supersedes relation.",
+    "sparql": "PREFIX al: <https://autoloan-docintel.example/ontology#>\nSELECT ?newer ?older WHERE { ?n al:ruleCode ?newer . ?n al:supersedes+ ?o . ?o al:ruleCode ?older . }",
+    "expected_count": 4
+  },
+  {
+    "nl": "Root (original) policy rules that supersede nothing.",
+    "sparql": "PREFIX al: <https://autoloan-docintel.example/ontology#>\nSELECT ?code WHERE { ?r a al:PolicyRule ; al:ruleCode ?code . FILTER NOT EXISTS { ?r al:supersedes ?x . } }",
+    "expected_count": 2
+  },
+  {
+    "nl": "Head (current) policy rules that are not superseded by any other rule.",
+    "sparql": "PREFIX al: <https://autoloan-docintel.example/ontology#>\nSELECT ?code WHERE { ?r a al:PolicyRule ; al:ruleCode ?code . FILTER NOT EXISTS { ?x al:supersedes ?r . } }",
+    "expected_count": 2
+  },
+  {
+    "nl": "Distinct policy rules that apply to the Northeast region.",
+    "sparql": "PREFIX al: <https://autoloan-docintel.example/ontology#>\nSELECT DISTINCT ?r WHERE { ?r a al:PolicyRule ; al:appliesToRegion ?reg . ?reg al:regionName \"Northeast\" . }",
+    "expected_count": 3
+  },
+  {
+    "nl": "Distinct policy rules that apply to the Southeast region.",
+    "sparql": "PREFIX al: <https://autoloan-docintel.example/ontology#>\nSELECT DISTINCT ?r WHERE { ?r a al:PolicyRule ; al:appliesToRegion ?reg . ?reg al:regionName \"Southeast\" . }",
+    "expected_count": 2
+  },
+  {
+    "nl": "Applications governed by a rule that applies to the Northeast region.",
+    "sparql": "PREFIX al: <https://autoloan-docintel.example/ontology#>\nSELECT DISTINCT ?app WHERE { ?app a al:Application ; al:governedBy ?r . ?r al:appliesToRegion ?reg . ?reg al:regionName \"Northeast\" . }",
+    "expected_count": 2
+  },
+  {
+    "nl": "Applications whose governing rule has been superseded by a newer rule (governed by stale policy).",
+    "sparql": "PREFIX al: <https://autoloan-docintel.example/ontology#>\nSELECT DISTINCT ?app WHERE { ?app a al:Application ; al:governedBy ?r . ?newer al:supersedes+ ?r . }",
+    "expected_count": 1
+  },
+  {
+    "nl": "Borrowers who submitted an application located in the Northeast region.",
+    "sparql": "PREFIX al: <https://autoloan-docintel.example/ontology#>\nSELECT DISTINCT ?b WHERE { ?app a al:Application ; al:submittedBy ?b ; al:inRegion ?reg . ?reg al:regionName \"Northeast\" . }",
+    "expected_count": 2
+  },
+  {
+    "nl": "Decisions and every rule code transitively reachable (including itself) from the rule they were derived from.",
+    "sparql": "PREFIX al: <https://autoloan-docintel.example/ontology#>\nSELECT ?d ?code WHERE { ?d a al:Decision ; al:derivedFrom ?r . ?r al:supersedes* ?a . ?a al:ruleCode ?code . }",
+    "expected_count": 5
+  },
+  {
+    "nl": "Number of distinct policy rules per region (regions that have at least one rule).",
+    "sparql": "PREFIX al: <https://autoloan-docintel.example/ontology#>\nSELECT ?reg (COUNT(DISTINCT ?r) AS ?n) WHERE { ?r a al:PolicyRule ; al:appliesToRegion ?reg . } GROUP BY ?reg",
+    "expected_count": 2
+  },
+  {
+    "nl": "Applications on collateral older than five years governed by a Southeast rule.",
+    "sparql": "PREFIX al: <https://autoloan-docintel.example/ontology#>\nSELECT DISTINCT ?app WHERE { ?app a al:Application ; al:hasCollateral ?v ; al:governedBy ?r . ?v al:vehicleAge ?age . FILTER(?age > 5) ?r al:appliesToRegion ?reg . ?reg al:regionName \"Southeast\" . }",
+    "expected_count": 1
+  },
+  {
+    "nl": "Co-borrowers (secondary borrowers) and their FICO band.",
+    "sparql": "PREFIX al: <https://autoloan-docintel.example/ontology#>\nSELECT ?cb ?band WHERE { ?cb a al:CoBorrower ; al:hasCreditProfile ?cp . ?cp al:ficoBand ?band . }",
+    "expected_count": 1
+  },
+  {
+    "nl": "Approved applications (decision outcome 'approved') in the Northeast region.",
+    "sparql": "PREFIX al: <https://autoloan-docintel.example/ontology#>\nSELECT DISTINCT ?app WHERE { ?app a al:Application ; al:inRegion ?reg ; al:resultsIn ?d . ?reg al:regionName \"Northeast\" . ?d al:decisionOutcome \"approved\" . }",
+    "expected_count": 1
+  }
+]

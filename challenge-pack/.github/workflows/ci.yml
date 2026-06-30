@@ -1,0 +1,101 @@
+name: ci
+
+# Lightweight CI: NO external services (no Postgres/Redis/Ollama). Everything
+# here runs offline using only stdlib + a couple of pure-Python deps. It proves
+# the scaffold stays importable and the generators/validators keep working.
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: ruff lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install ruff
+        run: pip install ruff
+      - name: Ruff check
+        run: ruff check .
+
+  schema-size:
+    name: schema size check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Expand + assert size targets (>=100 tables / >=200 cols)
+        # expand.py regenerates the long-tail DDL then re-scans db/ddl and
+        # asserts the size targets; it exits non-zero if the warehouse shrinks.
+        run: python tools/schemagen/expand.py --ddl db/ddl
+
+  docgen-smoke:
+    name: docgen smoke
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install docgen deps
+        run: pip install pillow numpy
+      - name: Generate a few pages
+        run: python tools/docgen/generate.py --out /tmp/ex --limit 4
+      - name: Sanity-check outputs
+        run: |
+          test -f /tmp/ex/manifest.jsonl
+          ls /tmp/ex/images | head
+
+  import-test:
+    name: src import test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Modules import without heavy deps
+        # Heavy/optional libs are imported lazily inside functions, so the
+        # packages must import on a bare interpreter.
+        run: python -c "import src.graph, src.nodes, src.llm; print('ok')"
+
+  contract-validate:
+    name: contract YAML validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install validators
+        run: pip install pyyaml openapi-spec-validator
+      - name: YAML well-formed + OpenAPI valid
+        run: |
+          python -c "import yaml; yaml.safe_load(open('openapi/contract.yaml')); print('yaml ok')"
+          python -c "from openapi_spec_validator import validate; import yaml; validate(yaml.safe_load(open('openapi/contract.yaml'))); print('openapi ok')"
+
+  py-compile:
+    name: py_compile (syntax)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Byte-compile all Python
+        run: python -m compileall -q src tools app

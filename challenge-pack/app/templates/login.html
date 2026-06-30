@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Sign in · {{ app_name }}{% endblock %}
+{% block content %}
+<div class="panel" style="max-width: 420px; margin: 3rem auto;">
+  <h2 style="margin-top:0;">Sign in</h2>
+  <p class="muted">AutoLoan-DocIntel console. Use a seeded account.</p>
+
+  <!-- PROVIDED: posts to /login; HX-Redirect sends you to /chat on success. -->
+  <form id="login-form" hx-post="/login" hx-target="#login-form" hx-swap="outerHTML">
+    <label for="username" class="muted">Username</label>
+    <input id="username" name="username" autocomplete="username" autofocus required />
+    <div style="height:.6rem"></div>
+    <label for="password" class="muted">Password</label>
+    <input id="password" name="password" type="password"
+           autocomplete="current-password" required />
+    {% if error %}
+      <p class="error" role="alert">{{ error }}</p>
+    {% endif %}
+    <div style="height:1rem"></div>
+    <button type="submit">Sign in</button>
+  </form>
+</div>
+{% endblock %}

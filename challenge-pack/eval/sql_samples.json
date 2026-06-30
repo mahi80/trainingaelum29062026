@@ -1,0 +1,34 @@
+[
+  {
+    "question": "List the application number, borrower full name, and branch name for every approved application, ordered by application number.",
+    "gold_sql": "SELECT la.application_no, p.first_name || ' ' || p.last_name AS borrower_name, b.name AS branch_name FROM loan.loan_application la JOIN loan.borrower bo ON bo.borrower_id = la.borrower_id JOIN loan.party p ON p.party_id = bo.party_id JOIN loan.branch b ON b.branch_id = la.branch_id JOIN loan.underwriting_decision ud ON ud.application_id = la.application_id WHERE ud.decision = 'approve' ORDER BY la.application_no;"
+  },
+  {
+    "question": "For each branch, what is the average requested loan amount across all applications? Return branch name and the average, highest first.",
+    "gold_sql": "SELECT b.name AS branch_name, AVG(la.requested_amount) AS avg_requested FROM loan.loan_application la JOIN loan.branch b ON b.branch_id = la.branch_id GROUP BY b.name ORDER BY avg_requested DESC;"
+  },
+  {
+    "question": "Show the VIN, make name, and model year of vehicles financed by applications whose underwriting LTV ratio exceeded 0.9.",
+    "gold_sql": "SELECT v.vin, mk.name AS make, v.model_year FROM loan.underwriting_decision ud JOIN loan.loan_application la ON la.application_id = ud.application_id JOIN loan.vehicle v ON v.vehicle_id = la.vehicle_id JOIN ref.vehicle_make mk ON mk.make_id = v.make_id WHERE ud.ltv_ratio > 0.9;"
+  },
+  {
+    "question": "Which underwriters approved loans for borrowers in the 'PRIME' credit band? Return the underwriter name and the count of such decisions.",
+    "gold_sql": "SELECT u.full_name AS underwriter, COUNT(*) AS approvals FROM loan.underwriting_decision ud JOIN loan.underwriter u ON u.underwriter_id = ud.underwriter_id JOIN loan.loan_application la ON la.application_id = ud.application_id JOIN loan.borrower bo ON bo.borrower_id = la.borrower_id WHERE ud.decision = 'approve' AND bo.credit_band = 'PRIME' GROUP BY u.full_name;"
+  },
+  {
+    "question": "For each region, total the principal of all booked loans, joining region through the originating branch. Return region name and total principal.",
+    "gold_sql": "SELECT r.name AS region, SUM(l.principal) AS total_principal FROM loan.loan l JOIN loan.loan_application la ON la.application_id = l.application_id JOIN loan.branch b ON b.branch_id = la.branch_id JOIN ref.region r ON r.region_id = b.region_id GROUP BY r.name ORDER BY total_principal DESC;"
+  },
+  {
+    "question": "Find borrowers whose most recent credit pull FICO score is below 600 but who still have an approved underwriting decision. Return borrower full name and the FICO score.",
+    "gold_sql": "SELECT p.first_name || ' ' || p.last_name AS borrower_name, cp.fico_score FROM loan.credit_pull cp JOIN loan.borrower bo ON bo.borrower_id = cp.borrower_id JOIN loan.party p ON p.party_id = bo.party_id JOIN loan.loan_application la ON la.borrower_id = bo.borrower_id JOIN loan.underwriting_decision ud ON ud.application_id = la.application_id WHERE cp.fico_score < 600 AND ud.decision = 'approve';"
+  },
+  {
+    "question": "List loan products and the count of late payments recorded against loans of each product. Return product label and the late-payment count.",
+    "gold_sql": "SELECT lp.label AS product, COUNT(*) AS late_payments FROM loan.payment pay JOIN loan.loan l ON l.loan_id = pay.loan_id JOIN loan.loan_application la ON la.application_id = l.application_id JOIN ref.loan_product lp ON lp.code = la.product_code WHERE pay.is_late = true GROUP BY lp.label ORDER BY late_payments DESC;"
+  },
+  {
+    "question": "For each branch, return the branch name and the number of distinct borrowers who submitted at least one application there.",
+    "gold_sql": "SELECT b.name AS branch_name, COUNT(DISTINCT la.borrower_id) AS borrowers FROM loan.branch b JOIN loan.loan_application la ON la.branch_id = b.branch_id GROUP BY b.name ORDER BY borrowers DESC;"
+  }
+]

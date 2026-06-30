@@ -1,0 +1,22 @@
+# Reference-solution extras (PRIVATE, grading-kit only).
+#
+# All packages here are OPTIONAL. nodes_ref.py and train_underwriting.py import
+# them lazily and degrade gracefully when they are absent, so the modules import
+# (and py_compile) cleanly with only the stdlib + the base challenge-pack deps.
+#
+# Install on top of challenge-pack/requirements.txt to regenerate the trained PD
+# artifact and to exercise the cross-encoder reranker:
+#     pip install -r grading-kit/reference-solution/requirements.txt
+
+# Gradient-boosted PD model (underwriting_scorer / train_underwriting).
+lightgbm>=4.3,<5
+
+# Logistic fallback trainer + metrics (AUC/KS) when LightGBM is unavailable.
+scikit-learn>=1.4,<2
+
+# SHAP -> adverse-action (Reg B / ECOA) reason mapping.
+shap>=0.45,<1
+
+# Cross-encoder reranker (bge-reranker-v2-m3) for the retrieval lane.
+# Pulls in torch/transformers; large — only needed to reproduce nDCG-lift numbers.
+sentence-transformers>=3.0,<4

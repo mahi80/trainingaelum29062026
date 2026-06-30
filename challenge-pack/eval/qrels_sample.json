@@ -1,0 +1,12 @@
+{
+  "q_ltv_policy": {
+    "chunk_policy_ltv_2024": 2,
+    "chunk_policy_ltv_2022": 1
+  },
+  "q_dti_threshold": {
+    "chunk_policy_dti_max": 2,
+    "chunk_underwriting_dti_calc": 1
+  },
+  "q_ev_collateral_value": ["chunk_app0001_vehicle", "chunk_valuation_ev"],
+  "q_handwritten_income": ["chunk_app0001_income"]
+}

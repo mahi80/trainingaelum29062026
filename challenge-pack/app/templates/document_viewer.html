@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}Document {{ doc_id }} · {{ app_name }}{% endblock %}
+{% block content %}
+<div class="panel">
+  <h2 style="margin-top:0;">Document {{ doc_id }}</h2>
+  <p class="muted">
+    class: <code>{{ page.doc_class }}</code> ·
+    page_no: <code>{{ page.page_no }}</code> ·
+    split: <code>{{ page.split }}</code>
+    {% if page.has_handwriting %} · <span>handwriting</span>{% endif %}
+    {% if page.distortions %} · distortions: {{ page.distortions | join(", ") }}{% endif %}
+  </p>
+</div>
+
+<div class="panel">
+  <!-- PROVIDED viewer: image + absolutely-positioned overlay layer.
+       TODO(candidate): render real cell bboxes into #overlay (scaled to the
+       image's natural dimensions). -->
+  <div id="viewer" style="position:relative; display:inline-block; max-width:100%;">
+    <img id="page-image" src="{{ image_url }}" alt="page {{ page.page_no }}"
+         style="max-width:100%; display:block; border:1px solid var(--border);" />
+    <div id="overlay" style="position:absolute; inset:0; pointer-events:none;"></div>
+  </div>
+</div>
+
+<script>
+// PROVIDED overlay scaffold. The candidate's extractions populate window.__OVERLAYS__
+// as [{x,y,w,h,label,is_handwritten}] in the image's natural pixel space.
+window.__OVERLAYS__ = {{ overlays | tojson }};
+(function () {
+  const img = document.getElementById('page-image');
+  const layer = document.getElementById('overlay');
+  function draw() {
+    layer.innerHTML = '';
+    if (!img.naturalWidth) return;
+    const sx = img.clientWidth / img.naturalWidth;
+    const sy = img.clientHeight / img.naturalHeight;
+    (window.__OVERLAYS__ || []).forEach(function (o) {
+      const b = document.createElement('div');
+      b.style.position = 'absolute';
+      b.style.left = (o.x * sx) + 'px';
+      b.style.top = (o.y * sy) + 'px';
+      b.style.width = (o.w * sx) + 'px';
+      b.style.height = (o.h * sy) + 'px';
+      b.style.border = '2px solid ' + (o.is_handwritten ? '#ffb454' : '#5b8cff');
+      b.title = o.label || '';
+      layer.appendChild(b);
+    });
+  }
+  img.addEventListener('load', draw);
+  window.addEventListener('resize', draw);
+  if (img.complete) draw();
+})();
+</script>
+{% endblock %}

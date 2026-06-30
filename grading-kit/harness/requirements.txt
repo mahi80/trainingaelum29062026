@@ -1,0 +1,7 @@
+# Grading-kit harness dependencies (private; evaluators only).
+# Pin to majors that match the firm stack (Python 3.11).
+pytest>=8.0,<9
+httpx>=0.27,<0.29
+sqlglot>=25.0,<27
+psycopg[binary]>=3.1,<4
+PyYAML>=6.0,<7
