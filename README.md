@@ -26,14 +26,41 @@ A multi-agent assistant over scanned auto-loan documents and a relational loan w
 
 See [`challenge-pack/README.md`](challenge-pack/README.md) for the full brief and [`challenge-pack/SUBMISSION.md`](challenge-pack/SUBMISSION.md) for deliverables.
 
-## Quick start (candidate)
+## Getting started (candidates)
+
+**Never commit to `main`.** Create your own solution branch and open a Pull Request when done.
 
 ```bash
+# 1. Clone (or fork — see note below if you only have read access)
+git clone https://github.com/mahi80/trainingaelum29062026.git
+cd trainingaelum29062026
+
+# 2. Create your solution branch (use your name / handle)
+git checkout -b solution/<your-name>
+
+# 3. Bring up the OSS stack and start building
 cd challenge-pack
 cp .env.example .env
-docker compose up -d          # postgres+pgvector, redis, ollama (+model pull), app, openmetadata
-# open http://localhost:8000  (login page) and http://localhost:8585 (OpenMetadata)
+docker compose up -d                            # postgres+pgvector, redis, ollama, app
+docker compose --profile seed run --rm seed     # load demo data (run once)
+# open http://localhost:8000   (login: admin / ChangeMe123!)
+
+# 4. Commit early and often — we review commit history (see SUBMISSION.md)
+git add -A && git commit -m "feat: implement SQL vertical slice"
+
+# 5. Push your branch and open a PR into main
+git push -u origin solution/<your-name>
+gh pr create --base main --head solution/<your-name> --title "Solution: <your-name>" --fill
 ```
+
+> **No write access to this repo?** Fork it on GitHub, push your
+> `solution/<your-name>` branch to your fork, then open the PR from your fork
+> into this repo's `main`.
+
+> Work only inside [`challenge-pack/`](challenge-pack/). Do **not** modify
+> [`grading-kit/`](grading-kit/) — it's for evaluators. First boot pulls the
+> Ollama models (`llama3.1:8b`, `qwen2.5-coder:7b`, `nomic-embed-text`), so the
+> first LLM call may block while they download.
 
 ## Effort & scope
 

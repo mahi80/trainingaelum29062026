@@ -80,12 +80,35 @@ Grade yourself against [`grading-kit/rubric.md`](../grading-kit/rubric.md).
 
 ## 4. How to run
 
+**First, create your own solution branch — never commit to `main`:**
+
 ```bash
-cp .env.example .env                 # safe local defaults; edit if you like
-docker compose up -d                 # postgres + redis + ollama + ollama-pull + app
-docker compose logs -f app           # watch it come up
-curl localhost:8000/healthz          # liveness
-curl localhost:8000/readyz           # readiness (PG + Redis + Ollama)
+git clone https://github.com/mahi80/trainingaelum29062026.git
+cd trainingaelum29062026
+git checkout -b solution/<your-name>     # your working branch
+cd challenge-pack
+```
+
+> No write access? Fork on GitHub, push your branch to the fork, and open the PR
+> from there. Work only inside `challenge-pack/`; leave `grading-kit/` alone.
+
+**Then bring up the stack:**
+
+```bash
+cp .env.example .env                  # safe local defaults; edit if you like
+docker compose up -d                  # postgres + redis + ollama + ollama-pull + app
+docker compose --profile seed run --rm seed   # load demo data (run once; users: admin / ChangeMe123!)
+docker compose logs -f app            # watch it come up
+curl localhost:8000/healthz           # liveness
+curl localhost:8000/readyz            # readiness (PG + Redis + Ollama)
+```
+
+**Commit often and submit a PR when done** (we review commit history):
+
+```bash
+git add -A && git commit -m "feat: <what you did>"
+git push -u origin solution/<your-name>
+gh pr create --base main --head solution/<your-name> --title "Solution: <your-name>" --fill
 ```
 
 First boot pulls three Ollama models (`llama3.1:8b`, `qwen2.5-coder:7b`,
