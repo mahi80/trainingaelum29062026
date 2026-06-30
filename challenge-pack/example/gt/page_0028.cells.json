@@ -1,0 +1,320 @@
+{
+ "table_uid": "T-APP-0028-1",
+ "cells": [
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "VIN",
+   "bbox": [
+    82,
+    559,
+    248,
+    601
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Make",
+   "bbox": [
+    244,
+    556,
+    352,
+    598
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "Model",
+   "bbox": [
+    348,
+    554,
+    468,
+    597
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "Year",
+   "bbox": [
+    464,
+    553,
+    538,
+    595
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "Fuel",
+   "bbox": [
+    533,
+    551,
+    629,
+    594
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 5,
+   "col_end": 5,
+   "text": "Cond",
+   "bbox": [
+    624,
+    549,
+    723,
+    593
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 6,
+   "col_end": 6,
+   "text": "Value ($)",
+   "bbox": [
+    717,
+    546,
+    851,
+    591
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "VIN44976AL",
+   "bbox": [
+    85,
+    598,
+    252,
+    640
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Kia",
+   "bbox": [
+    248,
+    597,
+    356,
+    639
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "Civic",
+   "bbox": [
+    352,
+    595,
+    472,
+    638
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "2023",
+   "bbox": [
+    468,
+    594,
+    542,
+    637
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "ICE",
+   "bbox": [
+    538,
+    593,
+    634,
+    636
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 5,
+   "col_end": 5,
+   "text": "Used",
+   "bbox": [
+    629,
+    591,
+    728,
+    635
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 6,
+   "col_end": 6,
+   "text": "44,000",
+   "bbox": [
+    723,
+    589,
+    857,
+    634
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "VIN33332AL",
+   "bbox": [
+    88,
+    639,
+    255,
+    680
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Tesla",
+   "bbox": [
+    252,
+    638,
+    360,
+    679
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "Sportage",
+   "bbox": [
+    356,
+    637,
+    477,
+    679
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "2021",
+   "bbox": [
+    472,
+    636,
+    547,
+    678
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "Hybrid",
+   "bbox": [
+    542,
+    635,
+    639,
+    678
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 5,
+   "col_end": 5,
+   "text": "New",
+   "bbox": [
+    634,
+    634,
+    733,
+    678
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 6,
+   "col_end": 6,
+   "text": "29,000",
+   "bbox": [
+    728,
+    633,
+    863,
+    677
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  }
+ ]
+}

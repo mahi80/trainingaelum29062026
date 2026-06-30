@@ -1,0 +1,215 @@
+{
+ "table_uid": "T-APP-0006-1",
+ "cells": [
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "VIN",
+   "bbox": [
+    62,
+    566,
+    244,
+    617
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Make",
+   "bbox": [
+    242,
+    560,
+    354,
+    608
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "Model",
+   "bbox": [
+    352,
+    553,
+    474,
+    602
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "Year",
+   "bbox": [
+    472,
+    550,
+    544,
+    595
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "Fuel",
+   "bbox": [
+    542,
+    545,
+    634,
+    591
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 5,
+   "col_end": 5,
+   "text": "Cond",
+   "bbox": [
+    632,
+    540,
+    724,
+    587
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 6,
+   "col_end": 6,
+   "text": "Value ($)",
+   "bbox": [
+    721,
+    534,
+    843,
+    582
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "VIN19669AL",
+   "bbox": [
+    65,
+    608,
+    247,
+    659
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Honda",
+   "bbox": [
+    244,
+    602,
+    356,
+    649
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "Model 3",
+   "bbox": [
+    354,
+    595,
+    476,
+    644
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "2021",
+   "bbox": [
+    474,
+    591,
+    546,
+    637
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "Hybrid",
+   "bbox": [
+    544,
+    587,
+    636,
+    633
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 5,
+   "col_end": 5,
+   "text": "CPO",
+   "bbox": [
+    634,
+    582,
+    726,
+    629
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 6,
+   "col_end": 6,
+   "text": "36,000",
+   "bbox": [
+    724,
+    575,
+    846,
+    624
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  }
+ ]
+}

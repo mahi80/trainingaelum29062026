@@ -1,0 +1,215 @@
+{
+ "table_uid": "T-APP-0022-1",
+ "cells": [
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "VIN",
+   "bbox": [
+    67,
+    553,
+    245,
+    596
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Make",
+   "bbox": [
+    241,
+    552,
+    353,
+    595
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "Model",
+   "bbox": [
+    350,
+    551,
+    472,
+    594
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "Year",
+   "bbox": [
+    469,
+    550,
+    543,
+    593
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "Fuel",
+   "bbox": [
+    540,
+    549,
+    635,
+    593
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 5,
+   "col_end": 5,
+   "text": "Cond",
+   "bbox": [
+    632,
+    548,
+    727,
+    592
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 6,
+   "col_end": 6,
+   "text": "Value ($)",
+   "bbox": [
+    725,
+    547,
+    852,
+    592
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "VIN40167AL",
+   "bbox": [
+    71,
+    595,
+    248,
+    637
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Tesla",
+   "bbox": [
+    245,
+    594,
+    356,
+    637
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "Elantra",
+   "bbox": [
+    353,
+    593,
+    475,
+    636
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "2024",
+   "bbox": [
+    472,
+    593,
+    546,
+    636
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "ICE",
+   "bbox": [
+    543,
+    592,
+    637,
+    635
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 5,
+   "col_end": 5,
+   "text": "CPO",
+   "bbox": [
+    635,
+    592,
+    729,
+    635
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 6,
+   "col_end": 6,
+   "text": "27,000",
+   "bbox": [
+    727,
+    591,
+    854,
+    635
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  }
+ ]
+}

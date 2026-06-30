@@ -1,0 +1,320 @@
+{
+ "table_uid": "T-APP-0026-1",
+ "cells": [
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "VIN",
+   "bbox": [
+    82,
+    575,
+    250,
+    631
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Make",
+   "bbox": [
+    246,
+    565,
+    354,
+    616
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "Model",
+   "bbox": [
+    351,
+    553,
+    471,
+    606
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "Year",
+   "bbox": [
+    468,
+    547,
+    542,
+    596
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "Fuel",
+   "bbox": [
+    539,
+    538,
+    634,
+    589
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 5,
+   "col_end": 5,
+   "text": "Cond",
+   "bbox": [
+    631,
+    528,
+    729,
+    581
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 6,
+   "col_end": 6,
+   "text": "Value ($)",
+   "bbox": [
+    726,
+    515,
+    860,
+    572
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "VIN48746AL",
+   "bbox": [
+    86,
+    616,
+    253,
+    671
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Hyundai",
+   "bbox": [
+    250,
+    606,
+    357,
+    657
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "320i",
+   "bbox": [
+    354,
+    596,
+    475,
+    648
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "2025",
+   "bbox": [
+    471,
+    589,
+    545,
+    638
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "Hybrid",
+   "bbox": [
+    542,
+    581,
+    637,
+    632
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 5,
+   "col_end": 5,
+   "text": "Used",
+   "bbox": [
+    634,
+    572,
+    732,
+    624
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 6,
+   "col_end": 6,
+   "text": "28,000",
+   "bbox": [
+    729,
+    560,
+    863,
+    616
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "VIN13434AL",
+   "bbox": [
+    90,
+    657,
+    257,
+    710
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Hyundai",
+   "bbox": [
+    253,
+    648,
+    361,
+    697
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "Sportage",
+   "bbox": [
+    357,
+    638,
+    478,
+    689
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "2024",
+   "bbox": [
+    475,
+    632,
+    548,
+    680
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "Hybrid",
+   "bbox": [
+    545,
+    624,
+    640,
+    674
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 5,
+   "col_end": 5,
+   "text": "Used",
+   "bbox": [
+    637,
+    616,
+    735,
+    667
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 6,
+   "col_end": 6,
+   "text": "51,000",
+   "bbox": [
+    732,
+    604,
+    865,
+    659
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  }
+ ]
+}

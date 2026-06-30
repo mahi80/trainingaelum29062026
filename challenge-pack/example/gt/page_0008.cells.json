@@ -1,0 +1,320 @@
+{
+ "table_uid": "T-APP-0008-1",
+ "cells": [
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "VIN",
+   "bbox": [
+    59,
+    544,
+    242,
+    590
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Make",
+   "bbox": [
+    239,
+    548,
+    352,
+    592
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "Model",
+   "bbox": [
+    349,
+    550,
+    472,
+    594
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "Year",
+   "bbox": [
+    469,
+    552,
+    542,
+    595
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "Fuel",
+   "bbox": [
+    540,
+    553,
+    633,
+    597
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 5,
+   "col_end": 5,
+   "text": "Cond",
+   "bbox": [
+    630,
+    555,
+    723,
+    598
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 6,
+   "col_end": 6,
+   "text": "Value ($)",
+   "bbox": [
+    720,
+    556,
+    843,
+    600
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "VIN15036AL",
+   "bbox": [
+    62,
+    586,
+    245,
+    632
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Nissan",
+   "bbox": [
+    242,
+    590,
+    355,
+    634
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "Corolla",
+   "bbox": [
+    352,
+    592,
+    475,
+    636
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "2016",
+   "bbox": [
+    472,
+    594,
+    545,
+    637
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "EV",
+   "bbox": [
+    542,
+    595,
+    635,
+    639
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 5,
+   "col_end": 5,
+   "text": "CPO",
+   "bbox": [
+    633,
+    597,
+    725,
+    640
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 6,
+   "col_end": 6,
+   "text": "39,000",
+   "bbox": [
+    723,
+    598,
+    846,
+    642
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "VIN69831AL",
+   "bbox": [
+    65,
+    628,
+    248,
+    674
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Honda",
+   "bbox": [
+    245,
+    632,
+    358,
+    676
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "Sportage",
+   "bbox": [
+    355,
+    634,
+    478,
+    678
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "2025",
+   "bbox": [
+    475,
+    636,
+    548,
+    679
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "EV",
+   "bbox": [
+    545,
+    637,
+    638,
+    680
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 5,
+   "col_end": 5,
+   "text": "CPO",
+   "bbox": [
+    635,
+    639,
+    728,
+    682
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 6,
+   "col_end": 6,
+   "text": "40,000",
+   "bbox": [
+    725,
+    640,
+    849,
+    684
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  }
+ ]
+}

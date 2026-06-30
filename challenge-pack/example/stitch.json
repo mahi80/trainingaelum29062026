@@ -1,0 +1,542 @@
+[
+ {
+  "logical_doc_id": "VER-0001",
+  "table_uid": "T-VER-0001-1",
+  "fragments": [
+   {
+    "page_in_doc": 1,
+    "frag_index": 0,
+    "is_continuation": false,
+    "header_repeated": true,
+    "first_row_global_idx": 0
+   },
+   {
+    "page_in_doc": 2,
+    "frag_index": 1,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 18
+   },
+   {
+    "page_in_doc": 3,
+    "frag_index": 2,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 36
+   },
+   {
+    "page_in_doc": 4,
+    "frag_index": 3,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 54
+   }
+  ]
+ },
+ {
+  "logical_doc_id": "VER-0002",
+  "table_uid": "T-VER-0002-1",
+  "fragments": [
+   {
+    "page_in_doc": 1,
+    "frag_index": 0,
+    "is_continuation": false,
+    "header_repeated": true,
+    "first_row_global_idx": 0
+   },
+   {
+    "page_in_doc": 2,
+    "frag_index": 1,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 18
+   },
+   {
+    "page_in_doc": 3,
+    "frag_index": 2,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 36
+   },
+   {
+    "page_in_doc": 4,
+    "frag_index": 3,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 54
+   }
+  ]
+ },
+ {
+  "logical_doc_id": "VER-0003",
+  "table_uid": "T-VER-0003-1",
+  "fragments": [
+   {
+    "page_in_doc": 1,
+    "frag_index": 0,
+    "is_continuation": false,
+    "header_repeated": true,
+    "first_row_global_idx": 0
+   },
+   {
+    "page_in_doc": 2,
+    "frag_index": 1,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 18
+   },
+   {
+    "page_in_doc": 3,
+    "frag_index": 2,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 36
+   },
+   {
+    "page_in_doc": 4,
+    "frag_index": 3,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 54
+   },
+   {
+    "page_in_doc": 5,
+    "frag_index": 4,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 72
+   }
+  ]
+ },
+ {
+  "logical_doc_id": "VER-0004",
+  "table_uid": "T-VER-0004-1",
+  "fragments": [
+   {
+    "page_in_doc": 1,
+    "frag_index": 0,
+    "is_continuation": false,
+    "header_repeated": true,
+    "first_row_global_idx": 0
+   },
+   {
+    "page_in_doc": 2,
+    "frag_index": 1,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 18
+   },
+   {
+    "page_in_doc": 3,
+    "frag_index": 2,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 36
+   }
+  ]
+ },
+ {
+  "logical_doc_id": "VER-0005",
+  "table_uid": "T-VER-0005-1",
+  "fragments": [
+   {
+    "page_in_doc": 1,
+    "frag_index": 0,
+    "is_continuation": false,
+    "header_repeated": true,
+    "first_row_global_idx": 0
+   },
+   {
+    "page_in_doc": 2,
+    "frag_index": 1,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 18
+   },
+   {
+    "page_in_doc": 3,
+    "frag_index": 2,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 36
+   },
+   {
+    "page_in_doc": 4,
+    "frag_index": 3,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 54
+   }
+  ]
+ },
+ {
+  "logical_doc_id": "VER-0006",
+  "table_uid": "T-VER-0006-1",
+  "fragments": [
+   {
+    "page_in_doc": 1,
+    "frag_index": 0,
+    "is_continuation": false,
+    "header_repeated": true,
+    "first_row_global_idx": 0
+   },
+   {
+    "page_in_doc": 2,
+    "frag_index": 1,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 18
+   },
+   {
+    "page_in_doc": 3,
+    "frag_index": 2,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 36
+   },
+   {
+    "page_in_doc": 4,
+    "frag_index": 3,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 54
+   },
+   {
+    "page_in_doc": 5,
+    "frag_index": 4,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 72
+   }
+  ]
+ },
+ {
+  "logical_doc_id": "VER-0007",
+  "table_uid": "T-VER-0007-1",
+  "fragments": [
+   {
+    "page_in_doc": 1,
+    "frag_index": 0,
+    "is_continuation": false,
+    "header_repeated": true,
+    "first_row_global_idx": 0
+   },
+   {
+    "page_in_doc": 2,
+    "frag_index": 1,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 18
+   },
+   {
+    "page_in_doc": 3,
+    "frag_index": 2,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 36
+   }
+  ]
+ },
+ {
+  "logical_doc_id": "VER-0008",
+  "table_uid": "T-VER-0008-1",
+  "fragments": [
+   {
+    "page_in_doc": 1,
+    "frag_index": 0,
+    "is_continuation": false,
+    "header_repeated": true,
+    "first_row_global_idx": 0
+   },
+   {
+    "page_in_doc": 2,
+    "frag_index": 1,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 18
+   }
+  ]
+ },
+ {
+  "logical_doc_id": "POL-0001",
+  "table_uid": "T-POL-0001-1",
+  "fragments": [
+   {
+    "page_in_doc": 1,
+    "frag_index": 0,
+    "is_continuation": false,
+    "header_repeated": true,
+    "first_row_global_idx": 0
+   },
+   {
+    "page_in_doc": 2,
+    "frag_index": 1,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 3
+   }
+  ]
+ },
+ {
+  "logical_doc_id": "POL-0002",
+  "table_uid": "T-POL-0002-1",
+  "fragments": [
+   {
+    "page_in_doc": 1,
+    "frag_index": 0,
+    "is_continuation": false,
+    "header_repeated": true,
+    "first_row_global_idx": 0
+   },
+   {
+    "page_in_doc": 2,
+    "frag_index": 1,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 3
+   }
+  ]
+ },
+ {
+  "logical_doc_id": "POL-0003",
+  "table_uid": "T-POL-0003-1",
+  "fragments": [
+   {
+    "page_in_doc": 1,
+    "frag_index": 0,
+    "is_continuation": false,
+    "header_repeated": true,
+    "first_row_global_idx": 0
+   },
+   {
+    "page_in_doc": 2,
+    "frag_index": 1,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 2
+   },
+   {
+    "page_in_doc": 3,
+    "frag_index": 2,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 4
+   }
+  ]
+ },
+ {
+  "logical_doc_id": "POL-0004",
+  "table_uid": "T-POL-0004-1",
+  "fragments": [
+   {
+    "page_in_doc": 1,
+    "frag_index": 0,
+    "is_continuation": false,
+    "header_repeated": true,
+    "first_row_global_idx": 0
+   },
+   {
+    "page_in_doc": 2,
+    "frag_index": 1,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 3
+   }
+  ]
+ },
+ {
+  "logical_doc_id": "POL-0005",
+  "table_uid": "T-POL-0005-1",
+  "fragments": [
+   {
+    "page_in_doc": 1,
+    "frag_index": 0,
+    "is_continuation": false,
+    "header_repeated": true,
+    "first_row_global_idx": 0
+   },
+   {
+    "page_in_doc": 2,
+    "frag_index": 1,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 2
+   },
+   {
+    "page_in_doc": 3,
+    "frag_index": 2,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 4
+   }
+  ]
+ },
+ {
+  "logical_doc_id": "POL-0006",
+  "table_uid": "T-POL-0006-1",
+  "fragments": [
+   {
+    "page_in_doc": 1,
+    "frag_index": 0,
+    "is_continuation": false,
+    "header_repeated": true,
+    "first_row_global_idx": 0
+   },
+   {
+    "page_in_doc": 2,
+    "frag_index": 1,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 3
+   }
+  ]
+ },
+ {
+  "logical_doc_id": "POL-0007",
+  "table_uid": "T-POL-0007-1",
+  "fragments": [
+   {
+    "page_in_doc": 1,
+    "frag_index": 0,
+    "is_continuation": false,
+    "header_repeated": true,
+    "first_row_global_idx": 0
+   },
+   {
+    "page_in_doc": 2,
+    "frag_index": 1,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 3
+   }
+  ]
+ },
+ {
+  "logical_doc_id": "POL-0008",
+  "table_uid": "T-POL-0008-1",
+  "fragments": [
+   {
+    "page_in_doc": 1,
+    "frag_index": 0,
+    "is_continuation": false,
+    "header_repeated": true,
+    "first_row_global_idx": 0
+   },
+   {
+    "page_in_doc": 2,
+    "frag_index": 1,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 2
+   },
+   {
+    "page_in_doc": 3,
+    "frag_index": 2,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 4
+   }
+  ]
+ },
+ {
+  "logical_doc_id": "POL-0009",
+  "table_uid": "T-POL-0009-1",
+  "fragments": [
+   {
+    "page_in_doc": 1,
+    "frag_index": 0,
+    "is_continuation": false,
+    "header_repeated": true,
+    "first_row_global_idx": 0
+   },
+   {
+    "page_in_doc": 2,
+    "frag_index": 1,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 3
+   }
+  ]
+ },
+ {
+  "logical_doc_id": "POL-0010",
+  "table_uid": "T-POL-0010-1",
+  "fragments": [
+   {
+    "page_in_doc": 1,
+    "frag_index": 0,
+    "is_continuation": false,
+    "header_repeated": true,
+    "first_row_global_idx": 0
+   },
+   {
+    "page_in_doc": 2,
+    "frag_index": 1,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 2
+   },
+   {
+    "page_in_doc": 3,
+    "frag_index": 2,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 4
+   }
+  ]
+ },
+ {
+  "logical_doc_id": "POL-0011",
+  "table_uid": "T-POL-0011-1",
+  "fragments": [
+   {
+    "page_in_doc": 1,
+    "frag_index": 0,
+    "is_continuation": false,
+    "header_repeated": true,
+    "first_row_global_idx": 0
+   },
+   {
+    "page_in_doc": 2,
+    "frag_index": 1,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 2
+   },
+   {
+    "page_in_doc": 3,
+    "frag_index": 2,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 4
+   }
+  ]
+ },
+ {
+  "logical_doc_id": "POL-0012",
+  "table_uid": "T-POL-0012-1",
+  "fragments": [
+   {
+    "page_in_doc": 1,
+    "frag_index": 0,
+    "is_continuation": false,
+    "header_repeated": true,
+    "first_row_global_idx": 0
+   },
+   {
+    "page_in_doc": 2,
+    "frag_index": 1,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 2
+   },
+   {
+    "page_in_doc": 3,
+    "frag_index": 2,
+    "is_continuation": true,
+    "header_repeated": true,
+    "first_row_global_idx": 4
+   }
+  ]
+ }
+]

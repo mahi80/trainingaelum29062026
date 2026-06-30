@@ -1,0 +1,275 @@
+{
+ "table_uid": "T-POL-0010-1",
+ "cells": [
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "FICO Band",
+   "bbox": [
+    -21,
+    195,
+    136,
+    250
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "LTV <=80%",
+   "bbox": [
+    128,
+    185,
+    284,
+    239
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "LTV 81-90%",
+   "bbox": [
+    276,
+    174,
+    433,
+    228
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "LTV 91-100%",
+   "bbox": [
+    425,
+    163,
+    581,
+    218
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "LTV 101-110%",
+   "bbox": [
+    573,
+    153,
+    730,
+    207
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 5,
+   "col_end": 5,
+   "text": "LTV 111-120%",
+   "bbox": [
+    722,
+    142,
+    878,
+    196
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "580-619",
+   "bbox": [
+    -13,
+    239,
+    144,
+    294
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "4.39%",
+   "bbox": [
+    136,
+    228,
+    292,
+    283
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "12.58%",
+   "bbox": [
+    284,
+    218,
+    440,
+    272
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "12.26%",
+   "bbox": [
+    433,
+    207,
+    589,
+    262
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "9.24%",
+   "bbox": [
+    581,
+    196,
+    737,
+    251
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 5,
+   "col_end": 5,
+   "text": "4.36%",
+   "bbox": [
+    730,
+    186,
+    886,
+    240
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "620-659",
+   "bbox": [
+    -5,
+    283,
+    151,
+    338
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "3.59%",
+   "bbox": [
+    144,
+    272,
+    300,
+    327
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "6.09%",
+   "bbox": [
+    292,
+    262,
+    448,
+    316
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "12.34%",
+   "bbox": [
+    440,
+    251,
+    597,
+    306
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "9.65%",
+   "bbox": [
+    589,
+    240,
+    745,
+    295
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 5,
+   "col_end": 5,
+   "text": "10.93%",
+   "bbox": [
+    737,
+    230,
+    894,
+    284
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  }
+ ]
+}

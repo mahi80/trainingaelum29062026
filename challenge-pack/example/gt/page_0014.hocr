@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta name="ocr-system" content="autoloan-docgen"/>
+<meta name="ocr-capabilities" content="ocr_page ocrx_word"/>
+</head><body>
+<div class="ocr_page" title="bbox 0 0 1000 1414">
+<span class="ocrx_word ocrx_word" id="w0" title="bbox 17 71 128 106; x_wconf 96">RegLoan</span>
+<span class="ocrx_word ocrx_word" id="w1" title="bbox 134 64 199 91; x_wconf 96">Bank</span>
+<span class="ocrx_word ocrx_word" id="w2" title="bbox 206 74 238 85; x_wconf 96">—</span>
+<span class="ocrx_word ocrx_word" id="w3" title="bbox 245 57 306 82; x_wconf 96">Auto</span>
+<span class="ocrx_word ocrx_word" id="w4" title="bbox 312 51 375 76; x_wconf 96">Loan</span>
+<span class="ocrx_word ocrx_word" id="w5" title="bbox 381 43 458 70; x_wconf 96">Credit</span>
+<span class="ocrx_word ocrx_word" id="w6" title="bbox 464 31 606 70; x_wconf 96">Application</span>
+<span class="ocrx_word ocrx_word" id="w7" title="bbox 21 120 104 140; x_wconf 96">Document</span>
+<span class="ocrx_word ocrx_word" id="w8" title="bbox 107 113 191 133; x_wconf 96">APP-0014</span>
+<span class="ocrx_word ocrx_word" id="w9" title="bbox 679 70 722 90; x_wconf 96">Page</span>
+<span class="ocrx_word ocrx_word" id="w10" title="bbox 726 69 737 82; x_wconf 96">1</span>
+<span class="ocrx_word ocrx_word" id="w11" title="bbox 741 67 758 81; x_wconf 96">of</span>
+<span class="ocrx_word ocrx_word" id="w12" title="bbox 762 66 773 80; x_wconf 96">1</span>
+<span class="ocrx_word ocrx_word" id="w13" title="bbox 25 174 117 201; x_wconf 96">Applicant</span>
+<span class="ocrx_word ocrx_word" id="w14" title="bbox 121 168 186 189; x_wconf 96">Name:</span>
+<span class="ocrx_word handwritten" id="w15" title="bbox 255 155 340 185; x_wconf 88">Lena</span>
+<span class="ocrx_word handwritten" id="w16" title="bbox 350 144 459 177; x_wconf 88">Cohen</span>
+<span class="ocrx_word ocrx_word" id="w17" title="bbox 29 223 77 243; x_wconf 96">Date</span>
+<span class="ocrx_word ocrx_word" id="w18" title="bbox 81 221 101 238; x_wconf 96">of</span>
+<span class="ocrx_word ocrx_word" id="w19" title="bbox 106 216 158 236; x_wconf 96">Birth:</span>
+<span class="ocrx_word handwritten" id="w20" title="bbox 258 186 450 231; x_wconf 88">28/05/1990</span>
+<span class="ocrx_word ocrx_word" id="w21" title="bbox 33 269 80 288; x_wconf 96">SSN</span>
+<span class="ocrx_word ocrx_word" id="w22" title="bbox 85 259 199 288; x_wconf 96">(tokenized):</span>
+<span class="ocrx_word handwritten" id="w23" title="bbox 262 236 416 271; x_wconf 88">TKN-666397</span>
+<span class="ocrx_word ocrx_word" id="w24" title="bbox 36 313 106 334; x_wconf 96">Annual</span>
+<span class="ocrx_word ocrx_word" id="w25" title="bbox 111 306 189 328; x_wconf 96">Income:</span>
+<span class="ocrx_word handwritten" id="w26" title="bbox 265 272 391 312; x_wconf 88">$154,000</span>
+<span class="ocrx_word ocrx_word" id="w27" title="bbox 41 356 140 384; x_wconf 96">Employer:</span>
+<span class="ocrx_word handwritten" id="w28" title="bbox 270 330 427 368; x_wconf 88">Umbrella</span>
+<span class="ocrx_word handwritten" id="w29" title="bbox 437 327 484 354; x_wconf 88">Co</span>
+<span class="ocrx_word ocrx_word" id="w30" title="bbox 44 406 93 426; x_wconf 96">Loan</span>
+<span class="ocrx_word ocrx_word" id="w31" title="bbox 97 399 180 422; x_wconf 96">Amount:</span>
+<span class="ocrx_word handwritten" id="w32" title="bbox 273 375 407 414; x_wconf 88">$35,000</span>
+<span class="ocrx_word ocrx_word" id="w33" title="bbox 48 452 99 472; x_wconf 96">Term</span>
+<span class="ocrx_word ocrx_word" id="w34" title="bbox 104 444 196 471; x_wconf 96">(months):</span>
+<span class="ocrx_word handwritten" id="w35" title="bbox 276 432 308 452; x_wconf 88">36</span>
+<span class="ocrx_word ocrx_word" id="w36" title="bbox 52 496 128 518; x_wconf 96">Branch:</span>
+<span class="ocrx_word handwritten" id="w37" title="bbox 281 472 339 497; x_wconf 88">Austin</span>
+<span class="ocrx_word ocrx_word" id="w38" title="bbox 56 546 156 570; x_wconf 96">Collateral</span>
+<span class="ocrx_word ocrx_word" id="w39" title="bbox 161 538 252 565; x_wconf 96">(Vehicle)</span>
+<span class="ocrx_word ocrx_word" id="w40" title="bbox 65 597 100 615; x_wconf 96">VIN</span>
+<span class="ocrx_word ocrx_word" id="w41" title="bbox 245 581 296 600; x_wconf 96">Make</span>
+<span class="ocrx_word ocrx_word" id="w42" title="bbox 355 572 414 591; x_wconf 96">Model</span>
+<span class="ocrx_word ocrx_word" id="w43" title="bbox 474 563 520 582; x_wconf 96">Year</span>
+<span class="ocrx_word ocrx_word" id="w44" title="bbox 544 558 586 576; x_wconf 96">Fuel</span>
+<span class="ocrx_word ocrx_word" id="w45" title="bbox 634 550 685 569; x_wconf 96">Cond</span>
+<span class="ocrx_word ocrx_word" id="w46" title="bbox 723 542 778 561; x_wconf 96">Value</span>
+<span class="ocrx_word ocrx_word" id="w47" title="bbox 782 538 809 560; x_wconf 96">($)</span>
+<span class="ocrx_word ocrx_word" id="w48" title="bbox 69 634 181 657; x_wconf 96">VIN58337AL</span>
+<span class="ocrx_word ocrx_word" id="w49" title="bbox 249 622 322 646; x_wconf 96">Hyundai</span>
+<span class="ocrx_word ocrx_word" id="w50" title="bbox 358 615 412 633; x_wconf 96">Model</span>
+<span class="ocrx_word ocrx_word" id="w51" title="bbox 416 614 428 628; x_wconf 96">3</span>
+<span class="ocrx_word ocrx_word" id="w52" title="bbox 478 606 523 623; x_wconf 96">2023</span>
+<span class="ocrx_word ocrx_word" id="w53" title="bbox 548 601 581 618; x_wconf 96">ICE</span>
+<span class="ocrx_word ocrx_word" id="w54" title="bbox 637 593 684 610; x_wconf 96">Used</span>
+<span class="ocrx_word ocrx_word" id="w55" title="bbox 727 584 788 606; x_wconf 96">18,000</span>
+<span class="ocrx_word ocrx_word" id="w56" title="bbox 66 685 172 709; x_wconf 96">Authorized</span>
+<span class="ocrx_word ocrx_word" id="w57" title="bbox 177 676 277 704; x_wconf 96">Signature:</span>
+<span class="ocrx_word handwritten" id="w58" title="bbox 316 657 395 691; x_wconf 88">Lena</span>
+<span class="ocrx_word handwritten" id="w59" title="bbox 403 647 500 685; x_wconf 88">Cohen</span>
+</div></body></html>

@@ -1,0 +1,31 @@
+{
+ "page": "page_0023",
+ "image": "page_0023.jpg",
+ "seed": 1337,
+ "doc_id": "APP-0023",
+ "doc_class": "application",
+ "page_in_doc": 1,
+ "distortions": [
+  "skew"
+ ],
+ "homography": [
+  [
+   1.0,
+   0.06783052810542722,
+   -47.95618337053702
+  ],
+  [
+   0.0,
+   1.0,
+   0.0
+  ],
+  [
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "n_tokens": 59,
+ "n_handwritten": 12,
+ "n_cells": 14
+}

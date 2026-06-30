@@ -1,0 +1,1430 @@
+{
+ "table_uid": "T-VER-0002-1",
+ "cells": [
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "Date",
+   "bbox": [
+    1,
+    181,
+    136,
+    224
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Description",
+   "bbox": [
+    130,
+    173,
+    495,
+    221
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "Debit ($)",
+   "bbox": [
+    489,
+    170,
+    604,
+    213
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "Credit ($)",
+   "bbox": [
+    599,
+    168,
+    714,
+    210
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "Balance ($)",
+   "bbox": [
+    709,
+    165,
+    844,
+    208
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 55,
+   "row_end": 55,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "26/02/2025",
+   "bbox": [
+    6,
+    221,
+    141,
+    264
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 55,
+   "row_end": 55,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "ATM WITHDRAWAL",
+   "bbox": [
+    136,
+    213,
+    500,
+    261
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 55,
+   "row_end": 55,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "693",
+   "bbox": [
+    495,
+    210,
+    610,
+    253
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 55,
+   "row_end": 55,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "817",
+   "bbox": [
+    604,
+    208,
+    719,
+    250
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 55,
+   "row_end": 55,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "6,827",
+   "bbox": [
+    714,
+    205,
+    849,
+    248
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 56,
+   "row_end": 56,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "05/02/2025",
+   "bbox": [
+    11,
+    261,
+    146,
+    304
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 56,
+   "row_end": 56,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "POS PURCHASE GROCERY",
+   "bbox": [
+    141,
+    253,
+    505,
+    301
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 56,
+   "row_end": 56,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "896",
+   "bbox": [
+    500,
+    250,
+    615,
+    293
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 56,
+   "row_end": 56,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "1,093",
+   "bbox": [
+    610,
+    248,
+    725,
+    290
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 56,
+   "row_end": 56,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "7,024",
+   "bbox": [
+    719,
+    245,
+    854,
+    288
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 57,
+   "row_end": 57,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "17/05/2025",
+   "bbox": [
+    16,
+    301,
+    151,
+    344
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 57,
+   "row_end": 57,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "POS PURCHASE GROCERY",
+   "bbox": [
+    146,
+    293,
+    510,
+    341
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 57,
+   "row_end": 57,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "836",
+   "bbox": [
+    505,
+    290,
+    620,
+    333
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 57,
+   "row_end": 57,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "-",
+   "bbox": [
+    615,
+    288,
+    730,
+    330
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 57,
+   "row_end": 57,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "6,188",
+   "bbox": [
+    725,
+    285,
+    859,
+    328
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 58,
+   "row_end": 58,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "12/07/2025",
+   "bbox": [
+    22,
+    341,
+    157,
+    384
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 58,
+   "row_end": 58,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "ATM WITHDRAWAL",
+   "bbox": [
+    151,
+    333,
+    516,
+    381
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 58,
+   "row_end": 58,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "799",
+   "bbox": [
+    510,
+    330,
+    625,
+    373
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 58,
+   "row_end": 58,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "-",
+   "bbox": [
+    620,
+    328,
+    735,
+    370
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 58,
+   "row_end": 58,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "5,389",
+   "bbox": [
+    730,
+    325,
+    865,
+    368
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 59,
+   "row_end": 59,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "12/01/2025",
+   "bbox": [
+    27,
+    381,
+    162,
+    424
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 59,
+   "row_end": 59,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "ATM WITHDRAWAL",
+   "bbox": [
+    157,
+    373,
+    521,
+    421
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 59,
+   "row_end": 59,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "-",
+   "bbox": [
+    516,
+    370,
+    631,
+    413
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 59,
+   "row_end": 59,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "2,280",
+   "bbox": [
+    625,
+    368,
+    740,
+    410
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 59,
+   "row_end": 59,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "7,669",
+   "bbox": [
+    735,
+    365,
+    870,
+    408
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 60,
+   "row_end": 60,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "14/08/2025",
+   "bbox": [
+    32,
+    421,
+    173,
+    504
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 60,
+   "row_end": 60,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "ONLINE TRANSFER TO SAVINGS ACCT",
+   "bbox": [
+    162,
+    413,
+    532,
+    501
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 60,
+   "row_end": 60,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "-",
+   "bbox": [
+    521,
+    410,
+    641,
+    493
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 60,
+   "row_end": 60,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "-",
+   "bbox": [
+    631,
+    408,
+    751,
+    490
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 60,
+   "row_end": 60,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "7,669",
+   "bbox": [
+    740,
+    405,
+    881,
+    488
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 61,
+   "row_end": 61,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "27/06/2025",
+   "bbox": [
+    43,
+    501,
+    178,
+    544
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 61,
+   "row_end": 61,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "UTILITY BILL",
+   "bbox": [
+    173,
+    493,
+    537,
+    541
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 61,
+   "row_end": 61,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "-",
+   "bbox": [
+    532,
+    490,
+    647,
+    533
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 61,
+   "row_end": 61,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "-",
+   "bbox": [
+    641,
+    488,
+    756,
+    530
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 61,
+   "row_end": 61,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "7,669",
+   "bbox": [
+    751,
+    485,
+    886,
+    528
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 62,
+   "row_end": 62,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "02/10/2025",
+   "bbox": [
+    48,
+    541,
+    183,
+    584
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 62,
+   "row_end": 62,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "ACH PAYROLL DEPOSIT",
+   "bbox": [
+    178,
+    533,
+    542,
+    581
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 62,
+   "row_end": 62,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "224",
+   "bbox": [
+    537,
+    530,
+    652,
+    573
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 62,
+   "row_end": 62,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "1,073",
+   "bbox": [
+    647,
+    528,
+    762,
+    570
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 62,
+   "row_end": 62,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "8,518",
+   "bbox": [
+    756,
+    525,
+    891,
+    568
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 63,
+   "row_end": 63,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "24/11/2025",
+   "bbox": [
+    54,
+    581,
+    189,
+    624
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 63,
+   "row_end": 63,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "AUTO LOAN PMT",
+   "bbox": [
+    183,
+    573,
+    548,
+    621
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 63,
+   "row_end": 63,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "-",
+   "bbox": [
+    542,
+    570,
+    657,
+    613
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 63,
+   "row_end": 63,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "980",
+   "bbox": [
+    652,
+    568,
+    767,
+    610
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 63,
+   "row_end": 63,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "9,498",
+   "bbox": [
+    762,
+    565,
+    897,
+    608
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 64,
+   "row_end": 64,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "26/01/2025",
+   "bbox": [
+    59,
+    621,
+    194,
+    664
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 64,
+   "row_end": 64,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "POS PURCHASE GROCERY",
+   "bbox": [
+    189,
+    613,
+    553,
+    661
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 64,
+   "row_end": 64,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "-",
+   "bbox": [
+    548,
+    610,
+    663,
+    653
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 64,
+   "row_end": 64,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "1,325",
+   "bbox": [
+    657,
+    608,
+    772,
+    650
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 64,
+   "row_end": 64,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "10,823",
+   "bbox": [
+    767,
+    605,
+    902,
+    648
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 65,
+   "row_end": 65,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "17/11/2025",
+   "bbox": [
+    64,
+    661,
+    199,
+    704
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 65,
+   "row_end": 65,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "POS PURCHASE GROCERY",
+   "bbox": [
+    194,
+    653,
+    558,
+    701
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 65,
+   "row_end": 65,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "493",
+   "bbox": [
+    553,
+    650,
+    668,
+    693
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 65,
+   "row_end": 65,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "-",
+   "bbox": [
+    663,
+    648,
+    778,
+    690
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 65,
+   "row_end": 65,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "10,330",
+   "bbox": [
+    772,
+    645,
+    907,
+    688
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 66,
+   "row_end": 66,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "27/07/2025",
+   "bbox": [
+    69,
+    701,
+    204,
+    744
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 66,
+   "row_end": 66,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "POS PURCHASE GROCERY",
+   "bbox": [
+    199,
+    693,
+    563,
+    741
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 66,
+   "row_end": 66,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "783",
+   "bbox": [
+    558,
+    690,
+    673,
+    733
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 66,
+   "row_end": 66,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "1,552",
+   "bbox": [
+    668,
+    688,
+    783,
+    730
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 66,
+   "row_end": 66,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "11,099",
+   "bbox": [
+    778,
+    685,
+    912,
+    728
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 67,
+   "row_end": 67,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "19/07/2025",
+   "bbox": [
+    75,
+    741,
+    215,
+    824
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 67,
+   "row_end": 67,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "ONLINE TRANSFER TO SAVINGS ACCT",
+   "bbox": [
+    204,
+    733,
+    574,
+    821
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 67,
+   "row_end": 67,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "850",
+   "bbox": [
+    563,
+    730,
+    684,
+    813
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 67,
+   "row_end": 67,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "-",
+   "bbox": [
+    673,
+    728,
+    793,
+    810
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 67,
+   "row_end": 67,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "10,249",
+   "bbox": [
+    783,
+    725,
+    923,
+    808
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 68,
+   "row_end": 68,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "05/02/2025",
+   "bbox": [
+    85,
+    821,
+    220,
+    864
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 68,
+   "row_end": 68,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "ACH PAYROLL DEPOSIT",
+   "bbox": [
+    215,
+    813,
+    579,
+    861
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 68,
+   "row_end": 68,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "471",
+   "bbox": [
+    574,
+    810,
+    689,
+    853
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 68,
+   "row_end": 68,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "-",
+   "bbox": [
+    684,
+    808,
+    799,
+    850
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 68,
+   "row_end": 68,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "9,778",
+   "bbox": [
+    793,
+    805,
+    928,
+    848
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 69,
+   "row_end": 69,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "05/08/2025",
+   "bbox": [
+    91,
+    861,
+    226,
+    904
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 69,
+   "row_end": 69,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "ACH PAYROLL DEPOSIT",
+   "bbox": [
+    220,
+    853,
+    585,
+    901
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 69,
+   "row_end": 69,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "60",
+   "bbox": [
+    579,
+    850,
+    694,
+    893
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 69,
+   "row_end": 69,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "1,471",
+   "bbox": [
+    689,
+    848,
+    804,
+    890
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 69,
+   "row_end": 69,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "11,189",
+   "bbox": [
+    799,
+    845,
+    934,
+    888
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 70,
+   "row_end": 70,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "01/02/2025",
+   "bbox": [
+    96,
+    901,
+    231,
+    944
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 70,
+   "row_end": 70,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "POS PURCHASE GROCERY",
+   "bbox": [
+    226,
+    893,
+    590,
+    941
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 70,
+   "row_end": 70,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "130",
+   "bbox": [
+    585,
+    890,
+    700,
+    933
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 70,
+   "row_end": 70,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "-",
+   "bbox": [
+    694,
+    888,
+    809,
+    930
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 70,
+   "row_end": 70,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "11,059",
+   "bbox": [
+    804,
+    885,
+    939,
+    928
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 71,
+   "row_end": 71,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "12/04/2025",
+   "bbox": [
+    101,
+    941,
+    236,
+    984
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 71,
+   "row_end": 71,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "POS PURCHASE GROCERY",
+   "bbox": [
+    231,
+    933,
+    595,
+    981
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 71,
+   "row_end": 71,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "23",
+   "bbox": [
+    590,
+    930,
+    705,
+    973
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 71,
+   "row_end": 71,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "2,208",
+   "bbox": [
+    700,
+    928,
+    815,
+    970
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 71,
+   "row_end": 71,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "13,244",
+   "bbox": [
+    809,
+    925,
+    944,
+    968
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 72,
+   "row_end": 72,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "10/11/2025",
+   "bbox": [
+    107,
+    981,
+    242,
+    1024
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 72,
+   "row_end": 72,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "ATM WITHDRAWAL",
+   "bbox": [
+    236,
+    973,
+    601,
+    1021
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 72,
+   "row_end": 72,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "280",
+   "bbox": [
+    595,
+    970,
+    710,
+    1013
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 72,
+   "row_end": 72,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "-",
+   "bbox": [
+    705,
+    968,
+    820,
+    1010
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 72,
+   "row_end": 72,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "12,964",
+   "bbox": [
+    815,
+    965,
+    950,
+    1007
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  }
+ ]
+}

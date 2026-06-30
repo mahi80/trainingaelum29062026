@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta name="ocr-system" content="autoloan-docgen"/>
+<meta name="ocr-capabilities" content="ocr_page ocrx_word"/>
+</head><body>
+<div class="ocr_page" title="bbox 0 0 1000 1414">
+<span class="ocrx_word ocrx_word" id="w0" title="bbox 29 43 139 69; x_wconf 96">RegLoan</span>
+<span class="ocrx_word ocrx_word" id="w1" title="bbox 145 42 211 63; x_wconf 96">Bank</span>
+<span class="ocrx_word ocrx_word" id="w2" title="bbox 217 55 250 63; x_wconf 96">—</span>
+<span class="ocrx_word ocrx_word" id="w3" title="bbox 256 42 419 69; x_wconf 96">Underwriting</span>
+<span class="ocrx_word ocrx_word" id="w4" title="bbox 425 42 503 69; x_wconf 96">Policy</span>
+<span class="ocrx_word ocrx_word" id="w5" title="bbox 510 43 534 63; x_wconf 96">&amp;</span>
+<span class="ocrx_word ocrx_word" id="w6" title="bbox 541 43 596 63; x_wconf 96">Rate</span>
+<span class="ocrx_word ocrx_word" id="w7" title="bbox 602 42 671 63; x_wconf 96">Sheet</span>
+<span class="ocrx_word ocrx_word" id="w8" title="bbox 31 90 114 103; x_wconf 96">Document</span>
+<span class="ocrx_word ocrx_word" id="w9" title="bbox 118 90 201 103; x_wconf 96">POL-0005</span>
+<span class="ocrx_word ocrx_word" id="w10" title="bbox 691 90 735 107; x_wconf 96">Page</span>
+<span class="ocrx_word ocrx_word" id="w11" title="bbox 738 90 749 103; x_wconf 96">3</span>
+<span class="ocrx_word ocrx_word" id="w12" title="bbox 753 90 770 103; x_wconf 96">of</span>
+<span class="ocrx_word ocrx_word" id="w13" title="bbox 774 90 785 103; x_wconf 96">3</span>
+<span class="ocrx_word ocrx_word" id="w14" title="bbox 34 134 82 150; x_wconf 96">APR</span>
+<span class="ocrx_word ocrx_word" id="w15" title="bbox 87 134 135 150; x_wconf 96">Rate</span>
+<span class="ocrx_word ocrx_word" id="w16" title="bbox 140 134 206 150; x_wconf 96">Matrix</span>
+<span class="ocrx_word ocrx_word" id="w17" title="bbox 211 134 237 154; x_wconf 96">by</span>
+<span class="ocrx_word ocrx_word" id="w18" title="bbox 242 134 295 150; x_wconf 96">FICO</span>
+<span class="ocrx_word ocrx_word" id="w19" title="bbox 300 136 314 150; x_wconf 96">×</span>
+<span class="ocrx_word ocrx_word" id="w20" title="bbox 319 134 361 150; x_wconf 96">LTV</span>
+<span class="ocrx_word ocrx_word" id="w21" title="bbox 366 134 432 154; x_wconf 96">(cont.)</span>
+<span class="ocrx_word ocrx_word" id="w22" title="bbox 44 187 92 202; x_wconf 96">FICO</span>
+<span class="ocrx_word ocrx_word" id="w23" title="bbox 98 187 147 202; x_wconf 96">Band</span>
+<span class="ocrx_word ocrx_word" id="w24" title="bbox 194 187 232 202; x_wconf 96">LTV</span>
+<span class="ocrx_word ocrx_word" id="w25" title="bbox 238 187 303 203; x_wconf 96">&lt;=80%</span>
+<span class="ocrx_word ocrx_word" id="w26" title="bbox 344 187 382 202; x_wconf 96">LTV</span>
+<span class="ocrx_word ocrx_word" id="w27" title="bbox 388 187 458 203; x_wconf 96">81-90%</span>
+<span class="ocrx_word ocrx_word" id="w28" title="bbox 494 187 532 202; x_wconf 96">LTV</span>
+<span class="ocrx_word ocrx_word" id="w29" title="bbox 538 187 619 203; x_wconf 96">91-100%</span>
+<span class="ocrx_word ocrx_word" id="w30" title="bbox 644 187 682 202; x_wconf 96">LTV</span>
+<span class="ocrx_word ocrx_word" id="w31" title="bbox 688 187 780 203; x_wconf 96">101-110%</span>
+<span class="ocrx_word ocrx_word" id="w32" title="bbox 794 187 832 202; x_wconf 96">LTV</span>
+<span class="ocrx_word ocrx_word" id="w33" title="bbox 838 187 930 203; x_wconf 96">111-120%</span>
+<span class="ocrx_word ocrx_word" id="w34" title="bbox 46 232 119 246; x_wconf 96">740-779</span>
+<span class="ocrx_word ocrx_word" id="w35" title="bbox 196 232 252 246; x_wconf 96">5.97%</span>
+<span class="ocrx_word ocrx_word" id="w36" title="bbox 346 232 413 246; x_wconf 96">11.56%</span>
+<span class="ocrx_word ocrx_word" id="w37" title="bbox 496 232 563 246; x_wconf 96">12.25%</span>
+<span class="ocrx_word ocrx_word" id="w38" title="bbox 646 232 702 246; x_wconf 96">6.01%</span>
+<span class="ocrx_word ocrx_word" id="w39" title="bbox 796 232 863 246; x_wconf 96">10.77%</span>
+<span class="ocrx_word ocrx_word" id="w40" title="bbox 49 276 94 290; x_wconf 96">780+</span>
+<span class="ocrx_word ocrx_word" id="w41" title="bbox 199 276 266 290; x_wconf 96">11.04%</span>
+<span class="ocrx_word ocrx_word" id="w42" title="bbox 349 276 394 290; x_wconf 96">8.0%</span>
+<span class="ocrx_word ocrx_word" id="w43" title="bbox 499 276 566 290; x_wconf 96">13.41%</span>
+<span class="ocrx_word ocrx_word" id="w44" title="bbox 649 276 694 290; x_wconf 96">9.5%</span>
+<span class="ocrx_word ocrx_word" id="w45" title="bbox 799 276 844 290; x_wconf 96">7.7%</span>
+<span class="ocrx_word handwritten" id="w46" title="bbox 46 332 147 357; x_wconf 88">Declined</span>
+<span class="ocrx_word handwritten" id="w47" title="bbox 155 346 186 356; x_wconf 88">—</span>
+<span class="ocrx_word handwritten" id="w48" title="bbox 194 337 236 359; x_wconf 88">UW</span>
+</div></body></html>

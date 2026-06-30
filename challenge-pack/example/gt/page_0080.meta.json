@@ -1,0 +1,31 @@
+{
+ "page": "page_0080",
+ "image": "page_0080.jpg",
+ "seed": 1337,
+ "doc_id": "POL-0005",
+ "doc_class": "policy",
+ "page_in_doc": 1,
+ "distortions": [
+  "skew"
+ ],
+ "homography": [
+  [
+   1.0,
+   0.039624094782775954,
+   -28.014235011422556
+  ],
+  [
+   0.0,
+   1.0,
+   0.0
+  ],
+  [
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "n_tokens": 49,
+ "n_handwritten": 4,
+ "n_cells": 18
+}

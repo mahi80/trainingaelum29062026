@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v4#">
+<Description><MeasurementUnit>pixel</MeasurementUnit></Description>
+<Layout>
+<Page WIDTH="1000" HEIGHT="1414" PHYSICAL_IMG_NR="1">
+<PrintSpace>
+<String ID="s0" CONTENT="RegLoan" HPOS="17" VPOS="71" WIDTH="111" HEIGHT="35" STYLE="printed"/>
+<String ID="s1" CONTENT="Bank" HPOS="134" VPOS="64" WIDTH="65" HEIGHT="27" STYLE="printed"/>
+<String ID="s2" CONTENT="—" HPOS="206" VPOS="74" WIDTH="32" HEIGHT="11" STYLE="printed"/>
+<String ID="s3" CONTENT="Auto" HPOS="245" VPOS="57" WIDTH="61" HEIGHT="25" STYLE="printed"/>
+<String ID="s4" CONTENT="Loan" HPOS="312" VPOS="51" WIDTH="63" HEIGHT="25" STYLE="printed"/>
+<String ID="s5" CONTENT="Credit" HPOS="381" VPOS="43" WIDTH="77" HEIGHT="27" STYLE="printed"/>
+<String ID="s6" CONTENT="Application" HPOS="464" VPOS="31" WIDTH="142" HEIGHT="39" STYLE="printed"/>
+<String ID="s7" CONTENT="Document" HPOS="21" VPOS="120" WIDTH="83" HEIGHT="20" STYLE="printed"/>
+<String ID="s8" CONTENT="APP-0014" HPOS="107" VPOS="113" WIDTH="84" HEIGHT="20" STYLE="printed"/>
+<String ID="s9" CONTENT="Page" HPOS="679" VPOS="70" WIDTH="43" HEIGHT="20" STYLE="printed"/>
+<String ID="s10" CONTENT="1" HPOS="726" VPOS="69" WIDTH="11" HEIGHT="13" STYLE="printed"/>
+<String ID="s11" CONTENT="of" HPOS="741" VPOS="67" WIDTH="17" HEIGHT="14" STYLE="printed"/>
+<String ID="s12" CONTENT="1" HPOS="762" VPOS="66" WIDTH="11" HEIGHT="14" STYLE="printed"/>
+<String ID="s13" CONTENT="Applicant" HPOS="25" VPOS="174" WIDTH="92" HEIGHT="27" STYLE="printed"/>
+<String ID="s14" CONTENT="Name:" HPOS="121" VPOS="168" WIDTH="65" HEIGHT="21" STYLE="printed"/>
+<String ID="s15" CONTENT="Lena" HPOS="255" VPOS="155" WIDTH="85" HEIGHT="30" STYLE="handwritten"/>
+<String ID="s16" CONTENT="Cohen" HPOS="350" VPOS="144" WIDTH="109" HEIGHT="33" STYLE="handwritten"/>
+<String ID="s17" CONTENT="Date" HPOS="29" VPOS="223" WIDTH="48" HEIGHT="20" STYLE="printed"/>
+<String ID="s18" CONTENT="of" HPOS="81" VPOS="221" WIDTH="20" HEIGHT="17" STYLE="printed"/>
+<String ID="s19" CONTENT="Birth:" HPOS="106" VPOS="216" WIDTH="52" HEIGHT="20" STYLE="printed"/>
+<String ID="s20" CONTENT="28/05/1990" HPOS="258" VPOS="186" WIDTH="192" HEIGHT="45" STYLE="handwritten"/>
+<String ID="s21" CONTENT="SSN" HPOS="33" VPOS="269" WIDTH="47" HEIGHT="19" STYLE="printed"/>
+<String ID="s22" CONTENT="(tokenized):" HPOS="85" VPOS="259" WIDTH="114" HEIGHT="29" STYLE="printed"/>
+<String ID="s23" CONTENT="TKN-666397" HPOS="262" VPOS="236" WIDTH="154" HEIGHT="35" STYLE="handwritten"/>
+<String ID="s24" CONTENT="Annual" HPOS="36" VPOS="313" WIDTH="70" HEIGHT="21" STYLE="printed"/>
+<String ID="s25" CONTENT="Income:" HPOS="111" VPOS="306" WIDTH="78" HEIGHT="22" STYLE="printed"/>
+<String ID="s26" CONTENT="$154,000" HPOS="265" VPOS="272" WIDTH="126" HEIGHT="40" STYLE="handwritten"/>
+<String ID="s27" CONTENT="Employer:" HPOS="41" VPOS="356" WIDTH="99" HEIGHT="28" STYLE="printed"/>
+<String ID="s28" CONTENT="Umbrella" HPOS="270" VPOS="330" WIDTH="157" HEIGHT="38" STYLE="handwritten"/>
+<String ID="s29" CONTENT="Co" HPOS="437" VPOS="327" WIDTH="47" HEIGHT="27" STYLE="handwritten"/>
+<String ID="s30" CONTENT="Loan" HPOS="44" VPOS="406" WIDTH="49" HEIGHT="20" STYLE="printed"/>
+<String ID="s31" CONTENT="Amount:" HPOS="97" VPOS="399" WIDTH="83" HEIGHT="23" STYLE="printed"/>
+<String ID="s32" CONTENT="$35,000" HPOS="273" VPOS="375" WIDTH="134" HEIGHT="39" STYLE="handwritten"/>
+<String ID="s33" CONTENT="Term" HPOS="48" VPOS="452" WIDTH="51" HEIGHT="20" STYLE="printed"/>
+<String ID="s34" CONTENT="(months):" HPOS="104" VPOS="444" WIDTH="92" HEIGHT="27" STYLE="printed"/>
+<String ID="s35" CONTENT="36" HPOS="276" VPOS="432" WIDTH="32" HEIGHT="20" STYLE="handwritten"/>
+<String ID="s36" CONTENT="Branch:" HPOS="52" VPOS="496" WIDTH="76" HEIGHT="22" STYLE="printed"/>
+<String ID="s37" CONTENT="Austin" HPOS="281" VPOS="472" WIDTH="58" HEIGHT="25" STYLE="handwritten"/>
+<String ID="s38" CONTENT="Collateral" HPOS="56" VPOS="546" WIDTH="100" HEIGHT="24" STYLE="printed"/>
+<String ID="s39" CONTENT="(Vehicle)" HPOS="161" VPOS="538" WIDTH="91" HEIGHT="27" STYLE="printed"/>
+<String ID="s40" CONTENT="VIN" HPOS="65" VPOS="597" WIDTH="35" HEIGHT="18" STYLE="printed"/>
+<String ID="s41" CONTENT="Make" HPOS="245" VPOS="581" WIDTH="51" HEIGHT="19" STYLE="printed"/>
+<String ID="s42" CONTENT="Model" HPOS="355" VPOS="572" WIDTH="59" HEIGHT="19" STYLE="printed"/>
+<String ID="s43" CONTENT="Year" HPOS="474" VPOS="563" WIDTH="46" HEIGHT="19" STYLE="printed"/>
+<String ID="s44" CONTENT="Fuel" HPOS="544" VPOS="558" WIDTH="42" HEIGHT="18" STYLE="printed"/>
+<String ID="s45" CONTENT="Cond" HPOS="634" VPOS="550" WIDTH="51" HEIGHT="19" STYLE="printed"/>
+<String ID="s46" CONTENT="Value" HPOS="723" VPOS="542" WIDTH="55" HEIGHT="19" STYLE="printed"/>
+<String ID="s47" CONTENT="($)" HPOS="782" VPOS="538" WIDTH="27" HEIGHT="22" STYLE="printed"/>
+<String ID="s48" CONTENT="VIN58337AL" HPOS="69" VPOS="634" WIDTH="112" HEIGHT="23" STYLE="printed"/>
+<String ID="s49" CONTENT="Hyundai" HPOS="249" VPOS="622" WIDTH="73" HEIGHT="24" STYLE="printed"/>
+<String ID="s50" CONTENT="Model" HPOS="358" VPOS="615" WIDTH="54" HEIGHT="18" STYLE="printed"/>
+<String ID="s51" CONTENT="3" HPOS="416" VPOS="614" WIDTH="12" HEIGHT="14" STYLE="printed"/>
+<String ID="s52" CONTENT="2023" HPOS="478" VPOS="606" WIDTH="45" HEIGHT="17" STYLE="printed"/>
+<String ID="s53" CONTENT="ICE" HPOS="548" VPOS="601" WIDTH="33" HEIGHT="17" STYLE="printed"/>
+<String ID="s54" CONTENT="Used" HPOS="637" VPOS="593" WIDTH="47" HEIGHT="17" STYLE="printed"/>
+<String ID="s55" CONTENT="18,000" HPOS="727" VPOS="584" WIDTH="61" HEIGHT="22" STYLE="printed"/>
+<String ID="s56" CONTENT="Authorized" HPOS="66" VPOS="685" WIDTH="106" HEIGHT="24" STYLE="printed"/>
+<String ID="s57" CONTENT="Signature:" HPOS="177" VPOS="676" WIDTH="100" HEIGHT="28" STYLE="printed"/>
+<String ID="s58" CONTENT="Lena" HPOS="316" VPOS="657" WIDTH="79" HEIGHT="34" STYLE="handwritten"/>
+<String ID="s59" CONTENT="Cohen" HPOS="403" VPOS="647" WIDTH="97" HEIGHT="38" STYLE="handwritten"/>
+</PrintSpace>
+</Page>
+</Layout>
+</alto>

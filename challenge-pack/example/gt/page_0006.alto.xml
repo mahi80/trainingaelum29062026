@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v4#">
+<Description><MeasurementUnit>pixel</MeasurementUnit></Description>
+<Layout>
+<Page WIDTH="1000" HEIGHT="1414" PHYSICAL_IMG_NR="1">
+<PrintSpace>
+<String ID="s0" CONTENT="RegLoan" HPOS="35" VPOS="61" WIDTH="110" HEIGHT="32" STYLE="printed"/>
+<String ID="s1" CONTENT="Bank" HPOS="152" VPOS="56" WIDTH="65" HEIGHT="25" STYLE="printed"/>
+<String ID="s2" CONTENT="—" HPOS="223" VPOS="67" WIDTH="33" HEIGHT="10" STYLE="printed"/>
+<String ID="s3" CONTENT="Auto" HPOS="263" VPOS="52" WIDTH="61" HEIGHT="23" STYLE="printed"/>
+<String ID="s4" CONTENT="Loan" HPOS="331" VPOS="48" WIDTH="62" HEIGHT="23" STYLE="printed"/>
+<String ID="s5" CONTENT="Credit" HPOS="400" VPOS="42" WIDTH="76" HEIGHT="25" STYLE="printed"/>
+<String ID="s6" CONTENT="Application" HPOS="482" VPOS="35" WIDTH="142" HEIGHT="34" STYLE="printed"/>
+<String ID="s7" CONTENT="Document" HPOS="38" VPOS="109" WIDTH="82" HEIGHT="18" STYLE="printed"/>
+<String ID="s8" CONTENT="APP-0006" HPOS="123" VPOS="105" WIDTH="84" HEIGHT="17" STYLE="printed"/>
+<String ID="s9" CONTENT="Page" HPOS="697" VPOS="76" WIDTH="43" HEIGHT="20" STYLE="printed"/>
+<String ID="s10" CONTENT="1" HPOS="744" VPOS="76" WIDTH="10" HEIGHT="13" STYLE="printed"/>
+<String ID="s11" CONTENT="of" HPOS="759" VPOS="74" WIDTH="16" HEIGHT="14" STYLE="printed"/>
+<String ID="s12" CONTENT="1" HPOS="780" VPOS="74" WIDTH="10" HEIGHT="13" STYLE="printed"/>
+<String ID="s13" CONTENT="Applicant" HPOS="40" VPOS="163" WIDTH="91" HEIGHT="25" STYLE="printed"/>
+<String ID="s14" CONTENT="Name:" HPOS="136" VPOS="159" WIDTH="65" HEIGHT="20" STYLE="printed"/>
+<String ID="s15" CONTENT="John" HPOS="268" VPOS="139" WIDTH="64" HEIGHT="28" STYLE="handwritten"/>
+<String ID="s16" CONTENT="Smith" HPOS="339" VPOS="134" WIDTH="79" HEIGHT="29" STYLE="handwritten"/>
+<String ID="s17" CONTENT="Date" HPOS="43" VPOS="211" WIDTH="47" HEIGHT="19" STYLE="printed"/>
+<String ID="s18" CONTENT="of" HPOS="95" VPOS="210" WIDTH="20" HEIGHT="17" STYLE="printed"/>
+<String ID="s19" CONTENT="Birth:" HPOS="120" VPOS="207" WIDTH="52" HEIGHT="19" STYLE="printed"/>
+<String ID="s20" CONTENT="22/04/1971" HPOS="272" VPOS="189" WIDTH="119" HEIGHT="27" STYLE="handwritten"/>
+<String ID="s21" CONTENT="SSN" HPOS="45" VPOS="257" WIDTH="47" HEIGHT="19" STYLE="printed"/>
+<String ID="s22" CONTENT="(tokenized):" HPOS="97" VPOS="251" WIDTH="114" HEIGHT="26" STYLE="printed"/>
+<String ID="s23" CONTENT="TKN-182091" HPOS="274" VPOS="224" WIDTH="173" HEIGHT="34" STYLE="handwritten"/>
+<String ID="s24" CONTENT="Annual" HPOS="47" VPOS="302" WIDTH="70" HEIGHT="20" STYLE="printed"/>
+<String ID="s25" CONTENT="Income:" HPOS="122" VPOS="298" WIDTH="78" HEIGHT="20" STYLE="printed"/>
+<String ID="s26" CONTENT="$75,000" HPOS="277" VPOS="284" WIDTH="138" HEIGHT="33" STYLE="handwritten"/>
+<String ID="s27" CONTENT="Employer:" HPOS="50" VPOS="346" WIDTH="99" HEIGHT="26" STYLE="printed"/>
+<String ID="s28" CONTENT="Umbrella" HPOS="278" VPOS="330" WIDTH="94" HEIGHT="25" STYLE="handwritten"/>
+<String ID="s29" CONTENT="Co" HPOS="379" VPOS="328" WIDTH="29" HEIGHT="26" STYLE="handwritten"/>
+<String ID="s30" CONTENT="Loan" HPOS="53" VPOS="395" WIDTH="49" HEIGHT="18" STYLE="printed"/>
+<String ID="s31" CONTENT="Amount:" HPOS="106" VPOS="390" WIDTH="82" HEIGHT="21" STYLE="printed"/>
+<String ID="s32" CONTENT="$44,000" HPOS="282" VPOS="361" WIDTH="116" HEIGHT="36" STYLE="handwritten"/>
+<String ID="s33" CONTENT="Term" HPOS="55" VPOS="441" WIDTH="51" HEIGHT="18" STYLE="printed"/>
+<String ID="s34" CONTENT="(months):" HPOS="111" VPOS="436" WIDTH="92" HEIGHT="24" STYLE="printed"/>
+<String ID="s35" CONTENT="48" HPOS="284" VPOS="416" WIDTH="42" HEIGHT="26" STYLE="handwritten"/>
+<String ID="s36" CONTENT="Branch:" HPOS="58" VPOS="485" WIDTH="75" HEIGHT="20" STYLE="printed"/>
+<String ID="s37" CONTENT="Pune" HPOS="287" VPOS="469" WIDTH="46" HEIGHT="22" STYLE="handwritten"/>
+<String ID="s38" CONTENT="Collateral" HPOS="61" VPOS="536" WIDTH="99" HEIGHT="21" STYLE="printed"/>
+<String ID="s39" CONTENT="(Vehicle)" HPOS="165" VPOS="531" WIDTH="91" HEIGHT="25" STYLE="printed"/>
+<String ID="s40" CONTENT="VIN" HPOS="68" VPOS="586" WIDTH="35" HEIGHT="17" STYLE="printed"/>
+<String ID="s41" CONTENT="Make" HPOS="249" VPOS="576" WIDTH="50" HEIGHT="17" STYLE="printed"/>
+<String ID="s42" CONTENT="Model" HPOS="359" VPOS="569" WIDTH="58" HEIGHT="18" STYLE="printed"/>
+<String ID="s43" CONTENT="Year" HPOS="477" VPOS="564" WIDTH="46" HEIGHT="17" STYLE="printed"/>
+<String ID="s44" CONTENT="Fuel" HPOS="548" VPOS="560" WIDTH="42" HEIGHT="17" STYLE="printed"/>
+<String ID="s45" CONTENT="Cond" HPOS="638" VPOS="555" WIDTH="51" HEIGHT="17" STYLE="printed"/>
+<String ID="s46" CONTENT="Value" HPOS="727" VPOS="550" WIDTH="55" HEIGHT="18" STYLE="printed"/>
+<String ID="s47" CONTENT="($)" HPOS="787" VPOS="547" WIDTH="26" HEIGHT="21" STYLE="printed"/>
+<String ID="s48" CONTENT="VIN19669AL" HPOS="71" VPOS="625" WIDTH="112" HEIGHT="20" STYLE="printed"/>
+<String ID="s49" CONTENT="Honda" HPOS="251" VPOS="618" WIDTH="59" HEIGHT="17" STYLE="printed"/>
+<String ID="s50" CONTENT="Model" HPOS="361" VPOS="612" WIDTH="54" HEIGHT="17" STYLE="printed"/>
+<String ID="s51" CONTENT="3" HPOS="419" VPOS="612" WIDTH="12" HEIGHT="14" STYLE="printed"/>
+<String ID="s52" CONTENT="2021" HPOS="481" VPOS="607" WIDTH="44" HEIGHT="16" STYLE="printed"/>
+<String ID="s53" CONTENT="Hybrid" HPOS="551" VPOS="602" WIDTH="57" HEIGHT="21" STYLE="printed"/>
+<String ID="s54" CONTENT="CPO" HPOS="640" VPOS="598" WIDTH="43" HEIGHT="16" STYLE="printed"/>
+<String ID="s55" CONTENT="36,000" HPOS="730" VPOS="592" WIDTH="61" HEIGHT="20" STYLE="printed"/>
+<String ID="s56" CONTENT="Authorized" HPOS="67" VPOS="676" WIDTH="106" HEIGHT="21" STYLE="printed"/>
+<String ID="s57" CONTENT="Signature:" HPOS="178" VPOS="670" WIDTH="100" HEIGHT="25" STYLE="printed"/>
+<String ID="s58" CONTENT="John" HPOS="312" VPOS="658" WIDTH="122" HEIGHT="47" STYLE="handwritten"/>
+<String ID="s59" CONTENT="Smith" HPOS="445" VPOS="650" WIDTH="137" HEIGHT="42" STYLE="handwritten"/>
+</PrintSpace>
+</Page>
+</Layout>
+</alto>

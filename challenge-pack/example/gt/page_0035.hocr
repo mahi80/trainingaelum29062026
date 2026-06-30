@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta name="ocr-system" content="autoloan-docgen"/>
+<meta name="ocr-capabilities" content="ocr_page ocrx_word"/>
+</head><body>
+<div class="ocr_page" title="bbox 0 0 1000 1414">
+<span class="ocrx_word ocrx_word" id="w0" title="bbox 48 -76 176 -29; x_wconf 96">RegLoan</span>
+<span class="ocrx_word ocrx_word" id="w1" title="bbox 185 -62 259 -28; x_wconf 96">Bank</span>
+<span class="ocrx_word ocrx_word" id="w2" title="bbox 266 -37 303 -23; x_wconf 96">—</span>
+<span class="ocrx_word ocrx_word" id="w3" title="bbox 312 -47 380 -15; x_wconf 96">Auto</span>
+<span class="ocrx_word ocrx_word" id="w4" title="bbox 388 -38 457 -6; x_wconf 96">Loan</span>
+<span class="ocrx_word ocrx_word" id="w5" title="bbox 465 -31 548 4; x_wconf 96">Credit</span>
+<span class="ocrx_word ocrx_word" id="w6" title="bbox 555 -21 708 28; x_wconf 96">Application</span>
+<span class="ocrx_word ocrx_word" id="w7" title="bbox 49 -17 144 9; x_wconf 96">Document</span>
+<span class="ocrx_word ocrx_word" id="w8" title="bbox 149 -6 244 20; x_wconf 96">APP-0035</span>
+<span class="ocrx_word ocrx_word" id="w9" title="bbox 778 61 823 85; x_wconf 96">Page</span>
+<span class="ocrx_word ocrx_word" id="w10" title="bbox 827 66 839 82; x_wconf 96">1</span>
+<span class="ocrx_word ocrx_word" id="w11" title="bbox 842 68 860 84; x_wconf 96">of</span>
+<span class="ocrx_word ocrx_word" id="w12" title="bbox 864 70 876 86; x_wconf 96">1</span>
+<span class="ocrx_word ocrx_word" id="w13" title="bbox 48 49 153 84; x_wconf 96">Applicant</span>
+<span class="ocrx_word ocrx_word" id="w14" title="bbox 160 61 233 87; x_wconf 96">Name:</span>
+<span class="ocrx_word handwritten" id="w15" title="bbox 311 70 418 109; x_wconf 88">Liam</span>
+<span class="ocrx_word handwritten" id="w16" title="bbox 428 83 493 118; x_wconf 88">Ito</span>
+<span class="ocrx_word ocrx_word" id="w17" title="bbox 50 105 103 130; x_wconf 96">Date</span>
+<span class="ocrx_word ocrx_word" id="w18" title="bbox 110 111 132 132; x_wconf 96">of</span>
+<span class="ocrx_word ocrx_word" id="w19" title="bbox 138 114 196 139; x_wconf 96">Birth:</span>
+<span class="ocrx_word handwritten" id="w20" title="bbox 310 125 436 163; x_wconf 88">18/05/1987</span>
+<span class="ocrx_word ocrx_word" id="w21" title="bbox 50 161 103 184; x_wconf 96">SSN</span>
+<span class="ocrx_word ocrx_word" id="w22" title="bbox 110 166 237 201; x_wconf 96">(tokenized):</span>
+<span class="ocrx_word handwritten" id="w23" title="bbox 309 168 503 216; x_wconf 88">TKN-800630</span>
+<span class="ocrx_word ocrx_word" id="w24" title="bbox 50 215 128 240; x_wconf 96">Annual</span>
+<span class="ocrx_word ocrx_word" id="w25" title="bbox 135 222 221 248; x_wconf 96">Income:</span>
+<span class="ocrx_word handwritten" id="w26" title="bbox 307 232 416 266; x_wconf 88">$155,000</span>
+<span class="ocrx_word ocrx_word" id="w27" title="bbox 51 269 161 301; x_wconf 96">Employer:</span>
+<span class="ocrx_word handwritten" id="w28" title="bbox 306 282 379 312; x_wconf 88">Initech</span>
+<span class="ocrx_word ocrx_word" id="w29" title="bbox 52 321 106 344; x_wconf 96">Loan</span>
+<span class="ocrx_word ocrx_word" id="w30" title="bbox 111 326 202 351; x_wconf 96">Amount:</span>
+<span class="ocrx_word handwritten" id="w31" title="bbox 305 335 447 378; x_wconf 88">$11,000</span>
+<span class="ocrx_word ocrx_word" id="w32" title="bbox 52 374 108 396; x_wconf 96">Term</span>
+<span class="ocrx_word ocrx_word" id="w33" title="bbox 115 378 214 408; x_wconf 96">(months):</span>
+<span class="ocrx_word handwritten" id="w34" title="bbox 304 389 349 417; x_wconf 88">60</span>
+<span class="ocrx_word ocrx_word" id="w35" title="bbox 53 425 135 449; x_wconf 96">Branch:</span>
+<span class="ocrx_word handwritten" id="w36" title="bbox 303 437 357 462; x_wconf 88">Leeds</span>
+<span class="ocrx_word ocrx_word" id="w37" title="bbox 53 483 161 507; x_wconf 96">Collateral</span>
+<span class="ocrx_word ocrx_word" id="w38" title="bbox 168 490 265 518; x_wconf 96">(Vehicle)</span>
+<span class="ocrx_word ocrx_word" id="w39" title="bbox 59 534 96 552; x_wconf 96">VIN</span>
+<span class="ocrx_word ocrx_word" id="w40" title="bbox 254 546 307 566; x_wconf 96">Make</span>
+<span class="ocrx_word ocrx_word" id="w41" title="bbox 369 554 430 573; x_wconf 96">Model</span>
+<span class="ocrx_word ocrx_word" id="w42" title="bbox 491 561 538 580; x_wconf 96">Year</span>
+<span class="ocrx_word ocrx_word" id="w43" title="bbox 563 566 605 584; x_wconf 96">Fuel</span>
+<span class="ocrx_word ocrx_word" id="w44" title="bbox 653 572 704 590; x_wconf 96">Cond</span>
+<span class="ocrx_word ocrx_word" id="w45" title="bbox 741 577 795 596; x_wconf 96">Value</span>
+<span class="ocrx_word ocrx_word" id="w46" title="bbox 799 580 825 602; x_wconf 96">($)</span>
+<span class="ocrx_word ocrx_word" id="w47" title="bbox 61 580 180 602; x_wconf 96">VIN69445AL</span>
+<span class="ocrx_word ocrx_word" id="w48" title="bbox 253 592 314 610; x_wconf 96">Honda</span>
+<span class="ocrx_word ocrx_word" id="w49" title="bbox 368 599 411 616; x_wconf 96">Civic</span>
+<span class="ocrx_word ocrx_word" id="w50" title="bbox 490 606 535 623; x_wconf 96">2022</span>
+<span class="ocrx_word ocrx_word" id="w51" title="bbox 561 610 588 626; x_wconf 96">EV</span>
+<span class="ocrx_word ocrx_word" id="w52" title="bbox 650 615 690 632; x_wconf 96">New</span>
+<span class="ocrx_word ocrx_word" id="w53" title="bbox 738 621 798 641; x_wconf 96">54,000</span>
+<span class="ocrx_word ocrx_word" id="w54" title="bbox 61 625 180 646; x_wconf 96">VIN26663AL</span>
+<span class="ocrx_word ocrx_word" id="w55" title="bbox 252 636 282 652; x_wconf 96">Kia</span>
+<span class="ocrx_word ocrx_word" id="w56" title="bbox 366 642 410 659; x_wconf 96">Civic</span>
+<span class="ocrx_word ocrx_word" id="w57" title="bbox 488 649 533 665; x_wconf 96">2022</span>
+<span class="ocrx_word ocrx_word" id="w58" title="bbox 558 653 591 669; x_wconf 96">ICE</span>
+<span class="ocrx_word ocrx_word" id="w59" title="bbox 647 658 689 674; x_wconf 96">CPO</span>
+<span class="ocrx_word ocrx_word" id="w60" title="bbox 735 663 794 683; x_wconf 96">52,000</span>
+<span class="ocrx_word ocrx_word" id="w61" title="bbox 54 677 166 699; x_wconf 96">Authorized</span>
+<span class="ocrx_word ocrx_word" id="w62" title="bbox 172 683 275 709; x_wconf 96">Signature:</span>
+<span class="ocrx_word handwritten" id="w63" title="bbox 317 680 398 712; x_wconf 88">Liam</span>
+<span class="ocrx_word handwritten" id="w64" title="bbox 408 685 470 716; x_wconf 88">Ito</span>
+</div></body></html>
