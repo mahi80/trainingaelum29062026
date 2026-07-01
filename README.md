@@ -27,6 +27,16 @@ A multi-agent assistant over scanned auto-loan documents and a relational loan w
 
 See [`challenge-pack/README.md`](challenge-pack/README.md) for the full brief and [`challenge-pack/SUBMISSION.md`](challenge-pack/SUBMISSION.md) for deliverables.
 
+## Example datasets provided
+
+Every modality ships with concrete examples (public) + matching hidden gold (evaluators). Full table with an evaluator per row: [`challenge-pack/README.md` → "Example datasets provided"](challenge-pack/README.md#example-datasets-provided).
+
+- **Scanned documents (OCR):** [`challenge-pack/example/`](challenge-pack/example/) — 100 JPEG scans (40 application / 30 verification / 30 policy), multi-page tables + skew + cursive handwriting, with GT (`cells.json`/`tables.html`/`hocr`/`alto`); 80 train / 20 test.
+- **NL-to-SQL:** [`challenge-pack/eval/sql_samples.json`](challenge-pack/eval/sql_samples.json) — 8 public NL↔SQL pairs (multi-join) over the **108-table** warehouse (`db/`); 20 hidden.
+- **SPARQL / ontology:** [`challenge-pack/ontology/sparql_samples.json`](challenge-pack/ontology/sparql_samples.json) — 8 public NL↔SPARQL pairs over `auto_loan.ttl` (transitive `supersedes`); 15 hidden.
+- **RAG:** [`challenge-pack/eval/qrels_sample.json`](challenge-pack/eval/qrels_sample.json) — query→relevant-chunk labels.
+- **ML underwriting dataset:** [`challenge-pack/example/underwriting/`](challenge-pack/example/underwriting/) — `train.csv` (1000) + `test.csv` (250), 12 features + `default` label, learnable (reference AUC ≈ 0.80); 300-row hidden holdout.
+
 ## Getting started (candidates)
 
 **Never commit to `main`.** Create your own solution branch and open a Pull Request when done.

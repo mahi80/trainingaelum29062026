@@ -51,6 +51,29 @@ idempotency / **Redis-Streams ingestion**.
 
 ---
 
+## Example datasets provided
+
+You don't create data — every modality ships with concrete examples plus a runnable
+evaluator. Public samples are for building & self-checking; matching **hidden** gold is
+held by evaluators (same pattern everywhere).
+
+| Modality | Example files | Contents | Evaluator |
+|----------|---------------|----------|-----------|
+| **Scanned documents (OCR)** | `example/images/*.jpg` (100) + `example/gt/` | 40 applications · 30 verification · 30 policy; multi-page tables, skew/perspective, cursive handwriting (70 pages have handwriting). GT per page: `cells.json` (grid), `tables.html` (PubTabNet), `hocr`, `alto.xml`. **80 train / 20 test** (test GT withheld). `manifest.jsonl`, `stitch.json`. | `eval/ocr_eval.py` (TEDS/GriTS/CER) |
+| **Relational warehouse (NL→SQL grounding)** | `db/ddl/` + `db/seed/seed.py` | **108-table / 589-col** auto-loan schema + ~5k deterministic Faker rows (borrowers, applications, vehicles, credit, decisions, loans, payments, policy rules), pgvector columns. | `grading-kit/harness/test_conformance.py` |
+| **NL-to-SQL** | `eval/sql_samples.json` (**8 public**) | Natural-language ↔ gold Postgres SQL pairs requiring multi-table joins. Hidden: `sql_gold.json` (**20**). | `eval/sql_eval.py` (execution accuracy) |
+| **SPARQL / ontology** | `ontology/sparql_samples.json` (**8 public**) + `ontology/auto_loan.ttl` | NL ↔ SPARQL over the policy ontology (transitive `supersedes`, region reasoning). Hidden: `sparql_gold.json` (**15**). | `ontology/load_oxigraph.py` |
+| **RAG retrieval labels** | `eval/qrels_sample.json` | Query → relevant-chunk relevance labels. | `eval/rag_eval.py` (Recall@k/MRR/nDCG) |
+| **ML underwriting (PD)** | `example/underwriting/train.csv` (**1000**) · `test.csv` (**250**) | 12 features — `fico, dti, ltv, loan_amount, term_months, vehicle_age, annual_income, prior_delinquencies, inquiries_6mo, down_payment_pct, employment_years, region_risk_tier` — + binary `default` label. Learnable (reference **AUC ≈ 0.80**). Hidden: `underwriting_holdout.csv` (**300**). Regenerate: `python tools/mk_underwriting.py`. | `eval/underwrite_eval.py` (AUC/PR-AUC/Brier) |
+
+Quick self-checks:
+```bash
+python eval/ocr_eval.py --pred example/gt --gt example/gt            # sanity (perfect on GT)
+python eval/underwrite_eval.py --pred my_preds.csv --labels example/underwriting/test.csv
+```
+
+---
+
 ## 3. Tiers — MUST / Target / Stretch
 
 Grade yourself against [`grading-kit/rubric.md`](../grading-kit/rubric.md).
@@ -152,12 +175,12 @@ docker compose -f docker-compose.yml -f openmetadata.compose.yml \
 | [`openmetadata.compose.yml`](openmetadata.compose.yml) | Optional heavy data-catalog override + ingestion notes. |
 | [`.env.example`](.env.example) | All env vars with safe local defaults. |
 | [`db/ddl/`](db/ddl/) | The ~100-table loan warehouse schema (ref/loan/doc/app + pgvector). |
-| [`example/`](example/) | 100 scanned pages + ground truth (train split) + `manifest.jsonl` + `stitch.json`. |
+| [`example/`](example/) | 100 scanned pages + GT (train split) + `manifest.jsonl` + `stitch.json`; `underwriting/` PD dataset (train/test CSVs). |
 | [`openapi/contract.yaml`](openapi/contract.yaml) | The **fixed serving contract** you implement. |
 | [`ontology/`](ontology/) | Auto-loan policy ontology + SPARQL assets. |
 | [`src/`](src/) | LangGraph skeleton (`graph/`), LLM interface (`llm/`), 14 nodes (`nodes/` — you build the bodies). |
 | [`app/`](app/) | FastAPI + HTMX shell (auth, sessions, middleware, templates). |
-| [`tools/`](tools/) | `docgen/` (corpus generator) and `schemagen/` (schema expander). |
+| [`tools/`](tools/) | `docgen/` (scan generator), `schemagen/` (schema expander), `mk_underwriting.py` (PD dataset). |
 | [`eval/`](eval/) | Runnable evaluation CLIs (OCR/TEDS, retrieval, SQL, underwriting). |
 | [`.github/workflows/ci.yml`](.github/workflows/ci.yml) | Offline CI: ruff, schema-size, docgen smoke, import test, contract validate. |
 
