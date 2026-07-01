@@ -1,0 +1,365 @@
+{
+ "table_uid": "T-PAY-0009-1",
+ "cells": [
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 2,
+   "col_end": 3,
+   "text": "Amounts",
+   "bbox": [
+    446,
+    208,
+    726,
+    254
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "",
+   "bbox": [
+    66,
+    212,
+    196,
+    257
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "",
+   "bbox": [
+    196,
+    210,
+    446,
+    256
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "Category",
+   "bbox": [
+    66,
+    256,
+    197,
+    301
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Item",
+   "bbox": [
+    196,
+    254,
+    447,
+    300
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "Current ($)",
+   "bbox": [
+    446,
+    253,
+    587,
+    298
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "YTD ($)",
+   "bbox": [
+    586,
+    252,
+    727,
+    297
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Regular",
+   "bbox": [
+    197,
+    298,
+    447,
+    344
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "4,058",
+   "bbox": [
+    447,
+    297,
+    587,
+    342
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "40,898",
+   "bbox": [
+    587,
+    296,
+    727,
+    341
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 3,
+   "row_end": 3,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Overtime",
+   "bbox": [
+    197,
+    342,
+    447,
+    388
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 3,
+   "row_end": 3,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "301",
+   "bbox": [
+    447,
+    341,
+    587,
+    386
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 3,
+   "row_end": 3,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "8,268",
+   "bbox": [
+    587,
+    340,
+    727,
+    385
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 4,
+   "row_end": 4,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Bonus",
+   "bbox": [
+    197,
+    386,
+    448,
+    432
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 4,
+   "row_end": 4,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "97",
+   "bbox": [
+    447,
+    385,
+    588,
+    430
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 4,
+   "row_end": 4,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "9,736",
+   "bbox": [
+    587,
+    384,
+    728,
+    429
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 5,
+   "row_end": 5,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Federal Tax",
+   "bbox": [
+    198,
+    430,
+    448,
+    476
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 5,
+   "row_end": 5,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "502",
+   "bbox": [
+    448,
+    429,
+    588,
+    474
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 5,
+   "row_end": 5,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "2,269",
+   "bbox": [
+    588,
+    428,
+    728,
+    473
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 6,
+   "row_end": 6,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Health",
+   "bbox": [
+    198,
+    474,
+    448,
+    520
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 6,
+   "row_end": 6,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "253",
+   "bbox": [
+    448,
+    473,
+    588,
+    518
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 6,
+   "row_end": 6,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "1,244",
+   "bbox": [
+    588,
+    472,
+    728,
+    517
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 4,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "Earnings",
+   "bbox": [
+    67,
+    300,
+    198,
+    433
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 5,
+   "row_end": 6,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "Deductions",
+   "bbox": [
+    68,
+    432,
+    199,
+    521
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  }
+ ]
+}

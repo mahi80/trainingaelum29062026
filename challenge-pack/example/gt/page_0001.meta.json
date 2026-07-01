@@ -8,6 +8,18 @@
  "distortions": [
   "rotate"
  ],
+ "artifacts": [
+  "staple",
+  "crease",
+  "coffee",
+  "fax"
+ ],
+ "overlays": [],
+ "orientation": 0,
+ "size": [
+  1000,
+  1414
+ ],
  "homography": [
   [
    0.9995802248209201,
@@ -25,7 +37,8 @@
    1.0
   ]
  ],
- "n_tokens": 67,
- "n_handwritten": 12,
+ "n_tokens": 71,
+ "n_handwritten": 9,
+ "n_redacted": 0,
  "n_cells": 21
 }

@@ -335,6 +335,8 @@ def cell_f1(pred_cells: List[dict], gt_cells: List[dict]) -> Tuple[float, float,
     tp = sum((pred & gt).values())
     n_pred = sum(pred.values())
     n_gt = sum(gt.values())
+    if n_pred == 0 and n_gt == 0:          # no table to find, none found -> perfect
+        return 1.0, 1.0, 1.0
     prec = tp / n_pred if n_pred else 0.0
     rec = tp / n_gt if n_gt else 0.0
     f1 = 0.0 if (prec + rec) == 0 else 2 * prec * rec / (prec + rec)

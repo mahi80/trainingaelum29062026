@@ -2,31 +2,42 @@
  "page": "page_0067",
  "image": "page_0067.jpg",
  "seed": 1337,
- "doc_id": "VER-0007",
- "doc_class": "verification",
- "page_in_doc": 2,
+ "doc_id": "W2-0007",
+ "doc_class": "w2",
+ "page_in_doc": 1,
  "distortions": [
-  "skew",
-  "perspective"
+  "skew"
+ ],
+ "artifacts": [
+  "crease"
+ ],
+ "overlays": [
+  "stamp"
+ ],
+ "orientation": 0,
+ "size": [
+  1000,
+  1414
  ],
  "homography": [
   [
-   0.970949774459782,
-   0.02473078336306038,
-   -2.9595510675746937
+   1.0,
+   0.03689714691077717,
+   -26.08628286591943
   ],
   [
-   -0.04107701891386828,
-   0.8874232584320492,
-   100.13026574547541
+   0.0,
+   1.0,
+   0.0
   ],
   [
-   -5.810045108043604e-05,
-   -0.0001592316005204396,
-   1.141626967108169
+   0.0,
+   0.0,
+   1.0
   ]
  ],
- "n_tokens": 155,
- "n_handwritten": 2,
- "n_cells": 95
+ "n_tokens": 58,
+ "n_handwritten": 0,
+ "n_redacted": 0,
+ "n_cells": 21
 }

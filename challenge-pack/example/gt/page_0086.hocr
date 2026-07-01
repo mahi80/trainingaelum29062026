@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta name="ocr-system" content="autoloan-docgen"/></head><body>
+<div class="ocr_page" title="bbox 0 0 1000 1414">
+<span class="ocrx_word ocrx_word" id="w0" title="bbox 69 44 178 70; x_wconf 96">RegLoan</span>
+<span class="ocrx_word ocrx_word" id="w1" title="bbox 186 43 250 64; x_wconf 96">Bank</span>
+<span class="ocrx_word ocrx_word" id="w2" title="bbox 257 55 289 64; x_wconf 96">—</span>
+<span class="ocrx_word ocrx_word" id="w3" title="bbox 297 42 421 63; x_wconf 96">Certificate</span>
+<span class="ocrx_word ocrx_word" id="w4" title="bbox 429 42 458 63; x_wconf 96">of</span>
+<span class="ocrx_word ocrx_word" id="w5" title="bbox 466 42 558 63; x_wconf 96">Vehicle</span>
+<span class="ocrx_word ocrx_word" id="w6" title="bbox 566 42 621 63; x_wconf 96">Title</span>
+<span class="ocrx_word ocrx_word" id="w7" title="bbox 69 91 151 104; x_wconf 96">Document</span>
+<span class="ocrx_word ocrx_word" id="w8" title="bbox 156 91 234 104; x_wconf 96">TTL-0002</span>
+<span class="ocrx_word ocrx_word" id="w9" title="bbox 729 89 771 107; x_wconf 96">Page</span>
+<span class="ocrx_word ocrx_word" id="w10" title="bbox 776 89 786 102; x_wconf 96">1</span>
+<span class="ocrx_word ocrx_word" id="w11" title="bbox 791 89 807 102; x_wconf 96">of</span>
+<span class="ocrx_word ocrx_word" id="w12" title="bbox 812 89 822 102; x_wconf 96">1</span>
+<span class="ocrx_word ocrx_word" id="w13" title="bbox 69 135 112 151; x_wconf 96">VIN:</span>
+<span class="ocrx_word ocrx_word" id="w14" title="bbox 319 134 443 150; x_wconf 96">VIN82217AL</span>
+<span class="ocrx_word ocrx_word" id="w15" title="bbox 69 181 139 197; x_wconf 96">Owner:</span>
+<span class="ocrx_word ocrx_word" id="w16" title="bbox 319 180 360 196; x_wconf 96">Ivan</span>
+<span class="ocrx_word ocrx_word" id="w17" title="bbox 366 180 430 196; x_wconf 96">Cohen</span>
+<span class="ocrx_word ocrx_word" id="w18" title="bbox 69 227 128 243; x_wconf 96">Make:</span>
+<span class="ocrx_word ocrx_word" id="w19" title="bbox 319 226 399 246; x_wconf 96">Hyundai</span>
+<span class="ocrx_word ocrx_word" id="w20" title="bbox 69 273 134 289; x_wconf 96">Model:</span>
+<span class="ocrx_word ocrx_word" id="w21" title="bbox 319 272 360 288; x_wconf 96">320i</span>
+<span class="ocrx_word ocrx_word" id="w22" title="bbox 69 319 121 335; x_wconf 96">Year:</span>
+<span class="ocrx_word ocrx_word" id="w23" title="bbox 319 318 367 334; x_wconf 96">2020</span>
+<span class="ocrx_word ocrx_word" id="w24" title="bbox 69 365 171 381; x_wconf 96">Odometer:</span>
+<span class="ocrx_word ocrx_word" id="w25" title="bbox 319 364 385 383; x_wconf 96">74,223</span>
+<span class="ocrx_word ocrx_word" id="w26" title="bbox 391 364 414 380; x_wconf 96">mi</span>
+<span class="ocrx_word ocrx_word" id="w27" title="bbox 69 411 176 427; x_wconf 96">Lienholder:</span>
+<span class="ocrx_word ocrx_word" id="w28" title="bbox 319 410 407 430; x_wconf 96">RegLoan</span>
+<span class="ocrx_word ocrx_word" id="w29" title="bbox 413 410 463 426; x_wconf 96">Bank</span>
+<span class="ocrx_word ocrx_word" id="w30" title="bbox 69 457 110 473; x_wconf 96">Title</span>
+<span class="ocrx_word ocrx_word" id="w31" title="bbox 116 457 150 473; x_wconf 96">No:</span>
+<span class="ocrx_word ocrx_word" id="w32" title="bbox 319 456 404 472; x_wconf 96">T160660</span>
+<span class="ocrx_word ocrx_word" id="w33" title="bbox 69 513 174 529; x_wconf 96">Authorized</span>
+<span class="ocrx_word ocrx_word" id="w34" title="bbox 180 512 279 533; x_wconf 96">Signature:</span>
+<span class="ocrx_word handwritten" id="w35" title="bbox 320 516 415 546; x_wconf 88">Ivan</span>
+<span class="ocrx_word handwritten" id="w36" title="bbox 430 515 566 546; x_wconf 88">Cohen</span>
+</div></body></html>

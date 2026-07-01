@@ -1,17 +1,32 @@
 {
- "table_uid": "T-POL-0002-1",
+ "table_uid": "T-INV-0006-1",
  "cells": [
   {
    "row_start": 0,
    "row_end": 0,
+   "col_start": 3,
+   "col_end": 4,
+   "text": "Charges",
+   "bbox": [
+    520,
+    210,
+    791,
+    258
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
    "col_start": 0,
    "col_end": 0,
-   "text": "FICO Band",
+   "text": "",
    "bbox": [
-    56,
-    182,
-    207,
-    230
+    80,
+    200,
+    151,
+    244
    ],
    "is_header": true,
    "is_handwritten": false
@@ -21,12 +36,12 @@
    "row_end": 0,
    "col_start": 1,
    "col_end": 1,
-   "text": "LTV <=80%",
+   "text": "",
    "bbox": [
-    205,
-    178,
-    357,
-    226
+    150,
+    202,
+    451,
+    251
    ],
    "is_header": true,
    "is_handwritten": false
@@ -36,238 +51,388 @@
    "row_end": 0,
    "col_start": 2,
    "col_end": 2,
-   "text": "LTV 81-90%",
+   "text": "",
    "bbox": [
-    355,
-    174,
-    507,
-    222
-   ],
-   "is_header": true,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 0,
-   "row_end": 0,
-   "col_start": 3,
-   "col_end": 3,
-   "text": "LTV 91-100%",
-   "bbox": [
-    505,
-    170,
-    656,
-    218
-   ],
-   "is_header": true,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 0,
-   "row_end": 0,
-   "col_start": 4,
-   "col_end": 4,
-   "text": "LTV 101-110%",
-   "bbox": [
-    655,
-    165,
-    806,
-    214
-   ],
-   "is_header": true,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 0,
-   "row_end": 0,
-   "col_start": 5,
-   "col_end": 5,
-   "text": "LTV 111-120%",
-   "bbox": [
-    805,
-    161,
-    956,
-    209
-   ],
-   "is_header": true,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 4,
-   "row_end": 4,
-   "col_start": 0,
-   "col_end": 0,
-   "text": "700-739",
-   "bbox": [
-    57,
-    226,
-    208,
-    274
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 4,
-   "row_end": 4,
-   "col_start": 1,
-   "col_end": 1,
-   "text": "12.88%",
-   "bbox": [
-    207,
-    222,
-    358,
-    270
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 4,
-   "row_end": 4,
-   "col_start": 2,
-   "col_end": 2,
-   "text": "10.3%",
-   "bbox": [
-    357,
-    218,
-    508,
-    266
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 4,
-   "row_end": 4,
-   "col_start": 3,
-   "col_end": 3,
-   "text": "8.8%",
-   "bbox": [
-    507,
-    214,
-    658,
-    262
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 4,
-   "row_end": 4,
-   "col_start": 4,
-   "col_end": 4,
-   "text": "12.55%",
-   "bbox": [
-    656,
+    450,
     209,
-    808,
-    257
+    521,
+    252
    ],
-   "is_header": false,
+   "is_header": true,
    "is_handwritten": false
   },
   {
-   "row_start": 4,
-   "row_end": 4,
-   "col_start": 5,
-   "col_end": 5,
-   "text": "9.18%",
-   "bbox": [
-    806,
-    205,
-    958,
-    253
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 5,
-   "row_end": 5,
+   "row_start": 1,
+   "row_end": 1,
    "col_start": 0,
    "col_end": 0,
-   "text": "740-779",
+   "text": "Line",
    "bbox": [
-    58,
-    270,
-    209,
-    318
+    79,
+    242,
+    150,
+    286
    ],
-   "is_header": false,
+   "is_header": true,
    "is_handwritten": false
   },
   {
-   "row_start": 5,
-   "row_end": 5,
+   "row_start": 1,
+   "row_end": 1,
    "col_start": 1,
    "col_end": 1,
-   "text": "12.87%",
+   "text": "Description",
    "bbox": [
-    208,
-    266,
-    359,
-    314
+    149,
+    244,
+    450,
+    293
    ],
-   "is_header": false,
+   "is_header": true,
    "is_handwritten": false
   },
   {
-   "row_start": 5,
-   "row_end": 5,
+   "row_start": 1,
+   "row_end": 1,
    "col_start": 2,
    "col_end": 2,
-   "text": "8.99%",
+   "text": "Qty",
    "bbox": [
-    358,
-    262,
-    509,
-    310
+    449,
+    251,
+    520,
+    294
    ],
-   "is_header": false,
+   "is_header": true,
    "is_handwritten": false
   },
   {
-   "row_start": 5,
-   "row_end": 5,
+   "row_start": 1,
+   "row_end": 1,
    "col_start": 3,
    "col_end": 3,
-   "text": "5.67%",
+   "text": "Unit ($)",
    "bbox": [
-    508,
-    257,
-    659,
-    306
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 5,
-   "row_end": 5,
-   "col_start": 4,
-   "col_end": 4,
-   "text": "11.02%",
-   "bbox": [
-    658,
-    253,
-    809,
-    301
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 5,
-   "row_end": 5,
-   "col_start": 5,
-   "col_end": 5,
-   "text": "5.16%",
-   "bbox": [
-    808,
-    249,
-    959,
+    519,
+    252,
+    650,
     297
    ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "Amount ($)",
+   "bbox": [
+    649,
+    255,
+    790,
+    300
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "1",
+   "bbox": [
+    78,
+    284,
+    149,
+    328
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Honda 320i base",
+   "bbox": [
+    148,
+    286,
+    449,
+    335
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "1",
+   "bbox": [
+    448,
+    293,
+    519,
+    336
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "30,818",
+   "bbox": [
+    518,
+    294,
+    649,
+    339
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "30,818",
+   "bbox": [
+    648,
+    297,
+    789,
+    342
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 3,
+   "row_end": 3,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "2",
+   "bbox": [
+    78,
+    326,
+    148,
+    370
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 3,
+   "row_end": 3,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Destination fee",
+   "bbox": [
+    148,
+    328,
+    448,
+    377
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 3,
+   "row_end": 3,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "1",
+   "bbox": [
+    447,
+    335,
+    518,
+    378
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 3,
+   "row_end": 3,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "1,190",
+   "bbox": [
+    517,
+    336,
+    648,
+    381
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 3,
+   "row_end": 3,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "1,190",
+   "bbox": [
+    647,
+    339,
+    788,
+    384
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 4,
+   "row_end": 4,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "3",
+   "bbox": [
+    77,
+    368,
+    148,
+    412
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 4,
+   "row_end": 4,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Options package",
+   "bbox": [
+    147,
+    370,
+    447,
+    419
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 4,
+   "row_end": 4,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "1",
+   "bbox": [
+    447,
+    377,
+    517,
+    420
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 4,
+   "row_end": 4,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "1,403",
+   "bbox": [
+    516,
+    378,
+    647,
+    423
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 4,
+   "row_end": 4,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "1,403",
+   "bbox": [
+    646,
+    381,
+    787,
+    426
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 5,
+   "row_end": 5,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "4",
+   "bbox": [
+    76,
+    410,
+    147,
+    454
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 5,
+   "row_end": 5,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Doc fee",
+   "bbox": [
+    146,
+    412,
+    447,
+    461
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 5,
+   "row_end": 5,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "1",
+   "bbox": [
+    446,
+    419,
+    516,
+    462
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 5,
+   "row_end": 5,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "380",
+   "bbox": [
+    516,
+    420,
+    646,
+    465
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 5,
+   "row_end": 5,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "380",
+   "bbox": [
+    646,
+    423,
+    786,
+    468
+   ],
    "is_header": false,
    "is_handwritten": false
   },
@@ -276,12 +441,12 @@
    "row_end": 6,
    "col_start": 0,
    "col_end": 0,
-   "text": "780+",
+   "text": "5",
    "bbox": [
-    59,
-    314,
-    210,
-    362
+    75,
+    452,
+    146,
+    496
    ],
    "is_header": false,
    "is_handwritten": false
@@ -291,12 +456,12 @@
    "row_end": 6,
    "col_start": 1,
    "col_end": 1,
-   "text": "9.92%",
+   "text": "Tax",
    "bbox": [
-    209,
-    310,
-    360,
-    358
+    145,
+    454,
+    446,
+    503
    ],
    "is_header": false,
    "is_handwritten": false
@@ -306,12 +471,12 @@
    "row_end": 6,
    "col_start": 2,
    "col_end": 2,
-   "text": "11.89%",
+   "text": "1",
    "bbox": [
-    359,
-    306,
-    510,
-    354
+    445,
+    461,
+    516,
+    504
    ],
    "is_header": false,
    "is_handwritten": false
@@ -321,12 +486,12 @@
    "row_end": 6,
    "col_start": 3,
    "col_end": 3,
-   "text": "5.68%",
+   "text": "1,664",
    "bbox": [
-    509,
-    301,
-    660,
-    350
+    515,
+    462,
+    646,
+    507
    ],
    "is_header": false,
    "is_handwritten": false
@@ -336,27 +501,12 @@
    "row_end": 6,
    "col_start": 4,
    "col_end": 4,
-   "text": "9.83%",
+   "text": "1,664",
    "bbox": [
-    659,
-    297,
-    810,
-    345
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 6,
-   "row_end": 6,
-   "col_start": 5,
-   "col_end": 5,
-   "text": "7.22%",
-   "bbox": [
-    809,
-    293,
-    960,
-    341
+    645,
+    465,
+    785,
+    510
    ],
    "is_header": false,
    "is_handwritten": false

@@ -2,30 +2,42 @@
  "page": "page_0070",
  "image": "page_0070.jpg",
  "seed": 1337,
- "doc_id": "VER-0008",
- "doc_class": "verification",
- "page_in_doc": 2,
+ "doc_id": "INV-0002",
+ "doc_class": "dealer_invoice",
+ "page_in_doc": 1,
  "distortions": [
-  "rotate"
+  "skew",
+  "perspective"
+ ],
+ "artifacts": [
+  "staple",
+  "crease"
+ ],
+ "overlays": [],
+ "orientation": 0,
+ "size": [
+  1000,
+  1414
  ],
  "homography": [
   [
-   0.9956767600267168,
-   -0.09288589528394368,
-   67.83194795238978
+   0.9621755642789797,
+   -0.012345330097151136,
+   27.640366239196
   ],
   [
-   0.09288589528394368,
-   0.9956767600267168,
-   -43.386416980860645
+   -0.053483752109522796,
+   0.8916820979103595,
+   103.32263283213729
   ],
   [
-   0.0,
-   0.0,
-   1.0
+   -7.564887144204073e-05,
+   -0.00015320778230500792,
+   1.146142337810661
   ]
  ],
- "n_tokens": 155,
- "n_handwritten": 0,
- "n_cells": 95
+ "n_tokens": 57,
+ "n_handwritten": 1,
+ "n_redacted": 0,
+ "n_cells": 34
 }

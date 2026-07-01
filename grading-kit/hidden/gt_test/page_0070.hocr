@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta name="ocr-system" content="autoloan-docgen"/></head><body>
+<div class="ocr_page" title="bbox 0 0 1000 1414">
+<span class="ocrx_word ocrx_word" id="w0" title="bbox 83 117 177 143; x_wconf 96">RegLoan</span>
+<span class="ocrx_word ocrx_word" id="w1" title="bbox 184 114 240 133; x_wconf 96">Bank</span>
+<span class="ocrx_word ocrx_word" id="w2" title="bbox 246 123 274 130; x_wconf 96">—</span>
+<span class="ocrx_word ocrx_word" id="w3" title="bbox 281 109 353 129; x_wconf 96">Dealer</span>
+<span class="ocrx_word ocrx_word" id="w4" title="bbox 359 104 442 125; x_wconf 96">Vehicle</span>
+<span class="ocrx_word ocrx_word" id="w5" title="bbox 449 100 531 121; x_wconf 96">Invoice</span>
+<span class="ocrx_word ocrx_word" id="w6" title="bbox 83 157 154 170; x_wconf 96">Document</span>
+<span class="ocrx_word ocrx_word" id="w7" title="bbox 158 154 225 167; x_wconf 96">INV-0002</span>
+<span class="ocrx_word ocrx_word" id="w8" title="bbox 677 132 718 149; x_wconf 96">Page</span>
+<span class="ocrx_word ocrx_word" id="w9" title="bbox 721 132 732 143; x_wconf 96">1</span>
+<span class="ocrx_word ocrx_word" id="w10" title="bbox 735 131 752 143; x_wconf 96">of</span>
+<span class="ocrx_word ocrx_word" id="w11" title="bbox 755 130 766 142; x_wconf 96">1</span>
+<span class="ocrx_word ocrx_word" id="w12" title="bbox 83 187 144 202; x_wconf 96">Dealer:</span>
+<span class="ocrx_word ocrx_word" id="w13" title="bbox 303 177 370 193; x_wconf 96">Sunrise</span>
+<span class="ocrx_word ocrx_word" id="w14" title="bbox 375 175 435 191; x_wconf 96">Motors</span>
+<span class="ocrx_word ocrx_word" id="w15" title="bbox 83 219 121 234; x_wconf 96">VIN:</span>
+<span class="ocrx_word ocrx_word" id="w16" title="bbox 304 208 417 225; x_wconf 96">VIN42796AL</span>
+<span class="ocrx_word ocrx_word" id="w17" title="bbox 486 254 554 271; x_wconf 96">Charges</span>
+<span class="ocrx_word ocrx_word" id="w18" title="bbox 89 304 125 318; x_wconf 96">Line</span>
+<span class="ocrx_word ocrx_word" id="w19" title="bbox 151 300 250 319; x_wconf 96">Description</span>
+<span class="ocrx_word ocrx_word" id="w20" title="bbox 423 294 456 311; x_wconf 96">Qty</span>
+<span class="ocrx_word ocrx_word" id="w21" title="bbox 488 291 526 306; x_wconf 96">Unit</span>
+<span class="ocrx_word ocrx_word" id="w22" title="bbox 531 290 556 308; x_wconf 96">($)</span>
+<span class="ocrx_word ocrx_word" id="w23" title="bbox 611 286 685 302; x_wconf 96">Amount</span>
+<span class="ocrx_word ocrx_word" id="w24" title="bbox 689 285 715 303; x_wconf 96">($)</span>
+<span class="ocrx_word ocrx_word" id="w25" title="bbox 89 342 98 354; x_wconf 96">1</span>
+<span class="ocrx_word ocrx_word" id="w26" title="bbox 151 339 203 352; x_wconf 96">Honda</span>
+<span class="ocrx_word ocrx_word" id="w27" title="bbox 208 337 263 351; x_wconf 96">Elantra</span>
+<span class="ocrx_word ocrx_word" id="w28" title="bbox 268 336 307 349; x_wconf 96">base</span>
+<span class="ocrx_word ocrx_word" id="w29" title="bbox 425 332 436 345; x_wconf 96">1</span>
+<span class="ocrx_word ocrx_word" id="w30" title="bbox 491 329 549 346; x_wconf 96">35,049</span>
+<span class="ocrx_word ocrx_word" id="w31" title="bbox 615 325 674 342; x_wconf 96">35,049</span>
+<span class="ocrx_word ocrx_word" id="w32" title="bbox 89 378 99 391; x_wconf 96">2</span>
+<span class="ocrx_word ocrx_word" id="w33" title="bbox 151 375 240 389; x_wconf 96">Destination</span>
+<span class="ocrx_word ocrx_word" id="w34" title="bbox 244 374 269 387; x_wconf 96">fee</span>
+<span class="ocrx_word ocrx_word" id="w35" title="bbox 427 370 438 382; x_wconf 96">1</span>
+<span class="ocrx_word ocrx_word" id="w36" title="bbox 493 367 541 383; x_wconf 96">1,173</span>
+<span class="ocrx_word ocrx_word" id="w37" title="bbox 618 364 667 380; x_wconf 96">1,173</span>
+<span class="ocrx_word ocrx_word" id="w38" title="bbox 89 415 99 428; x_wconf 96">3</span>
+<span class="ocrx_word ocrx_word" id="w39" title="bbox 152 413 213 430; x_wconf 96">Options</span>
+<span class="ocrx_word ocrx_word" id="w40" title="bbox 217 411 287 429; x_wconf 96">package</span>
+<span class="ocrx_word ocrx_word" id="w41" title="bbox 429 407 441 420; x_wconf 96">1</span>
+<span class="ocrx_word ocrx_word" id="w42" title="bbox 496 405 544 422; x_wconf 96">3,694</span>
+<span class="ocrx_word ocrx_word" id="w43" title="bbox 621 402 671 419; x_wconf 96">3,694</span>
+<span class="ocrx_word ocrx_word" id="w44" title="bbox 89 453 99 465; x_wconf 96">4</span>
+<span class="ocrx_word ocrx_word" id="w45" title="bbox 152 451 184 464; x_wconf 96">Doc</span>
+<span class="ocrx_word ocrx_word" id="w46" title="bbox 189 450 214 463; x_wconf 96">fee</span>
+<span class="ocrx_word ocrx_word" id="w47" title="bbox 432 446 443 459; x_wconf 96">1</span>
+<span class="ocrx_word ocrx_word" id="w48" title="bbox 499 444 531 458; x_wconf 96">380</span>
+<span class="ocrx_word ocrx_word" id="w49" title="bbox 625 442 658 455; x_wconf 96">380</span>
+<span class="ocrx_word ocrx_word" id="w50" title="bbox 89 490 99 503; x_wconf 96">5</span>
+<span class="ocrx_word ocrx_word" id="w51" title="bbox 153 489 183 502; x_wconf 96">Tax</span>
+<span class="ocrx_word ocrx_word" id="w52" title="bbox 434 485 445 498; x_wconf 96">1</span>
+<span class="ocrx_word ocrx_word" id="w53" title="bbox 501 483 550 500; x_wconf 96">2,407</span>
+<span class="ocrx_word ocrx_word" id="w54" title="bbox 628 481 678 498; x_wconf 96">2,407</span>
+<span class="ocrx_word ocrx_word" id="w55" title="bbox 83 537 133 553; x_wconf 96">Total:</span>
+<span class="ocrx_word handwritten" id="w56" title="bbox 315 517 431 546; x_wconf 88">$42,703</span>
+</div></body></html>

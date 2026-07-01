@@ -1,62 +1,17 @@
 {
- "table_uid": "T-APP-0025-1",
+ "table_uid": "T-VER-0002-1",
  "cells": [
   {
    "row_start": 0,
    "row_end": 0,
-   "col_start": 0,
-   "col_end": 0,
-   "text": "VIN",
-   "bbox": [
-    47,
-    567,
-    233,
-    619
-   ],
-   "is_header": true,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 0,
-   "row_end": 0,
-   "col_start": 1,
-   "col_end": 1,
-   "text": "Make",
-   "bbox": [
-    226,
-    560,
-    342,
-    609
-   ],
-   "is_header": true,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 0,
-   "row_end": 0,
    "col_start": 2,
-   "col_end": 2,
-   "text": "Model",
-   "bbox": [
-    335,
-    553,
-    461,
-    602
-   ],
-   "is_header": true,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 0,
-   "row_end": 0,
-   "col_start": 3,
    "col_end": 3,
-   "text": "Year",
+   "text": "Transaction",
    "bbox": [
-    454,
-    549,
-    531,
-    595
+    624,
+    170,
+    849,
+    218
    ],
    "is_header": true,
    "is_handwritten": false
@@ -66,12 +21,12 @@
    "row_end": 0,
    "col_start": 4,
    "col_end": 4,
-   "text": "Fuel",
+   "text": "Running",
    "bbox": [
-    524,
-    544,
-    620,
-    591
+    844,
+    178,
+    978,
+    222
    ],
    "is_header": true,
    "is_handwritten": false
@@ -79,14 +34,14 @@
   {
    "row_start": 0,
    "row_end": 0,
-   "col_start": 5,
-   "col_end": 5,
-   "text": "Cond",
+   "col_start": 0,
+   "col_end": 0,
+   "text": "",
    "bbox": [
-    613,
-    539,
-    709,
-    586
+    136,
+    154,
+    271,
+    198
    ],
    "is_header": true,
    "is_handwritten": false
@@ -94,14 +49,14 @@
   {
    "row_start": 0,
    "row_end": 0,
-   "col_start": 6,
-   "col_end": 6,
-   "text": "Value ($)",
+   "col_start": 1,
+   "col_end": 1,
+   "text": "",
    "bbox": [
-    702,
-    532,
-    828,
-    581
+    266,
+    158,
+    630,
+    210
    ],
    "is_header": true,
    "is_handwritten": false
@@ -111,207 +66,1272 @@
    "row_end": 1,
    "col_start": 0,
    "col_end": 0,
-   "text": "VIN36155AL",
+   "text": "Date",
    "bbox": [
-    55,
+    131,
+    194,
+    266,
+    238
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Description",
+   "bbox": [
+    261,
+    198,
+    624,
+    250
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "Debit ($)",
+   "bbox": [
+    619,
+    210,
+    734,
+    254
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "Credit ($)",
+   "bbox": [
+    729,
+    214,
+    844,
+    258
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "Balance ($)",
+   "bbox": [
+    838,
+    218,
+    973,
+    262
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 66,
+   "row_end": 66,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "27/04/2025",
+   "bbox": [
+    121,
+    234,
+    261,
+    318
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 66,
+   "row_end": 66,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "ONLINE TRANSFER TO SAVINGS ACCT",
+   "bbox": [
+    250,
+    238,
+    619,
+    330
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 66,
+   "row_end": 66,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "-",
+   "bbox": [
     609,
-    240,
-    661
+    250,
+    729,
+    334
    ],
    "is_header": false,
    "is_handwritten": false
   },
   {
-   "row_start": 1,
-   "row_end": 1,
-   "col_start": 1,
-   "col_end": 1,
-   "text": "Kia",
-   "bbox": [
-    233,
-    602,
-    349,
-    651
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 1,
-   "row_end": 1,
-   "col_start": 2,
-   "col_end": 2,
-   "text": "Model 3",
-   "bbox": [
-    342,
-    595,
-    468,
-    644
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 1,
-   "row_end": 1,
+   "row_start": 66,
+   "row_end": 66,
    "col_start": 3,
    "col_end": 3,
-   "text": "2021",
+   "text": "-",
    "bbox": [
-    461,
-    591,
-    538,
-    637
+    718,
+    254,
+    838,
+    337
    ],
    "is_header": false,
    "is_handwritten": false
   },
   {
-   "row_start": 1,
-   "row_end": 1,
+   "row_start": 66,
+   "row_end": 66,
    "col_start": 4,
    "col_end": 4,
-   "text": "EV",
+   "text": "3,054",
    "bbox": [
-    531,
-    586,
-    627,
-    633
+    828,
+    258,
+    968,
+    342
    ],
    "is_header": false,
    "is_handwritten": false
   },
   {
-   "row_start": 1,
-   "row_end": 1,
-   "col_start": 5,
-   "col_end": 5,
-   "text": "CPO",
-   "bbox": [
-    620,
-    581,
-    716,
-    628
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 1,
-   "row_end": 1,
-   "col_start": 6,
-   "col_end": 6,
-   "text": "41,000",
-   "bbox": [
-    709,
-    574,
-    835,
-    623
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 2,
-   "row_end": 2,
+   "row_start": 67,
+   "row_end": 67,
    "col_start": 0,
    "col_end": 0,
-   "text": "VIN66442AL",
+   "text": "10/05/2025",
    "bbox": [
-    62,
-    651,
-    247,
-    703
+    116,
+    314,
+    250,
+    358
    ],
    "is_header": false,
    "is_handwritten": false
   },
   {
-   "row_start": 2,
-   "row_end": 2,
+   "row_start": 67,
+   "row_end": 67,
    "col_start": 1,
    "col_end": 1,
-   "text": "Honda",
+   "text": "POS PURCHASE GROCERY",
    "bbox": [
-    240,
-    644,
-    356,
-    693
+    245,
+    318,
+    609,
+    370
    ],
    "is_header": false,
    "is_handwritten": false
   },
   {
-   "row_start": 2,
-   "row_end": 2,
+   "row_start": 67,
+   "row_end": 67,
    "col_start": 2,
    "col_end": 2,
-   "text": "F-150",
+   "text": "-",
    "bbox": [
-    349,
-    637,
-    475,
-    686
+    604,
+    330,
+    718,
+    374
    ],
    "is_header": false,
    "is_handwritten": false
   },
   {
-   "row_start": 2,
-   "row_end": 2,
+   "row_start": 67,
+   "row_end": 67,
    "col_start": 3,
    "col_end": 3,
-   "text": "2019",
+   "text": "-",
    "bbox": [
-    468,
-    633,
-    545,
-    679
+    713,
+    334,
+    828,
+    377
    ],
    "is_header": false,
    "is_handwritten": false
   },
   {
-   "row_start": 2,
-   "row_end": 2,
+   "row_start": 67,
+   "row_end": 67,
    "col_start": 4,
    "col_end": 4,
-   "text": "EV",
+   "text": "3,054",
    "bbox": [
-    538,
-    628,
-    634,
-    675
+    823,
+    337,
+    958,
+    382
    ],
    "is_header": false,
    "is_handwritten": false
   },
   {
-   "row_start": 2,
-   "row_end": 2,
-   "col_start": 5,
-   "col_end": 5,
-   "text": "CPO",
+   "row_start": 68,
+   "row_end": 68,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "27/02/2025",
    "bbox": [
-    627,
-    623,
-    723,
-    670
+    105,
+    354,
+    245,
+    438
    ],
    "is_header": false,
    "is_handwritten": false
   },
   {
-   "row_start": 2,
-   "row_end": 2,
-   "col_start": 6,
-   "col_end": 6,
-   "text": "29,000",
+   "row_start": 68,
+   "row_end": 68,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "ONLINE TRANSFER TO SAVINGS ACCT",
    "bbox": [
-    716,
-    616,
-    842,
-    665
+    235,
+    358,
+    604,
+    450
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 68,
+   "row_end": 68,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "670",
+   "bbox": [
+    593,
+    370,
+    713,
+    454
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 68,
+   "row_end": 68,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "-",
+   "bbox": [
+    703,
+    374,
+    823,
+    457
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 68,
+   "row_end": 68,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "2,384",
+   "bbox": [
+    813,
+    377,
+    952,
+    462
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 69,
+   "row_end": 69,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "03/04/2025",
+   "bbox": [
+    100,
+    434,
+    235,
+    478
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 69,
+   "row_end": 69,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "ACH PAYROLL DEPOSIT",
+   "bbox": [
+    230,
+    438,
+    593,
+    490
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 69,
+   "row_end": 69,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "756",
+   "bbox": [
+    588,
+    450,
+    703,
+    494
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 69,
+   "row_end": 69,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "-",
+   "bbox": [
+    698,
+    454,
+    813,
+    497
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 69,
+   "row_end": 69,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "1,628",
+   "bbox": [
+    807,
+    457,
+    942,
+    502
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 70,
+   "row_end": 70,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "17/07/2025",
+   "bbox": [
+    95,
+    474,
+    230,
+    518
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 70,
+   "row_end": 70,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "ATM WITHDRAWAL",
+   "bbox": [
+    224,
+    478,
+    588,
+    530
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 70,
+   "row_end": 70,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "-",
+   "bbox": [
+    583,
+    490,
+    698,
+    534
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 70,
+   "row_end": 70,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "1,852",
+   "bbox": [
+    693,
+    494,
+    807,
+    537
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 70,
+   "row_end": 70,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "3,480",
+   "bbox": [
+    802,
+    497,
+    937,
+    542
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 71,
+   "row_end": 71,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "01/02/2025",
+   "bbox": [
+    90,
+    514,
+    224,
+    558
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 71,
+   "row_end": 71,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "POS PURCHASE GROCERY",
+   "bbox": [
+    219,
+    518,
+    583,
+    570
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 71,
+   "row_end": 71,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "-",
+   "bbox": [
+    578,
+    530,
+    693,
+    574
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 71,
+   "row_end": 71,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "-",
+   "bbox": [
+    687,
+    534,
+    802,
+    577
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 71,
+   "row_end": 71,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "3,480",
+   "bbox": [
+    797,
+    537,
+    932,
+    582
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 72,
+   "row_end": 72,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "01/02/2025",
+   "bbox": [
+    84,
+    554,
+    219,
+    598
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 72,
+   "row_end": 72,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "ATM WITHDRAWAL",
+   "bbox": [
+    214,
+    558,
+    578,
+    610
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 72,
+   "row_end": 72,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "193",
+   "bbox": [
+    573,
+    570,
+    687,
+    614
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 72,
+   "row_end": 72,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "238",
+   "bbox": [
+    682,
+    574,
+    797,
+    617
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 72,
+   "row_end": 72,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "3,525",
+   "bbox": [
+    792,
+    577,
+    926,
+    622
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 73,
+   "row_end": 73,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "12/03/2025",
+   "bbox": [
+    74,
+    594,
+    214,
+    678
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 73,
+   "row_end": 73,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "ONLINE TRANSFER TO SAVINGS ACCT",
+   "bbox": [
+    204,
+    598,
+    573,
+    690
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 73,
+   "row_end": 73,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "341",
+   "bbox": [
+    562,
+    610,
+    682,
+    694
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 73,
+   "row_end": 73,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "-",
+   "bbox": [
+    672,
+    614,
+    792,
+    697
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 73,
+   "row_end": 73,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "3,184",
+   "bbox": [
+    781,
+    617,
+    921,
+    702
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 74,
+   "row_end": 74,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "04/01/2025",
+   "bbox": [
+    69,
+    674,
+    204,
+    718
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 74,
+   "row_end": 74,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "UTILITY BILL",
+   "bbox": [
+    198,
+    678,
+    562,
+    730
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 74,
+   "row_end": 74,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "734",
+   "bbox": [
+    557,
+    690,
+    672,
+    734
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 74,
+   "row_end": 74,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "1,448",
+   "bbox": [
+    667,
+    694,
+    781,
+    737
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 74,
+   "row_end": 74,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "3,898",
+   "bbox": [
+    776,
+    697,
+    911,
+    742
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 75,
+   "row_end": 75,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "13/12/2025",
+   "bbox": [
+    59,
+    714,
+    198,
+    798
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 75,
+   "row_end": 75,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "ONLINE TRANSFER TO SAVINGS ACCT",
+   "bbox": [
+    188,
+    718,
+    557,
+    810
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 75,
+   "row_end": 75,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "-",
+   "bbox": [
+    547,
+    730,
+    667,
+    814
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 75,
+   "row_end": 75,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "1,250",
+   "bbox": [
+    656,
+    734,
+    776,
+    817
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 75,
+   "row_end": 75,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "5,148",
+   "bbox": [
+    766,
+    737,
+    906,
+    822
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 76,
+   "row_end": 76,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "04/12/2025",
+   "bbox": [
+    53,
+    794,
+    188,
+    838
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 76,
+   "row_end": 76,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "ATM WITHDRAWAL",
+   "bbox": [
+    183,
+    798,
+    547,
+    850
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 76,
+   "row_end": 76,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "614",
+   "bbox": [
+    541,
+    810,
+    656,
+    854
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 76,
+   "row_end": 76,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "-",
+   "bbox": [
+    651,
+    814,
+    766,
+    857
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 76,
+   "row_end": 76,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "4,534",
+   "bbox": [
+    761,
+    817,
+    895,
+    862
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 77,
+   "row_end": 77,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "20/04/2025",
+   "bbox": [
+    48,
+    834,
+    183,
+    878
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 77,
+   "row_end": 77,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "AUTO LOAN PMT",
+   "bbox": [
+    178,
+    838,
+    541,
+    890
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 77,
+   "row_end": 77,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "-",
+   "bbox": [
+    536,
+    850,
+    651,
+    894
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 77,
+   "row_end": 77,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "2,335",
+   "bbox": [
+    646,
+    854,
+    761,
+    897
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 77,
+   "row_end": 77,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "6,869",
+   "bbox": [
+    755,
+    857,
+    890,
+    902
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 78,
+   "row_end": 78,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "04/01/2025",
+   "bbox": [
+    43,
+    874,
+    178,
+    918
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 78,
+   "row_end": 78,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "ACH PAYROLL DEPOSIT",
+   "bbox": [
+    172,
+    878,
+    536,
+    930
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 78,
+   "row_end": 78,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "103",
+   "bbox": [
+    531,
+    890,
+    646,
+    934
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 78,
+   "row_end": 78,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "423",
+   "bbox": [
+    641,
+    894,
+    755,
+    937
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 78,
+   "row_end": 78,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "7,189",
+   "bbox": [
+    750,
+    897,
+    885,
+    941
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 79,
+   "row_end": 79,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "05/09/2025",
+   "bbox": [
+    38,
+    914,
+    172,
+    958
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 79,
+   "row_end": 79,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "AUTO LOAN PMT",
+   "bbox": [
+    167,
+    918,
+    531,
+    970
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 79,
+   "row_end": 79,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "-",
+   "bbox": [
+    526,
+    930,
+    641,
+    973
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 79,
+   "row_end": 79,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "912",
+   "bbox": [
+    636,
+    934,
+    750,
+    977
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 79,
+   "row_end": 79,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "8,101",
+   "bbox": [
+    745,
+    937,
+    880,
+    981
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 80,
+   "row_end": 80,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "10/01/2025",
+   "bbox": [
+    33,
+    954,
+    167,
+    998
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 80,
+   "row_end": 80,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "UTILITY BILL",
+   "bbox": [
+    162,
+    958,
+    526,
+    1010
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 80,
+   "row_end": 80,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "-",
+   "bbox": [
+    521,
+    970,
+    636,
+    1013
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 80,
+   "row_end": 80,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "2,476",
+   "bbox": [
+    630,
+    973,
+    745,
+    1017
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 80,
+   "row_end": 80,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "10,577",
+   "bbox": [
+    740,
+    977,
+    875,
+    1021
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 81,
+   "row_end": 81,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "26/06/2025",
+   "bbox": [
+    27,
+    994,
+    162,
+    1038
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 81,
+   "row_end": 81,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "UTILITY BILL",
+   "bbox": [
+    157,
+    998,
+    521,
+    1050
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 81,
+   "row_end": 81,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "508",
+   "bbox": [
+    516,
+    1010,
+    630,
+    1053
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 81,
+   "row_end": 81,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "2,192",
+   "bbox": [
+    625,
+    1013,
+    740,
+    1057
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 81,
+   "row_end": 81,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "12,261",
+   "bbox": [
+    735,
+    1017,
+    869,
+    1061
    ],
    "is_header": false,
    "is_handwritten": false

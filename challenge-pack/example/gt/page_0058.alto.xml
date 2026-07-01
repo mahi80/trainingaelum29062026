@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v4#"><Layout>
+<Page WIDTH="1000" HEIGHT="1414" PHYSICAL_IMG_NR="1"><PrintSpace>
+<String ID="s0" CONTENT="RegLoan" HPOS="88" VPOS="31" WIDTH="109" HEIGHT="29" STYLE="printed"/>
+<String ID="s1" CONTENT="Bank" HPOS="205" VPOS="34" WIDTH="64" HEIGHT="22" STYLE="printed"/>
+<String ID="s2" CONTENT="—" HPOS="276" VPOS="49" WIDTH="32" HEIGHT="8" STYLE="printed"/>
+<String ID="s3" CONTENT="Payroll" HPOS="316" VPOS="37" WIDTH="86" HEIGHT="29" STYLE="printed"/>
+<String ID="s4" CONTENT="Earnings" HPOS="410" VPOS="39" WIDTH="106" HEIGHT="30" STYLE="printed"/>
+<String ID="s5" CONTENT="Statement" HPOS="524" VPOS="43" WIDTH="119" HEIGHT="24" STYLE="printed"/>
+<String ID="s6" CONTENT="Document" HPOS="87" VPOS="78" WIDTH="82" HEIGHT="16" STYLE="printed"/>
+<String ID="s7" CONTENT="PAY-0008" HPOS="174" VPOS="81" WIDTH="82" HEIGHT="15" STYLE="printed"/>
+<String ID="s8" CONTENT="Page" HPOS="746" VPOS="97" WIDTH="43" HEIGHT="18" STYLE="printed"/>
+<String ID="s9" CONTENT="1" HPOS="794" VPOS="98" WIDTH="10" HEIGHT="13" STYLE="printed"/>
+<String ID="s10" CONTENT="of" HPOS="809" VPOS="98" WIDTH="16" HEIGHT="14" STYLE="printed"/>
+<String ID="s11" CONTENT="1" HPOS="830" VPOS="99" WIDTH="10" HEIGHT="13" STYLE="printed"/>
+<String ID="s12" CONTENT="Employee:" HPOS="86" VPOS="114" WIDTH="103" HEIGHT="23" STYLE="printed"/>
+<String ID="s13" CONTENT="Omar" HPOS="336" VPOS="121" WIDTH="55" HEIGHT="18" STYLE="printed"/>
+<String ID="s14" CONTENT="Ito" HPOS="397" VPOS="123" WIDTH="24" HEIGHT="17" STYLE="printed"/>
+<String ID="s15" CONTENT="Pay" HPOS="85" VPOS="152" WIDTH="38" HEIGHT="21" STYLE="printed"/>
+<String ID="s16" CONTENT="Period:" HPOS="129" VPOS="154" WIDTH="69" HEIGHT="17" STYLE="printed"/>
+<String ID="s17" CONTENT="15/05/2025" HPOS="335" VPOS="159" WIDTH="108" HEIGHT="19" STYLE="printed"/>
+<String ID="s18" CONTENT="Emp." HPOS="545" VPOS="127" WIDTH="52" HEIGHT="21" STYLE="printed"/>
+<String ID="s19" CONTENT="ID:" HPOS="603" VPOS="129" WIDTH="28" HEIGHT="16" STYLE="printed"/>
+<String ID="s20" CONTENT="E7741" HPOS="795" VPOS="134" WIDTH="64" HEIGHT="18" STYLE="printed"/>
+<String ID="s21" CONTENT="Amounts" HPOS="469" VPOS="222" WIDTH="78" HEIGHT="15" STYLE="printed"/>
+<String ID="s22" CONTENT="Category" HPOS="88" VPOS="255" WIDTH="86" HEIGHT="22" STYLE="printed"/>
+<String ID="s23" CONTENT="Item" HPOS="218" VPOS="259" WIDTH="42" HEIGHT="16" STYLE="printed"/>
+<String ID="s24" CONTENT="Current" HPOS="468" VPOS="266" WIDTH="72" HEIGHT="17" STYLE="printed"/>
+<String ID="s25" CONTENT="($)" HPOS="546" VPOS="267" WIDTH="25" HEIGHT="21" STYLE="printed"/>
+<String ID="s26" CONTENT="YTD" HPOS="607" VPOS="270" WIDTH="40" HEIGHT="16" STYLE="printed"/>
+<String ID="s27" CONTENT="($)" HPOS="653" VPOS="270" WIDTH="25" HEIGHT="21" STYLE="printed"/>
+<String ID="s28" CONTENT="Regular" HPOS="217" VPOS="304" WIDTH="69" HEIGHT="20" STYLE="printed"/>
+<String ID="s29" CONTENT="3,838" HPOS="466" VPOS="311" WIDTH="50" HEIGHT="18" STYLE="printed"/>
+<String ID="s30" CONTENT="27,181" HPOS="606" VPOS="315" WIDTH="61" HEIGHT="18" STYLE="printed"/>
+<String ID="s31" CONTENT="Overtime" HPOS="215" VPOS="348" WIDTH="79" HEIGHT="16" STYLE="printed"/>
+<String ID="s32" CONTENT="681" HPOS="465" VPOS="355" WIDTH="34" HEIGHT="15" STYLE="printed"/>
+<String ID="s33" CONTENT="8,999" HPOS="605" VPOS="359" WIDTH="50" HEIGHT="18" STYLE="printed"/>
+<String ID="s34" CONTENT="Bonus" HPOS="214" VPOS="392" WIDTH="57" HEIGHT="16" STYLE="printed"/>
+<String ID="s35" CONTENT="388" HPOS="464" VPOS="399" WIDTH="33" HEIGHT="15" STYLE="printed"/>
+<String ID="s36" CONTENT="9,133" HPOS="604" VPOS="403" WIDTH="49" HEIGHT="18" STYLE="printed"/>
+<String ID="s37" CONTENT="Federal" HPOS="213" VPOS="436" WIDTH="66" HEIGHT="16" STYLE="printed"/>
+<String ID="s38" CONTENT="Tax" HPOS="284" VPOS="438" WIDTH="33" HEIGHT="15" STYLE="printed"/>
+<String ID="s39" CONTENT="706" HPOS="463" VPOS="443" WIDTH="33" HEIGHT="15" STYLE="printed"/>
+<String ID="s40" CONTENT="5,646" HPOS="603" VPOS="447" WIDTH="49" HEIGHT="18" STYLE="printed"/>
+<String ID="s41" CONTENT="Health" HPOS="212" VPOS="480" WIDTH="56" HEIGHT="16" STYLE="printed"/>
+<String ID="s42" CONTENT="194" HPOS="462" VPOS="487" WIDTH="33" HEIGHT="15" STYLE="printed"/>
+<String ID="s43" CONTENT="2,874" HPOS="602" VPOS="491" WIDTH="49" HEIGHT="18" STYLE="printed"/>
+<String ID="s44" CONTENT="Earnings" HPOS="87" VPOS="298" WIDTH="77" HEIGHT="20" STYLE="printed"/>
+<String ID="s45" CONTENT="Deductions" HPOS="83" VPOS="430" WIDTH="98" HEIGHT="16" STYLE="printed"/>
+<String ID="s46" CONTENT="Net" HPOS="74" VPOS="530" WIDTH="35" HEIGHT="17" STYLE="printed"/>
+<String ID="s47" CONTENT="Pay:" HPOS="114" VPOS="531" WIDTH="45" HEIGHT="22" STYLE="printed"/>
+<String ID="s48" CONTENT="$3,231" HPOS="324" VPOS="536" WIDTH="62" HEIGHT="19" STYLE="handwritten"/>
+</PrintSpace></Page></Layout></alto>

@@ -8,10 +8,10 @@
    "col_end": 0,
    "text": "VIN",
    "bbox": [
-    59,
-    573,
-    242,
-    629
+    73,
+    527,
+    255,
+    569
    ],
    "is_header": true,
    "is_handwritten": false
@@ -23,10 +23,10 @@
    "col_end": 1,
    "text": "Make",
    "bbox": [
-    238,
-    564,
-    351,
-    615
+    253,
+    527,
+    365,
+    570
    ],
    "is_header": true,
    "is_handwritten": false
@@ -38,10 +38,10 @@
    "col_end": 2,
    "text": "Model",
    "bbox": [
-    348,
-    554,
-    471,
-    606
+    363,
+    528,
+    485,
+    570
    ],
    "is_header": true,
    "is_handwritten": false
@@ -53,10 +53,10 @@
    "col_end": 3,
    "text": "Year",
    "bbox": [
-    467,
-    548,
-    541,
-    596
+    483,
+    528,
+    555,
+    570
    ],
    "is_header": true,
    "is_handwritten": false
@@ -68,10 +68,10 @@
    "col_end": 4,
    "text": "Fuel",
    "bbox": [
-    537,
-    541,
-    630,
-    590
+    553,
+    528,
+    645,
+    570
    ],
    "is_header": true,
    "is_handwritten": false
@@ -83,10 +83,10 @@
    "col_end": 5,
    "text": "Cond",
    "bbox": [
-    627,
-    534,
-    720,
-    583
+    643,
+    528,
+    734,
+    571
    ],
    "is_header": true,
    "is_handwritten": false
@@ -98,10 +98,10 @@
    "col_end": 6,
    "text": "Value ($)",
    "bbox": [
-    717,
-    524,
-    840,
-    576
+    733,
+    529,
+    854,
+    571
    ],
    "is_header": true,
    "is_handwritten": false
@@ -111,12 +111,12 @@
    "row_end": 1,
    "col_start": 0,
    "col_end": 0,
-   "text": "VIN58337AL",
+   "text": "VIN89828AL",
    "bbox": [
-    62,
-    615,
-    245,
-    671
+    72,
+    569,
+    253,
+    611
    ],
    "is_header": false,
    "is_handwritten": false
@@ -126,12 +126,12 @@
    "row_end": 1,
    "col_start": 1,
    "col_end": 1,
-   "text": "Hyundai",
+   "text": "Toyota",
    "bbox": [
-    242,
-    606,
-    355,
-    657
+    252,
+    569,
+    363,
+    612
    ],
    "is_header": false,
    "is_handwritten": false
@@ -141,12 +141,12 @@
    "row_end": 1,
    "col_start": 2,
    "col_end": 2,
-   "text": "Model 3",
+   "text": "Corolla",
    "bbox": [
-    351,
-    596,
-    474,
-    648
+    362,
+    570,
+    483,
+    612
    ],
    "is_header": false,
    "is_handwritten": false
@@ -156,12 +156,12 @@
    "row_end": 1,
    "col_start": 3,
    "col_end": 3,
-   "text": "2023",
+   "text": "2018",
    "bbox": [
-    471,
-    590,
-    544,
-    638
+    482,
+    570,
+    553,
+    612
    ],
    "is_header": false,
    "is_handwritten": false
@@ -173,10 +173,10 @@
    "col_end": 4,
    "text": "ICE",
    "bbox": [
-    541,
-    583,
-    634,
-    632
+    552,
+    570,
+    643,
+    612
    ],
    "is_header": false,
    "is_handwritten": false
@@ -188,10 +188,10 @@
    "col_end": 5,
    "text": "Used",
    "bbox": [
-    630,
-    576,
-    723,
-    625
+    642,
+    570,
+    733,
+    613
    ],
    "is_header": false,
    "is_handwritten": false
@@ -201,12 +201,12 @@
    "row_end": 1,
    "col_start": 6,
    "col_end": 6,
-   "text": "18,000",
+   "text": "24,000",
    "bbox": [
-    720,
-    566,
-    843,
-    618
+    732,
+    571,
+    853,
+    613
    ],
    "is_header": false,
    "is_handwritten": false

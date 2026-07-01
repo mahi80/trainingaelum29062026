@@ -1,17 +1,32 @@
 {
- "table_uid": "T-POL-0003-1",
+ "table_uid": "T-INV-0007-1",
  "cells": [
   {
    "row_start": 0,
    "row_end": 0,
+   "col_start": 3,
+   "col_end": 4,
+   "text": "Charges",
+   "bbox": [
+    555,
+    213,
+    828,
+    278
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 0,
+   "row_end": 0,
    "col_start": 0,
    "col_end": 0,
-   "text": "FICO Band",
+   "text": "",
    "bbox": [
-    58,
-    198,
-    209,
-    254
+    117,
+    175,
+    191,
+    223
    ],
    "is_header": true,
    "is_handwritten": false
@@ -21,12 +36,12 @@
    "row_end": 0,
    "col_start": 1,
    "col_end": 1,
-   "text": "LTV <=80%",
+   "text": "",
    "bbox": [
-    208,
     186,
-    359,
-    242
+    181,
+    489,
+    249
    ],
    "is_header": true,
    "is_handwritten": false
@@ -36,57 +51,12 @@
    "row_end": 0,
    "col_start": 2,
    "col_end": 2,
-   "text": "LTV 81-90%",
+   "text": "",
    "bbox": [
-    358,
-    174,
-    509,
-    230
-   ],
-   "is_header": true,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 0,
-   "row_end": 0,
-   "col_start": 3,
-   "col_end": 3,
-   "text": "LTV 91-100%",
-   "bbox": [
-    508,
-    162,
-    660,
-    218
-   ],
-   "is_header": true,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 0,
-   "row_end": 0,
-   "col_start": 4,
-   "col_end": 4,
-   "text": "LTV 101-110%",
-   "bbox": [
-    659,
-    150,
-    810,
-    206
-   ],
-   "is_header": true,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 0,
-   "row_end": 0,
-   "col_start": 5,
-   "col_end": 5,
-   "text": "LTV 111-120%",
-   "bbox": [
-    809,
-    138,
-    960,
-    194
+    485,
+    207,
+    559,
+    255
    ],
    "is_header": true,
    "is_handwritten": false
@@ -96,14 +66,14 @@
    "row_end": 1,
    "col_start": 0,
    "col_end": 0,
-   "text": "580-619",
+   "text": "Line",
    "bbox": [
-    59,
-    242,
-    210,
-    298
+    113,
+    217,
+    186,
+    265
    ],
-   "is_header": false,
+   "is_header": true,
    "is_handwritten": false
   },
   {
@@ -111,74 +81,59 @@
    "row_end": 1,
    "col_start": 1,
    "col_end": 1,
-   "text": "9.11%",
+   "text": "Description",
    "bbox": [
-    209,
-    230,
-    360,
-    286
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 1,
-   "row_end": 1,
-   "col_start": 2,
-   "col_end": 2,
-   "text": "11.26%",
-   "bbox": [
-    359,
-    218,
-    510,
-    274
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 1,
-   "row_end": 1,
-   "col_start": 3,
-   "col_end": 3,
-   "text": "5.94%",
-   "bbox": [
-    509,
-    206,
-    660,
-    262
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 1,
-   "row_end": 1,
-   "col_start": 4,
-   "col_end": 4,
-   "text": "6.55%",
-   "bbox": [
-    660,
-    194,
-    811,
-    250
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 1,
-   "row_end": 1,
-   "col_start": 5,
-   "col_end": 5,
-   "text": "6.3%",
-   "bbox": [
-    810,
     182,
-    961,
-    238
+    223,
+    485,
+    290
    ],
-   "is_header": false,
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "Qty",
+   "bbox": [
+    481,
+    249,
+    555,
+    296
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "Unit ($)",
+   "bbox": [
+    551,
+    255,
+    684,
+    308
+   ],
+   "is_header": true,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 1,
+   "row_end": 1,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "Amount ($)",
+   "bbox": [
+    680,
+    266,
+    823,
+    320
+   ],
+   "is_header": true,
    "is_handwritten": false
   },
   {
@@ -186,56 +141,11 @@
    "row_end": 2,
    "col_start": 0,
    "col_end": 0,
-   "text": "620-659",
+   "text": "1",
    "bbox": [
-    60,
-    286,
-    211,
-    342
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 2,
-   "row_end": 2,
-   "col_start": 1,
-   "col_end": 1,
-   "text": "12.13%",
-   "bbox": [
-    210,
-    274,
-    361,
-    330
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 2,
-   "row_end": 2,
-   "col_start": 2,
-   "col_end": 2,
-   "text": "13.28%",
-   "bbox": [
-    360,
-    262,
-    511,
-    318
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 2,
-   "row_end": 2,
-   "col_start": 3,
-   "col_end": 3,
-   "text": "3.96%",
-   "bbox": [
-    510,
-    250,
-    661,
+    109,
+    258,
+    182,
     306
    ],
    "is_header": false,
@@ -244,14 +154,14 @@
   {
    "row_start": 2,
    "row_end": 2,
-   "col_start": 4,
-   "col_end": 4,
-   "text": "13.33%",
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Nissan Model 3 base",
    "bbox": [
-    660,
-    238,
-    812,
-    294
+    178,
+    265,
+    481,
+    332
    ],
    "is_header": false,
    "is_handwritten": false
@@ -259,14 +169,344 @@
   {
    "row_start": 2,
    "row_end": 2,
-   "col_start": 5,
-   "col_end": 5,
-   "text": "11.67%",
+   "col_start": 2,
+   "col_end": 2,
+   "text": "1",
    "bbox": [
+    477,
+    290,
+    551,
+    338
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "20,517",
+   "bbox": [
+    546,
+    296,
+    680,
+    349
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 2,
+   "row_end": 2,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "20,517",
+   "bbox": [
+    676,
+    308,
+    819,
+    362
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 3,
+   "row_end": 3,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "2",
+   "bbox": [
+    104,
+    300,
+    178,
+    348
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 3,
+   "row_end": 3,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Destination fee",
+   "bbox": [
+    174,
+    306,
+    477,
+    374
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 3,
+   "row_end": 3,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "1",
+   "bbox": [
+    473,
+    332,
+    546,
+    380
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 3,
+   "row_end": 3,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "1,377",
+   "bbox": [
+    542,
+    338,
+    676,
+    391
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 3,
+   "row_end": 3,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "1,377",
+   "bbox": [
+    672,
+    349,
+    815,
+    403
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 4,
+   "row_end": 4,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "3",
+   "bbox": [
+    100,
+    342,
+    174,
+    390
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 4,
+   "row_end": 4,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Options package",
+   "bbox": [
+    170,
+    348,
+    473,
+    416
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 4,
+   "row_end": 4,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "1",
+   "bbox": [
+    468,
+    374,
+    542,
+    422
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 4,
+   "row_end": 4,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "2,583",
+   "bbox": [
+    538,
+    380,
+    672,
+    433
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 4,
+   "row_end": 4,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "2,583",
+   "bbox": [
+    668,
+    391,
     811,
-    226,
-    962,
-    282
+    445
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 5,
+   "row_end": 5,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "4",
+   "bbox": [
+    96,
+    384,
+    170,
+    432
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 5,
+   "row_end": 5,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Doc fee",
+   "bbox": [
+    166,
+    390,
+    468,
+    458
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 5,
+   "row_end": 5,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "1",
+   "bbox": [
+    464,
+    416,
+    538,
+    464
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 5,
+   "row_end": 5,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "125",
+   "bbox": [
+    534,
+    422,
+    668,
+    475
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 5,
+   "row_end": 5,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "125",
+   "bbox": [
+    663,
+    433,
+    807,
+    487
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 6,
+   "row_end": 6,
+   "col_start": 0,
+   "col_end": 0,
+   "text": "5",
+   "bbox": [
+    92,
+    426,
+    166,
+    474
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 6,
+   "row_end": 6,
+   "col_start": 1,
+   "col_end": 1,
+   "text": "Tax",
+   "bbox": [
+    162,
+    432,
+    464,
+    500
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 6,
+   "row_end": 6,
+   "col_start": 2,
+   "col_end": 2,
+   "text": "1",
+   "bbox": [
+    460,
+    458,
+    534,
+    506
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 6,
+   "row_end": 6,
+   "col_start": 3,
+   "col_end": 3,
+   "text": "2,544",
+   "bbox": [
+    530,
+    464,
+    663,
+    517
+   ],
+   "is_header": false,
+   "is_handwritten": false
+  },
+  {
+   "row_start": 6,
+   "row_end": 6,
+   "col_start": 4,
+   "col_end": 4,
+   "text": "2,544",
+   "bbox": [
+    659,
+    475,
+    803,
+    529
    ],
    "is_header": false,
    "is_handwritten": false

@@ -46,14 +46,23 @@ DELINQ = [("CUR", "Current", 0, 0), ("DPD30", "30 DPD", 1, 30), ("DPD60", "60 DP
           ("DPD90", "90+ DPD", 61, 9999)]
 DOC_TYPES = [("CREDIT_APP", "Credit Application", "application"),
              ("BANK_STMT", "Bank Statement", "verification"),
-             ("RATE_SHEET", "Rate Sheet", "policy")]
+             ("RATE_SHEET", "Rate Sheet", "policy"),
+             ("PAYSTUB", "Payroll Earnings Statement", "paystub"),
+             ("W2", "Form W-2", "w2"),
+             ("DEALER_INV", "Dealer Vehicle Invoice", "dealer_invoice"),
+             ("DRIVER_LIC", "Driver License", "driver_license"),
+             ("VEH_TITLE", "Certificate of Vehicle Title", "vehicle_title"),
+             ("INS_CARD", "Auto Insurance ID Card", "insurance_card")]
 CHANNELS = [("BRANCH", "Branch"), ("ONLINE", "Online"), ("DEALER", "Dealer")]
 BUREAUS = [("EXP", "Experian"), ("EQF", "Equifax"), ("TU", "TransUnion")]
 MAKES = ["Toyota", "Honda", "Tesla", "Ford", "Hyundai", "Kia", "Nissan", "BMW"]
 MODELS = {"Toyota": ["Corolla", "RAV4"], "Honda": ["Civic", "CR-V"], "Tesla": ["Model 3", "Model Y"],
           "Ford": ["F-150", "Escape"], "Hyundai": ["Elantra", "Tucson"], "Kia": ["Sportage", "Niro"],
           "Nissan": ["Leaf", "Altima"], "BMW": ["320i", "X3"]}
-DOCCLASS_TO_TYPE = {"application": "CREDIT_APP", "verification": "BANK_STMT", "policy": "RATE_SHEET"}
+DOCCLASS_TO_TYPE = {"application": "CREDIT_APP", "verification": "BANK_STMT", "policy": "RATE_SHEET",
+                    "paystub": "PAYSTUB", "w2": "W2", "dealer_invoice": "DEALER_INV",
+                    "driver_license": "DRIVER_LIC", "vehicle_title": "VEH_TITLE",
+                    "insurance_card": "INS_CARD"}
 
 
 class DB:
@@ -245,7 +254,7 @@ def main():
     for doc_id, pages in docs.items():
         dc = pages[0]["doc_class"]
         documentid = db.ins("doc.document", returning="document_id", doc_class=dc,
-                            doc_type_code=DOCCLASS_TO_TYPE[dc],
+                            doc_type_code=DOCCLASS_TO_TYPE.get(dc, "CREDIT_APP"),
                             source_path=f"example/images/{pages[0]['image']}",
                             page_count=len(pages))
         for p in sorted(pages, key=lambda z: z["page_in_doc"]):

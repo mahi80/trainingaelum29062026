@@ -2,23 +2,30 @@
  "page": "page_0056",
  "image": "page_0056.jpg",
  "seed": 1337,
- "doc_id": "VER-0004",
- "doc_class": "verification",
- "page_in_doc": 3,
+ "doc_id": "PAY-0006",
+ "doc_class": "paystub",
+ "page_in_doc": 1,
  "distortions": [
   "rotate",
   "skew"
  ],
+ "artifacts": [],
+ "overlays": [],
+ "orientation": 0,
+ "size": [
+  1000,
+  1414
+ ],
  "homography": [
   [
-   0.997615101038614,
-   0.06902850699458395,
-   -47.610704964477804
+   0.9983088116852316,
+   -0.05864549791499963,
+   42.30796118328891
   ],
   [
-   -0.06812254259780996,
-   0.9976769613406985,
-   35.7036596310312
+   0.06636007324413999,
+   0.9977957409605597,
+   -31.621625481185674
   ],
   [
    0.0,
@@ -26,7 +33,8 @@
    1.0
   ]
  ],
- "n_tokens": 147,
- "n_handwritten": 0,
- "n_cells": 95
+ "n_tokens": 49,
+ "n_handwritten": 1,
+ "n_redacted": 0,
+ "n_cells": 24
 }

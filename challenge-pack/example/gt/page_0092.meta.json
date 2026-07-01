@@ -2,23 +2,35 @@
  "page": "page_0092",
  "image": "page_0092.jpg",
  "seed": 1337,
- "doc_id": "POL-0010",
- "doc_class": "policy",
+ "doc_id": "INS-0002",
+ "doc_class": "insurance_card",
  "page_in_doc": 1,
  "distortions": [
   "rotate",
   "skew"
  ],
+ "artifacts": [
+  "staple"
+ ],
+ "overlays": [
+  "watermark",
+  "stamp"
+ ],
+ "orientation": 0,
+ "size": [
+  1000,
+  1414
+ ],
  "homography": [
   [
-   0.9898295062709451,
-   0.1782257337933011,
-   -120.92034692733637
+   0.9929886820258149,
+   -0.12087553305751511,
+   88.96466085875574
   ],
   [
-   -0.07113448101314539,
-   0.9974667340874033,
-   37.35825950677861
+   0.09574439844296455,
+   0.9954059524469375,
+   -44.624207601467106
   ],
   [
    0.0,
@@ -26,7 +38,8 @@
    1.0
   ]
  ],
- "n_tokens": 45,
+ "n_tokens": 29,
  "n_handwritten": 0,
- "n_cells": 18
+ "n_redacted": 0,
+ "n_cells": 0
 }

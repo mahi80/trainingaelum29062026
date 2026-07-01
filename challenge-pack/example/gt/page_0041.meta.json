@@ -2,32 +2,45 @@
  "page": "page_0041",
  "image": "page_0041.jpg",
  "seed": 1337,
- "doc_id": "VER-0001",
- "doc_class": "verification",
+ "doc_id": "POL-0002",
+ "doc_class": "policy",
  "page_in_doc": 1,
  "distortions": [
   "rotate",
-  "skew",
-  "perspective"
+  "skew"
+ ],
+ "artifacts": [
+  "holes",
+  "coffee",
+  "lowdpi"
+ ],
+ "overlays": [
+  "watermark"
+ ],
+ "orientation": 0,
+ "size": [
+  1000,
+  1414
  ],
  "homography": [
   [
-   1.0637914452611912,
-   0.025683615862086836,
-   -50.05403904509103
+   1.0031432142144103,
+   -0.05638042844846478,
+   38.28935580585943
   ],
   [
-   0.12866184740063738,
-   1.099965627252332,
-   -135.0066221677174
+   -0.0408781336577178,
+   0.9991641397631631,
+   21.030020016302615
   ],
   [
-   0.0001295825088469431,
-   0.0001423650685815844,
-   0.8345566420893483
+   0.0,
+   0.0,
+   1.0
   ]
  ],
- "n_tokens": 147,
- "n_handwritten": 0,
- "n_cells": 95
+ "n_tokens": 57,
+ "n_handwritten": 3,
+ "n_redacted": 0,
+ "n_cells": 26
 }

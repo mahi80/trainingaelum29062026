@@ -9,11 +9,18 @@ This tool is shipped for transparency and reproducibility — you can inspect
 exactly how the documents and labels were produced, and regenerate them.
 
 ## What it produces
-- **`example/images/page_XXXX.jpg`** — grayscale "scans" (JPEG, ~A4) with:
+- **`example/images/page_XXXX.jpg`** — grayscale "scans" (JPEG, ~A4) across **9 doc
+  types** (credit application, bank/income verification, policy rate sheet, pay stub,
+  W-2, dealer invoice, driver license, vehicle title, insurance card) with:
   - tables that **span multiple pages** (repeated headers + continuation rows),
-  - **skewed / rotated / perspective-distorted** columns,
+  - **merged / spanning cells** — colspan group headers + rowspan category cells,
+  - **skewed / rotated / perspective-distorted** columns; a few pages rotated **90°/180°**,
   - **dense multi-line** cells,
-  - **cursive handwritten** field values, signatures, and margin notes.
+  - **cursive handwritten** field values, signatures, and margin notes,
+  - **checkboxes**, semi-transparent **stamps + watermarks**, and **redaction bars**
+    (redacted values → `[REDACTED]` token, `class="redacted"`),
+  - scan **artifacts**: hole punches, staples, creases, coffee stains, photocopy/fax
+    (bitonal), and variable DPI.
 - **`example/gt/page_XXXX.*`** ground truth, all in *distorted* image coordinates:
   | File | Format | Used for |
   |------|--------|----------|

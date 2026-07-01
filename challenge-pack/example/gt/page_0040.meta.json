@@ -2,31 +2,44 @@
  "page": "page_0040",
  "image": "page_0040.jpg",
  "seed": 1337,
- "doc_id": "APP-0040",
- "doc_class": "application",
- "page_in_doc": 1,
+ "doc_id": "POL-0001",
+ "doc_class": "policy",
+ "page_in_doc": 3,
  "distortions": [
   "rotate",
-  "skew"
+  "skew",
+  "perspective"
+ ],
+ "artifacts": [
+  "holes",
+  "coffee",
+  "fax"
+ ],
+ "overlays": [],
+ "orientation": 0,
+ "size": [
+  1000,
+  1414
  ],
  "homography": [
   [
-   0.9869462709643301,
-   -0.18219484828816293,
-   135.33862225756616
+   0.9193283526428067,
+   -0.0934609282964238,
+   106.41269998416828
   ],
   [
-   0.09740663487405642,
-   0.9952446671459798,
-   -45.34129710923594
+   -0.007983776948894097,
+   0.9673626413555685,
+   27.066501036060117
   ],
   [
-   0.0,
-   0.0,
-   1.0
+   -0.00015667345873348487,
+   -3.867188243882103e-05,
+   1.105677750250989
   ]
  ],
- "n_tokens": 58,
- "n_handwritten": 11,
- "n_cells": 14
+ "n_tokens": 49,
+ "n_handwritten": 0,
+ "n_redacted": 0,
+ "n_cells": 20
 }

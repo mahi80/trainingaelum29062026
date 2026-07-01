@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v4#"><Layout>
+<Page WIDTH="1000" HEIGHT="1414" PHYSICAL_IMG_NR="1"><PrintSpace>
+<String ID="s0" CONTENT="RegLoan" HPOS="69" VPOS="44" WIDTH="109" HEIGHT="26" STYLE="printed"/>
+<String ID="s1" CONTENT="Bank" HPOS="186" VPOS="43" WIDTH="64" HEIGHT="21" STYLE="printed"/>
+<String ID="s2" CONTENT="—" HPOS="257" VPOS="55" WIDTH="32" HEIGHT="9" STYLE="printed"/>
+<String ID="s3" CONTENT="Certificate" HPOS="297" VPOS="42" WIDTH="124" HEIGHT="21" STYLE="printed"/>
+<String ID="s4" CONTENT="of" HPOS="429" VPOS="42" WIDTH="29" HEIGHT="21" STYLE="printed"/>
+<String ID="s5" CONTENT="Vehicle" HPOS="466" VPOS="42" WIDTH="92" HEIGHT="21" STYLE="printed"/>
+<String ID="s6" CONTENT="Title" HPOS="566" VPOS="42" WIDTH="55" HEIGHT="21" STYLE="printed"/>
+<String ID="s7" CONTENT="Document" HPOS="69" VPOS="91" WIDTH="82" HEIGHT="13" STYLE="printed"/>
+<String ID="s8" CONTENT="TTL-0002" HPOS="156" VPOS="91" WIDTH="78" HEIGHT="13" STYLE="printed"/>
+<String ID="s9" CONTENT="Page" HPOS="729" VPOS="89" WIDTH="42" HEIGHT="18" STYLE="printed"/>
+<String ID="s10" CONTENT="1" HPOS="776" VPOS="89" WIDTH="10" HEIGHT="13" STYLE="printed"/>
+<String ID="s11" CONTENT="of" HPOS="791" VPOS="89" WIDTH="16" HEIGHT="13" STYLE="printed"/>
+<String ID="s12" CONTENT="1" HPOS="812" VPOS="89" WIDTH="10" HEIGHT="13" STYLE="printed"/>
+<String ID="s13" CONTENT="VIN:" HPOS="69" VPOS="135" WIDTH="43" HEIGHT="16" STYLE="printed"/>
+<String ID="s14" CONTENT="VIN82217AL" HPOS="319" VPOS="134" WIDTH="124" HEIGHT="16" STYLE="printed"/>
+<String ID="s15" CONTENT="Owner:" HPOS="69" VPOS="181" WIDTH="70" HEIGHT="16" STYLE="printed"/>
+<String ID="s16" CONTENT="Ivan" HPOS="319" VPOS="180" WIDTH="41" HEIGHT="16" STYLE="printed"/>
+<String ID="s17" CONTENT="Cohen" HPOS="366" VPOS="180" WIDTH="64" HEIGHT="16" STYLE="printed"/>
+<String ID="s18" CONTENT="Make:" HPOS="69" VPOS="227" WIDTH="59" HEIGHT="16" STYLE="printed"/>
+<String ID="s19" CONTENT="Hyundai" HPOS="319" VPOS="226" WIDTH="80" HEIGHT="20" STYLE="printed"/>
+<String ID="s20" CONTENT="Model:" HPOS="69" VPOS="273" WIDTH="65" HEIGHT="16" STYLE="printed"/>
+<String ID="s21" CONTENT="320i" HPOS="319" VPOS="272" WIDTH="41" HEIGHT="16" STYLE="printed"/>
+<String ID="s22" CONTENT="Year:" HPOS="69" VPOS="319" WIDTH="52" HEIGHT="16" STYLE="printed"/>
+<String ID="s23" CONTENT="2020" HPOS="319" VPOS="318" WIDTH="48" HEIGHT="16" STYLE="printed"/>
+<String ID="s24" CONTENT="Odometer:" HPOS="69" VPOS="365" WIDTH="102" HEIGHT="16" STYLE="printed"/>
+<String ID="s25" CONTENT="74,223" HPOS="319" VPOS="364" WIDTH="66" HEIGHT="19" STYLE="printed"/>
+<String ID="s26" CONTENT="mi" HPOS="391" VPOS="364" WIDTH="23" HEIGHT="16" STYLE="printed"/>
+<String ID="s27" CONTENT="Lienholder:" HPOS="69" VPOS="411" WIDTH="107" HEIGHT="16" STYLE="printed"/>
+<String ID="s28" CONTENT="RegLoan" HPOS="319" VPOS="410" WIDTH="88" HEIGHT="20" STYLE="printed"/>
+<String ID="s29" CONTENT="Bank" HPOS="413" VPOS="410" WIDTH="50" HEIGHT="16" STYLE="printed"/>
+<String ID="s30" CONTENT="Title" HPOS="69" VPOS="457" WIDTH="41" HEIGHT="16" STYLE="printed"/>
+<String ID="s31" CONTENT="No:" HPOS="116" VPOS="457" WIDTH="34" HEIGHT="16" STYLE="printed"/>
+<String ID="s32" CONTENT="T160660" HPOS="319" VPOS="456" WIDTH="85" HEIGHT="16" STYLE="printed"/>
+<String ID="s33" CONTENT="Authorized" HPOS="69" VPOS="513" WIDTH="105" HEIGHT="16" STYLE="printed"/>
+<String ID="s34" CONTENT="Signature:" HPOS="180" VPOS="512" WIDTH="99" HEIGHT="21" STYLE="printed"/>
+<String ID="s35" CONTENT="Ivan" HPOS="320" VPOS="516" WIDTH="95" HEIGHT="30" STYLE="handwritten"/>
+<String ID="s36" CONTENT="Cohen" HPOS="430" VPOS="515" WIDTH="136" HEIGHT="31" STYLE="handwritten"/>
+</PrintSpace></Page></Layout></alto>

@@ -1,59 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<alto xmlns="http://www.loc.gov/standards/alto/ns-v4#">
-<Description><MeasurementUnit>pixel</MeasurementUnit></Description>
-<Layout>
-<Page WIDTH="1000" HEIGHT="1414" PHYSICAL_IMG_NR="1">
-<PrintSpace>
-<String ID="s0" CONTENT="RegLoan" HPOS="44" VPOS="43" WIDTH="110" HEIGHT="26" STYLE="printed"/>
-<String ID="s1" CONTENT="Bank" HPOS="161" VPOS="42" WIDTH="64" HEIGHT="21" STYLE="printed"/>
-<String ID="s2" CONTENT="—" HPOS="232" VPOS="55" WIDTH="32" HEIGHT="8" STYLE="printed"/>
-<String ID="s3" CONTENT="Underwriting" HPOS="272" VPOS="42" WIDTH="162" HEIGHT="27" STYLE="printed"/>
-<String ID="s4" CONTENT="Policy" HPOS="441" VPOS="42" WIDTH="77" HEIGHT="27" STYLE="printed"/>
-<String ID="s5" CONTENT="&amp;" HPOS="525" VPOS="43" WIDTH="23" HEIGHT="20" STYLE="printed"/>
-<String ID="s6" CONTENT="Rate" HPOS="556" VPOS="43" WIDTH="54" HEIGHT="20" STYLE="printed"/>
-<String ID="s7" CONTENT="Sheet" HPOS="618" VPOS="42" WIDTH="67" HEIGHT="21" STYLE="printed"/>
-<String ID="s8" CONTENT="Document" HPOS="46" VPOS="90" WIDTH="82" HEIGHT="13" STYLE="printed"/>
-<String ID="s9" CONTENT="POL-0005" HPOS="133" VPOS="90" WIDTH="82" HEIGHT="13" STYLE="printed"/>
-<String ID="s10" CONTENT="Page" HPOS="706" VPOS="90" WIDTH="42" HEIGHT="17" STYLE="printed"/>
-<String ID="s11" CONTENT="1" HPOS="753" VPOS="90" WIDTH="10" HEIGHT="13" STYLE="printed"/>
-<String ID="s12" CONTENT="of" HPOS="768" VPOS="90" WIDTH="16" HEIGHT="13" STYLE="printed"/>
-<String ID="s13" CONTENT="3" HPOS="789" VPOS="90" WIDTH="10" HEIGHT="13" STYLE="printed"/>
-<String ID="s14" CONTENT="APR" HPOS="47" VPOS="134" WIDTH="48" HEIGHT="16" STYLE="printed"/>
-<String ID="s15" CONTENT="Rate" HPOS="100" VPOS="134" WIDTH="48" HEIGHT="16" STYLE="printed"/>
-<String ID="s16" CONTENT="Matrix" HPOS="153" VPOS="134" WIDTH="66" HEIGHT="16" STYLE="printed"/>
-<String ID="s17" CONTENT="by" HPOS="224" VPOS="134" WIDTH="26" HEIGHT="20" STYLE="printed"/>
-<String ID="s18" CONTENT="FICO" HPOS="255" VPOS="134" WIDTH="53" HEIGHT="16" STYLE="printed"/>
-<String ID="s19" CONTENT="×" HPOS="313" VPOS="136" WIDTH="14" HEIGHT="14" STYLE="printed"/>
-<String ID="s20" CONTENT="LTV" HPOS="332" VPOS="134" WIDTH="42" HEIGHT="16" STYLE="printed"/>
-<String ID="s21" CONTENT="FICO" HPOS="55" VPOS="187" WIDTH="49" HEIGHT="15" STYLE="printed"/>
-<String ID="s22" CONTENT="Band" HPOS="109" VPOS="187" WIDTH="50" HEIGHT="15" STYLE="printed"/>
-<String ID="s23" CONTENT="LTV" HPOS="205" VPOS="187" WIDTH="39" HEIGHT="15" STYLE="printed"/>
-<String ID="s24" CONTENT="&lt;=80%" HPOS="249" VPOS="187" WIDTH="65" HEIGHT="16" STYLE="printed"/>
-<String ID="s25" CONTENT="LTV" HPOS="355" VPOS="187" WIDTH="39" HEIGHT="15" STYLE="printed"/>
-<String ID="s26" CONTENT="81-90%" HPOS="399" VPOS="187" WIDTH="70" HEIGHT="16" STYLE="printed"/>
-<String ID="s27" CONTENT="LTV" HPOS="505" VPOS="187" WIDTH="39" HEIGHT="15" STYLE="printed"/>
-<String ID="s28" CONTENT="91-100%" HPOS="549" VPOS="187" WIDTH="81" HEIGHT="16" STYLE="printed"/>
-<String ID="s29" CONTENT="LTV" HPOS="655" VPOS="187" WIDTH="39" HEIGHT="15" STYLE="printed"/>
-<String ID="s30" CONTENT="101-110%" HPOS="699" VPOS="187" WIDTH="92" HEIGHT="16" STYLE="printed"/>
-<String ID="s31" CONTENT="LTV" HPOS="805" VPOS="187" WIDTH="39" HEIGHT="15" STYLE="printed"/>
-<String ID="s32" CONTENT="111-120%" HPOS="849" VPOS="187" WIDTH="92" HEIGHT="16" STYLE="printed"/>
-<String ID="s33" CONTENT="580-619" HPOS="57" VPOS="232" WIDTH="73" HEIGHT="14" STYLE="printed"/>
-<String ID="s34" CONTENT="7.03%" HPOS="207" VPOS="232" WIDTH="56" HEIGHT="14" STYLE="printed"/>
-<String ID="s35" CONTENT="9.17%" HPOS="357" VPOS="232" WIDTH="56" HEIGHT="14" STYLE="printed"/>
-<String ID="s36" CONTENT="11.2%" HPOS="507" VPOS="232" WIDTH="56" HEIGHT="14" STYLE="printed"/>
-<String ID="s37" CONTENT="11.99%" HPOS="657" VPOS="232" WIDTH="67" HEIGHT="14" STYLE="printed"/>
-<String ID="s38" CONTENT="5.45%" HPOS="807" VPOS="232" WIDTH="56" HEIGHT="14" STYLE="printed"/>
-<String ID="s39" CONTENT="620-659" HPOS="59" VPOS="276" WIDTH="72" HEIGHT="14" STYLE="printed"/>
-<String ID="s40" CONTENT="9.08%" HPOS="209" VPOS="276" WIDTH="55" HEIGHT="14" STYLE="printed"/>
-<String ID="s41" CONTENT="4.22%" HPOS="359" VPOS="276" WIDTH="55" HEIGHT="14" STYLE="printed"/>
-<String ID="s42" CONTENT="5.06%" HPOS="509" VPOS="276" WIDTH="55" HEIGHT="14" STYLE="printed"/>
-<String ID="s43" CONTENT="12.61%" HPOS="659" VPOS="276" WIDTH="66" HEIGHT="14" STYLE="printed"/>
-<String ID="s44" CONTENT="3.56%" HPOS="809" VPOS="276" WIDTH="55" HEIGHT="14" STYLE="printed"/>
-<String ID="s45" CONTENT="See" HPOS="56" VPOS="342" WIDTH="34" HEIGHT="20" STYLE="handwritten"/>
-<String ID="s46" CONTENT="note" HPOS="97" VPOS="348" WIDTH="36" HEIGHT="14" STYLE="handwritten"/>
-<String ID="s47" CONTENT="—" HPOS="141" VPOS="358" WIDTH="22" HEIGHT="4" STYLE="handwritten"/>
-<String ID="s48" CONTENT="UW" HPOS="171" VPOS="342" WIDTH="47" HEIGHT="20" STYLE="handwritten"/>
-</PrintSpace>
-</Page>
-</Layout>
-</alto>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v4#"><Layout>
+<Page WIDTH="1000" HEIGHT="1414" PHYSICAL_IMG_NR="1"><PrintSpace>
+<String ID="s0" CONTENT="RegLoan" HPOS="78" VPOS="4" WIDTH="109" HEIGHT="36" STYLE="printed"/>
+<String ID="s1" CONTENT="Bank" HPOS="195" VPOS="14" WIDTH="65" HEIGHT="28" STYLE="printed"/>
+<String ID="s2" CONTENT="—" HPOS="266" VPOS="34" WIDTH="33" HEIGHT="11" STYLE="printed"/>
+<String ID="s3" CONTENT="Driver" HPOS="307" VPOS="25" WIDTH="79" HEIGHT="29" STYLE="printed"/>
+<String ID="s4" CONTENT="License" HPOS="394" VPOS="34" WIDTH="92" HEIGHT="30" STYLE="printed"/>
+<String ID="s5" CONTENT="Document" HPOS="77" VPOS="51" WIDTH="83" HEIGHT="21" STYLE="printed"/>
+<String ID="s6" CONTENT="DL-0004" HPOS="164" VPOS="59" WIDTH="70" HEIGHT="20" STYLE="printed"/>
+<String ID="s7" CONTENT="Page" HPOS="739" VPOS="116" WIDTH="43" HEIGHT="21" STYLE="printed"/>
+<String ID="s8" CONTENT="1" HPOS="787" VPOS="120" WIDTH="10" HEIGHT="14" STYLE="printed"/>
+<String ID="s9" CONTENT="of" HPOS="802" VPOS="122" WIDTH="16" HEIGHT="14" STYLE="printed"/>
+<String ID="s10" CONTENT="1" HPOS="823" VPOS="124" WIDTH="10" HEIGHT="14" STYLE="printed"/>
+<String ID="s11" CONTENT="PHOTO" HPOS="130" VPOS="219" WIDTH="71" HEIGHT="22" STYLE="printed"/>
+<String ID="s12" CONTENT="DL" HPOS="287" VPOS="145" WIDTH="28" HEIGHT="19" STYLE="printed"/>
+<String ID="s13" CONTENT="No:" HPOS="321" VPOS="148" WIDTH="34" HEIGHT="20" STYLE="printed"/>
+<String ID="s14" CONTENT="WA1358140" HPOS="538" VPOS="170" WIDTH="120" HEIGHT="27" STYLE="printed"/>
+<String ID="s15" CONTENT="Name:" HPOS="286" VPOS="187" WIDTH="65" HEIGHT="22" STYLE="printed"/>
+<String ID="s16" CONTENT="Wei" HPOS="537" VPOS="211" WIDTH="38" HEIGHT="20" STYLE="printed"/>
+<String ID="s17" CONTENT="Nguyen" HPOS="581" VPOS="216" WIDTH="76" HEIGHT="27" STYLE="printed"/>
+<String ID="s18" CONTENT="DOB:" HPOS="286" VPOS="229" WIDTH="54" HEIGHT="21" STYLE="printed"/>
+<String ID="s19" CONTENT="12/12/1977" HPOS="536" VPOS="253" WIDTH="109" HEIGHT="27" STYLE="printed"/>
+<String ID="s20" CONTENT="Class:" HPOS="285" VPOS="270" WIDTH="61" HEIGHT="22" STYLE="printed"/>
+<String ID="s21" CONTENT="M" HPOS="536" VPOS="295" WIDTH="18" HEIGHT="18" STYLE="printed"/>
+<String ID="s22" CONTENT="Exp:" HPOS="284" VPOS="312" WIDTH="45" HEIGHT="24" STYLE="printed"/>
+<String ID="s23" CONTENT="06/2030" HPOS="535" VPOS="337" WIDTH="79" HEIGHT="23" STYLE="printed"/>
+<String ID="s24" CONTENT="State:" HPOS="284" VPOS="354" WIDTH="57" HEIGHT="21" STYLE="printed"/>
+<String ID="s25" CONTENT="GA" HPOS="535" VPOS="379" WIDTH="32" HEIGHT="19" STYLE="printed"/>
+<String ID="s26" CONTENT="Authorized" HPOS="71" VPOS="423" WIDTH="105" HEIGHT="26" STYLE="printed"/>
+<String ID="s27" CONTENT="Signature:" HPOS="182" VPOS="434" WIDTH="100" HEIGHT="29" STYLE="printed"/>
+<String ID="s28" CONTENT="Wei" HPOS="322" VPOS="446" WIDTH="86" HEIGHT="39" STYLE="handwritten"/>
+<String ID="s29" CONTENT="Nguyen" HPOS="421" VPOS="454" WIDTH="174" HEIGHT="61" STYLE="handwritten"/>
+</PrintSpace></Page></Layout></alto>

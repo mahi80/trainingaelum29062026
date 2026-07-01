@@ -8,10 +8,10 @@
    "col_end": 0,
    "text": "VIN",
    "bbox": [
-    83,
-    512,
-    266,
-    571
+    59,
+    546,
+    241,
+    600
    ],
    "is_header": true,
    "is_handwritten": false
@@ -23,10 +23,10 @@
    "col_end": 1,
    "text": "Make",
    "bbox": [
-    262,
-    529,
-    375,
-    581
+    238,
+    538,
+    351,
+    588
    ],
    "is_header": true,
    "is_handwritten": false
@@ -38,10 +38,10 @@
    "col_end": 2,
    "text": "Model",
    "bbox": [
-    371,
-    539,
-    495,
-    593
+    348,
+    530,
+    471,
+    580
    ],
    "is_header": true,
    "is_handwritten": false
@@ -53,10 +53,10 @@
    "col_end": 3,
    "text": "Year",
    "bbox": [
-    491,
-    551,
-    565,
-    599
+    468,
+    525,
+    540,
+    572
    ],
    "is_header": true,
    "is_handwritten": false
@@ -68,10 +68,10 @@
    "col_end": 4,
    "text": "Fuel",
    "bbox": [
-    561,
-    557,
-    654,
-    608
+    537,
+    519,
+    630,
+    567
    ],
    "is_header": true,
    "is_handwritten": false
@@ -83,10 +83,10 @@
    "col_end": 5,
    "text": "Cond",
    "bbox": [
-    650,
-    566,
-    744,
-    616
+    627,
+    513,
+    720,
+    561
    ],
    "is_header": true,
    "is_handwritten": false
@@ -98,10 +98,10 @@
    "col_end": 6,
    "text": "Value ($)",
    "bbox": [
-    740,
-    575,
-    863,
-    628
+    717,
+    504,
+    840,
+    554
    ],
    "is_header": true,
    "is_handwritten": false
@@ -111,12 +111,12 @@
    "row_end": 1,
    "col_start": 0,
    "col_end": 0,
-   "text": "VIN72016AL",
+   "text": "VIN65111AL",
    "bbox": [
-    79,
-    553,
-    262,
-    612
+    62,
+    588,
+    244,
+    642
    ],
    "is_header": false,
    "is_handwritten": false
@@ -126,12 +126,12 @@
    "row_end": 1,
    "col_start": 1,
    "col_end": 1,
-   "text": "Tesla",
+   "text": "Kia",
    "bbox": [
-    258,
-    571,
-    371,
-    623
+    241,
+    580,
+    354,
+    630
    ],
    "is_header": false,
    "is_handwritten": false
@@ -141,12 +141,12 @@
    "row_end": 1,
    "col_start": 2,
    "col_end": 2,
-   "text": "Corolla",
+   "text": "Sportage",
    "bbox": [
-    367,
-    581,
-    491,
-    634
+    351,
+    572,
+    473,
+    622
    ],
    "is_header": false,
    "is_handwritten": false
@@ -156,12 +156,12 @@
    "row_end": 1,
    "col_start": 3,
    "col_end": 3,
-   "text": "2023",
+   "text": "2017",
    "bbox": [
-    487,
-    593,
-    561,
-    641
+    471,
+    567,
+    543,
+    614
    ],
    "is_header": false,
    "is_handwritten": false
@@ -173,10 +173,10 @@
    "col_end": 4,
    "text": "EV",
    "bbox": [
-    557,
-    599,
-    650,
-    650
+    540,
+    561,
+    633,
+    609
    ],
    "is_header": false,
    "is_handwritten": false
@@ -186,12 +186,12 @@
    "row_end": 1,
    "col_start": 5,
    "col_end": 5,
-   "text": "New",
+   "text": "CPO",
    "bbox": [
-    646,
-    608,
-    740,
-    658
+    630,
+    554,
+    723,
+    603
    ],
    "is_header": false,
    "is_handwritten": false
@@ -201,12 +201,12 @@
    "row_end": 1,
    "col_start": 6,
    "col_end": 6,
-   "text": "24,000",
+   "text": "49,000",
    "bbox": [
-    736,
-    616,
-    859,
-    670
+    720,
+    546,
+    843,
+    596
    ],
    "is_header": false,
    "is_handwritten": false
@@ -216,12 +216,12 @@
    "row_end": 2,
    "col_start": 0,
    "col_end": 0,
-   "text": "VIN19631AL",
+   "text": "VIN45232AL",
    "bbox": [
-    75,
-    595,
-    258,
-    654
+    64,
+    630,
+    247,
+    684
    ],
    "is_header": false,
    "is_handwritten": false
@@ -231,12 +231,12 @@
    "row_end": 2,
    "col_start": 1,
    "col_end": 1,
-   "text": "Nissan",
+   "text": "Hyundai",
    "bbox": [
-    254,
-    612,
-    367,
-    665
+    244,
+    622,
+    357,
+    671
    ],
    "is_header": false,
    "is_handwritten": false
@@ -246,12 +246,12 @@
    "row_end": 2,
    "col_start": 2,
    "col_end": 2,
-   "text": "F-150",
+   "text": "Corolla",
    "bbox": [
-    363,
-    623,
-    487,
-    676
+    354,
+    614,
+    476,
+    664
    ],
    "is_header": false,
    "is_handwritten": false
@@ -261,12 +261,12 @@
    "row_end": 2,
    "col_start": 3,
    "col_end": 3,
-   "text": "2017",
+   "text": "2021",
    "bbox": [
-    483,
-    634,
-    557,
-    683
+    473,
+    609,
+    546,
+    656
    ],
    "is_header": false,
    "is_handwritten": false
@@ -276,12 +276,12 @@
    "row_end": 2,
    "col_start": 4,
    "col_end": 4,
-   "text": "EV",
+   "text": "ICE",
    "bbox": [
-    553,
-    641,
-    646,
-    692
+    543,
+    603,
+    636,
+    651
    ],
    "is_header": false,
    "is_handwritten": false
@@ -291,12 +291,12 @@
    "row_end": 2,
    "col_start": 5,
    "col_end": 5,
-   "text": "CPO",
+   "text": "New",
    "bbox": [
-    642,
-    650,
-    736,
-    700
+    633,
+    596,
+    726,
+    644
    ],
    "is_header": false,
    "is_handwritten": false
@@ -306,12 +306,12 @@
    "row_end": 2,
    "col_start": 6,
    "col_end": 6,
-   "text": "45,000",
+   "text": "39,000",
    "bbox": [
-    732,
-    658,
-    855,
-    712
+    723,
+    588,
+    845,
+    638
    ],
    "is_header": false,
    "is_handwritten": false

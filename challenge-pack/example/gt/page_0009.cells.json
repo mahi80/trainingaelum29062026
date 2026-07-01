@@ -8,10 +8,10 @@
    "col_end": 0,
    "text": "VIN",
    "bbox": [
-    71,
+    64,
     541,
-    251,
-    588
+    245,
+    592
    ],
    "is_header": true,
    "is_handwritten": false
@@ -23,10 +23,10 @@
    "col_end": 1,
    "text": "Make",
    "bbox": [
-    251,
-    546,
-    361,
-    590
+    244,
+    535,
+    355,
+    583
    ],
    "is_header": true,
    "is_handwritten": false
@@ -38,10 +38,10 @@
    "col_end": 2,
    "text": "Model",
    "bbox": [
-    361,
-    548,
-    481,
-    594
+    354,
+    529,
+    475,
+    577
    ],
    "is_header": true,
    "is_handwritten": false
@@ -53,10 +53,10 @@
    "col_end": 3,
    "text": "Year",
    "bbox": [
-    481,
-    552,
-    551,
-    595
+    474,
+    526,
+    545,
+    571
    ],
    "is_header": true,
    "is_handwritten": false
@@ -68,10 +68,10 @@
    "col_end": 4,
    "text": "Fuel",
    "bbox": [
-    551,
-    553,
-    641,
-    598
+    544,
+    521,
+    635,
+    568
    ],
    "is_header": true,
    "is_handwritten": false
@@ -83,10 +83,10 @@
    "col_end": 5,
    "text": "Cond",
    "bbox": [
-    641,
-    556,
-    731,
-    600
+    634,
+    517,
+    725,
+    563
    ],
    "is_header": true,
    "is_handwritten": false
@@ -98,10 +98,10 @@
    "col_end": 6,
    "text": "Value ($)",
    "bbox": [
-    731,
-    558,
-    851,
-    603
+    724,
+    511,
+    845,
+    559
    ],
    "is_header": true,
    "is_handwritten": false
@@ -111,12 +111,12 @@
    "row_end": 1,
    "col_start": 0,
    "col_end": 0,
-   "text": "VIN43643AL",
+   "text": "VIN10562AL",
    "bbox": [
-    71,
+    65,
     583,
-    251,
-    630
+    247,
+    634
    ],
    "is_header": false,
    "is_handwritten": false
@@ -128,10 +128,10 @@
    "col_end": 1,
    "text": "Tesla",
    "bbox": [
-    251,
-    588,
-    361,
-    632
+    245,
+    577,
+    357,
+    625
    ],
    "is_header": false,
    "is_handwritten": false
@@ -141,12 +141,12 @@
    "row_end": 1,
    "col_start": 2,
    "col_end": 2,
-   "text": "Civic",
+   "text": "Leaf",
    "bbox": [
-    361,
-    590,
-    481,
-    636
+    355,
+    571,
+    477,
+    619
    ],
    "is_header": false,
    "is_handwritten": false
@@ -156,12 +156,12 @@
    "row_end": 1,
    "col_start": 3,
    "col_end": 3,
-   "text": "2019",
+   "text": "2020",
    "bbox": [
-    481,
-    594,
-    551,
-    637
+    475,
+    568,
+    547,
+    613
    ],
    "is_header": false,
    "is_handwritten": false
@@ -171,12 +171,12 @@
    "row_end": 1,
    "col_start": 4,
    "col_end": 4,
-   "text": "ICE",
+   "text": "EV",
    "bbox": [
-    551,
-    595,
-    641,
-    640
+    545,
+    563,
+    637,
+    610
    ],
    "is_header": false,
    "is_handwritten": false
@@ -188,10 +188,10 @@
    "col_end": 5,
    "text": "CPO",
    "bbox": [
-    641,
-    598,
-    731,
-    642
+    635,
+    559,
+    727,
+    605
    ],
    "is_header": false,
    "is_handwritten": false
@@ -201,117 +201,12 @@
    "row_end": 1,
    "col_start": 6,
    "col_end": 6,
-   "text": "22,000",
+   "text": "33,000",
    "bbox": [
-    731,
-    600,
-    851,
-    645
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 2,
-   "row_end": 2,
-   "col_start": 0,
-   "col_end": 0,
-   "text": "VIN29908AL",
-   "bbox": [
-    70,
-    625,
-    251,
-    672
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 2,
-   "row_end": 2,
-   "col_start": 1,
-   "col_end": 1,
-   "text": "Toyota",
-   "bbox": [
-    250,
-    630,
-    361,
-    674
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 2,
-   "row_end": 2,
-   "col_start": 2,
-   "col_end": 2,
-   "text": "Corolla",
-   "bbox": [
-    360,
-    632,
-    481,
-    678
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 2,
-   "row_end": 2,
-   "col_start": 3,
-   "col_end": 3,
-   "text": "2016",
-   "bbox": [
-    480,
-    636,
-    551,
-    679
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 2,
-   "row_end": 2,
-   "col_start": 4,
-   "col_end": 4,
-   "text": "ICE",
-   "bbox": [
-    550,
-    637,
-    641,
-    682
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 2,
-   "row_end": 2,
-   "col_start": 5,
-   "col_end": 5,
-   "text": "Used",
-   "bbox": [
-    640,
-    640,
-    731,
-    684
-   ],
-   "is_header": false,
-   "is_handwritten": false
-  },
-  {
-   "row_start": 2,
-   "row_end": 2,
-   "col_start": 6,
-   "col_end": 6,
-   "text": "19,000",
-   "bbox": [
-    730,
-    642,
-    851,
-    687
+    725,
+    553,
+    846,
+    601
    ],
    "is_header": false,
    "is_handwritten": false

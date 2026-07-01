@@ -2,22 +2,32 @@
  "page": "page_0073",
  "image": "page_0073.jpg",
  "seed": 1337,
- "doc_id": "POL-0002",
- "doc_class": "policy",
+ "doc_id": "INV-0005",
+ "doc_class": "dealer_invoice",
  "page_in_doc": 1,
  "distortions": [
   "rotate"
  ],
+ "artifacts": [
+  "crease",
+  "fax"
+ ],
+ "overlays": [],
+ "orientation": 0,
+ "size": [
+  1000,
+  1414
+ ],
  "homography": [
   [
-   0.9994058290045202,
-   0.03446721560827901,
-   -24.071235937313418
+   0.9996317868668204,
+   0.02713467680750283,
+   -19.000109936314743
   ],
   [
-   -0.03446721560827901,
-   0.9994058290045202,
-   17.653686697943726
+   -0.02713467680750283,
+   0.9996317868668204,
+   13.827665088909384
   ],
   [
    0.0,
@@ -25,7 +35,8 @@
    1.0
   ]
  ],
- "n_tokens": 51,
- "n_handwritten": 0,
- "n_cells": 24
+ "n_tokens": 57,
+ "n_handwritten": 1,
+ "n_redacted": 0,
+ "n_cells": 34
 }

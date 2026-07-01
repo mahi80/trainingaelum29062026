@@ -2,30 +2,40 @@
  "page": "page_0081",
  "image": "page_0081.jpg",
  "seed": 1337,
- "doc_id": "POL-0005",
- "doc_class": "policy",
- "page_in_doc": 2,
+ "doc_id": "DL-0005",
+ "doc_class": "driver_license",
+ "page_in_doc": 1,
  "distortions": [
-  "skew"
+  "perspective"
+ ],
+ "artifacts": [],
+ "overlays": [
+  "watermark"
+ ],
+ "orientation": 0,
+ "size": [
+  1000,
+  1414
  ],
  "homography": [
   [
-   1.0,
-   0.0533116567018993,
-   -37.691341288242825
+   0.9244185274072136,
+   0.07181148243590156,
+   -12.979981785789278
   ],
   [
-   0.0,
-   1.0,
-   0.0
+   -0.10687220224619987,
+   1.1015414361643647,
+   -18.353694245105885
   ],
   [
-   0.0,
-   0.0,
-   1.0
+   -0.00015116294518557265,
+   0.00014362296487180313,
+   0.9740400364284215
   ]
  ],
- "n_tokens": 50,
- "n_handwritten": 4,
- "n_cells": 18
+ "n_tokens": 30,
+ "n_handwritten": 2,
+ "n_redacted": 0,
+ "n_cells": 0
 }

@@ -8,10 +8,10 @@
    "col_end": 0,
    "text": "VIN",
    "bbox": [
-    73,
-    540,
+    74,
+    516,
     255,
-    587
+    563
    ],
    "is_header": true,
    "is_handwritten": false
@@ -23,10 +23,10 @@
    "col_end": 1,
    "text": "Make",
    "bbox": [
-    253,
-    545,
+    254,
+    521,
     365,
-    590
+    566
    ],
    "is_header": true,
    "is_handwritten": false
@@ -38,10 +38,10 @@
    "col_end": 2,
    "text": "Model",
    "bbox": [
-    363,
-    548,
-    484,
-    593
+    364,
+    524,
+    485,
+    569
    ],
    "is_header": true,
    "is_handwritten": false
@@ -53,10 +53,10 @@
    "col_end": 3,
    "text": "Year",
    "bbox": [
-    483,
-    551,
-    554,
-    595
+    484,
+    527,
+    555,
+    572
    ],
    "is_header": true,
    "is_handwritten": false
@@ -68,10 +68,10 @@
    "col_end": 4,
    "text": "Fuel",
    "bbox": [
-    553,
     554,
-    644,
-    598
+    530,
+    645,
+    574
    ],
    "is_header": true,
    "is_handwritten": false
@@ -83,10 +83,10 @@
    "col_end": 5,
    "text": "Cond",
    "bbox": [
-    643,
-    556,
-    734,
-    601
+    644,
+    532,
+    735,
+    577
    ],
    "is_header": true,
    "is_handwritten": false
@@ -98,10 +98,10 @@
    "col_end": 6,
    "text": "Value ($)",
    "bbox": [
-    733,
-    559,
-    854,
-    604
+    734,
+    535,
+    855,
+    580
    ],
    "is_header": true,
    "is_handwritten": false
@@ -113,10 +113,10 @@
    "col_end": 0,
    "text": "VIN62899AL",
    "bbox": [
-    72,
-    582,
-    253,
-    629
+    73,
+    558,
+    254,
+    605
    ],
    "is_header": false,
    "is_handwritten": false
@@ -128,10 +128,10 @@
    "col_end": 1,
    "text": "Nissan",
    "bbox": [
-    252,
-    587,
-    363,
-    632
+    253,
+    563,
+    364,
+    608
    ],
    "is_header": false,
    "is_handwritten": false
@@ -143,10 +143,10 @@
    "col_end": 2,
    "text": "Elantra",
    "bbox": [
-    362,
-    590,
-    483,
-    635
+    363,
+    566,
+    484,
+    611
    ],
    "is_header": false,
    "is_handwritten": false
@@ -158,10 +158,10 @@
    "col_end": 3,
    "text": "2016",
    "bbox": [
-    482,
-    593,
-    553,
-    637
+    483,
+    569,
+    554,
+    613
    ],
    "is_header": false,
    "is_handwritten": false
@@ -173,10 +173,10 @@
    "col_end": 4,
    "text": "Hybrid",
    "bbox": [
-    552,
-    595,
-    643,
-    640
+    553,
+    572,
+    644,
+    616
    ],
    "is_header": false,
    "is_handwritten": false
@@ -188,10 +188,10 @@
    "col_end": 5,
    "text": "CPO",
    "bbox": [
-    642,
-    598,
-    733,
-    643
+    643,
+    574,
+    734,
+    619
    ],
    "is_header": false,
    "is_handwritten": false
@@ -203,10 +203,10 @@
    "col_end": 6,
    "text": "19,000",
    "bbox": [
-    732,
-    601,
-    853,
-    646
+    733,
+    577,
+    854,
+    622
    ],
    "is_header": false,
    "is_handwritten": false
@@ -218,10 +218,10 @@
    "col_end": 0,
    "text": "VIN70415AL",
    "bbox": [
-    71,
-    624,
-    252,
-    671
+    72,
+    600,
+    253,
+    647
    ],
    "is_header": false,
    "is_handwritten": false
@@ -233,10 +233,10 @@
    "col_end": 1,
    "text": "Ford",
    "bbox": [
-    251,
-    629,
-    362,
-    674
+    252,
+    605,
+    363,
+    650
    ],
    "is_header": false,
    "is_handwritten": false
@@ -248,10 +248,10 @@
    "col_end": 2,
    "text": "Model 3",
    "bbox": [
-    361,
-    632,
-    482,
-    677
+    362,
+    608,
+    483,
+    653
    ],
    "is_header": false,
    "is_handwritten": false
@@ -263,10 +263,10 @@
    "col_end": 3,
    "text": "2021",
    "bbox": [
-    481,
-    635,
-    552,
-    679
+    482,
+    611,
+    553,
+    655
    ],
    "is_header": false,
    "is_handwritten": false
@@ -278,10 +278,10 @@
    "col_end": 4,
    "text": "EV",
    "bbox": [
-    551,
-    637,
-    642,
-    682
+    552,
+    613,
+    643,
+    658
    ],
    "is_header": false,
    "is_handwritten": false
@@ -294,9 +294,9 @@
    "text": "CPO",
    "bbox": [
     641,
-    640,
-    732,
-    685
+    616,
+    733,
+    661
    ],
    "is_header": false,
    "is_handwritten": false
@@ -309,9 +309,9 @@
    "text": "50,000",
    "bbox": [
     731,
-    643,
-    852,
-    688
+    619,
+    853,
+    664
    ],
    "is_header": false,
    "is_handwritten": false

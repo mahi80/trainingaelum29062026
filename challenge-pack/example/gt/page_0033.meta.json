@@ -2,23 +2,34 @@
  "page": "page_0033",
  "image": "page_0033.jpg",
  "seed": 1337,
- "doc_id": "APP-0033",
- "doc_class": "application",
- "page_in_doc": 1,
+ "doc_id": "VER-0004",
+ "doc_class": "verification",
+ "page_in_doc": 4,
  "distortions": [
-  "rotate",
-  "skew"
+  "rotate"
+ ],
+ "artifacts": [
+  "staple",
+  "crease"
+ ],
+ "overlays": [
+  "stamp"
+ ],
+ "orientation": 0,
+ "size": [
+  1000,
+  1414
  ],
  "homography": [
   [
-   1.001079814901295,
-   -0.06478638492366195,
-   45.264066690381526
+   0.9997717847441809,
+   -0.02136301545744599,
+   15.217759556323813
   ],
   [
-   -0.014942229176401752,
-   0.9998883586617258,
-   7.550045014360762
+   0.02136301545744599,
+   0.9997717847441809,
+   -10.520159542858892
   ],
   [
    0.0,
@@ -26,7 +37,8 @@
    1.0
   ]
  ],
- "n_tokens": 65,
- "n_handwritten": 11,
- "n_cells": 21
+ "n_tokens": 138,
+ "n_handwritten": 1,
+ "n_redacted": 0,
+ "n_cells": 89
 }

@@ -31,7 +31,7 @@ See [`challenge-pack/README.md`](challenge-pack/README.md) for the full brief an
 
 Every modality ships with concrete examples (public) + matching hidden gold (evaluators). Full table with an evaluator per row: [`challenge-pack/README.md` → "Example datasets provided"](challenge-pack/README.md#example-datasets-provided).
 
-- **Scanned documents (OCR):** [`challenge-pack/example/`](challenge-pack/example/) — 100 JPEG scans (40 application / 30 verification / 30 policy), multi-page tables + skew + cursive handwriting, with GT (`cells.json`/`tables.html`/`hocr`/`alto`); 80 train / 20 test.
+- **Scanned documents (OCR):** [`challenge-pack/example/`](challenge-pack/example/) — 100 JPEG scans across **9 doc types** (application, bank/income verification, policy rate sheet, pay stub, W-2, dealer invoice, driver license, vehicle title, insurance card); multi-page tables, **merged/spanning cells**, skew/perspective, cursive handwriting, **stamps/watermarks/redaction/checkboxes**, scan artifacts, and a few 90°/180° pages — all with GT (`cells.json`/`tables.html`/`hocr`/`alto`); 80 train / 20 test.
 - **NL-to-SQL:** [`challenge-pack/eval/sql_samples.json`](challenge-pack/eval/sql_samples.json) — 8 public NL↔SQL pairs (multi-join) over the **108-table** warehouse (`db/`); 20 hidden.
 - **SPARQL / ontology:** [`challenge-pack/ontology/sparql_samples.json`](challenge-pack/ontology/sparql_samples.json) — 8 public NL↔SPARQL pairs over `auto_loan.ttl` (transitive `supersedes`); 15 hidden.
 - **RAG:** [`challenge-pack/eval/qrels_sample.json`](challenge-pack/eval/qrels_sample.json) — query→relevant-chunk labels.

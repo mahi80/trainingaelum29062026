@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta name="ocr-system" content="autoloan-docgen"/></head><body>
+<div class="ocr_page" title="bbox 0 0 1414 1000">
+<span class="ocrx_word ocrx_word" id="w0" title="bbox 1316 68 1349 177; x_wconf 96">RegLoan</span>
+<span class="ocrx_word ocrx_word" id="w1" title="bbox 1330 185 1355 249; x_wconf 96">Bank</span>
+<span class="ocrx_word ocrx_word" id="w2" title="bbox 1334 256 1344 288; x_wconf 96">—</span>
+<span class="ocrx_word ocrx_word" id="w3" title="bbox 1337 296 1361 363; x_wconf 96">Form</span>
+<span class="ocrx_word ocrx_word" id="w4" title="bbox 1341 371 1365 424; x_wconf 96">W-2</span>
+<span class="ocrx_word ocrx_word" id="w5" title="bbox 1339 432 1370 501; x_wconf 96">Wage</span>
+<span class="ocrx_word ocrx_word" id="w6" title="bbox 1350 509 1374 553; x_wconf 96">and</span>
+<span class="ocrx_word ocrx_word" id="w7" title="bbox 1354 561 1377 607; x_wconf 96">Tax</span>
+<span class="ocrx_word ocrx_word" id="w8" title="bbox 1357 615 1385 734; x_wconf 96">Statement</span>
+<span class="ocrx_word ocrx_word" id="w9" title="bbox 1282 68 1300 150; x_wconf 96">Document</span>
+<span class="ocrx_word ocrx_word" id="w10" title="bbox 1288 155 1305 228; x_wconf 96">W2-0008</span>
+<span class="ocrx_word ocrx_word" id="w11" title="bbox 1321 729 1340 771; x_wconf 96">Page</span>
+<span class="ocrx_word ocrx_word" id="w12" title="bbox 1328 776 1341 786; x_wconf 96">1</span>
+<span class="ocrx_word ocrx_word" id="w13" title="bbox 1329 791 1343 808; x_wconf 96">of</span>
+<span class="ocrx_word ocrx_word" id="w14" title="bbox 1330 813 1343 823; x_wconf 96">1</span>
+<span class="ocrx_word ocrx_word" id="w15" title="bbox 1239 68 1266 171; x_wconf 96">Employee:</span>
+<span class="ocrx_word ocrx_word" id="w16" title="bbox 1259 319 1278 366; x_wconf 96">Liam</span>
+<span class="ocrx_word ocrx_word" id="w17" title="bbox 1263 372 1284 449; x_wconf 96">Mensah</span>
+<span class="ocrx_word ocrx_word" id="w18" title="bbox 1205 68 1225 120; x_wconf 96">SSN:</span>
+<span class="ocrx_word redacted" id="w19" title="bbox 1215 319 1252 454; x_wconf 60">[REDACTED]</span>
+<span class="ocrx_word ocrx_word" id="w20" title="bbox 1148 74 1165 111; x_wconf 96">Box</span>
+<span class="ocrx_word ocrx_word" id="w21" title="bbox 1150 164 1176 275; x_wconf 96">Description</span>
+<span class="ocrx_word ocrx_word" id="w22" title="bbox 1174 485 1194 560; x_wconf 96">Amount</span>
+<span class="ocrx_word ocrx_word" id="w23" title="bbox 1175 566 1197 591; x_wconf 96">($)</span>
+<span class="ocrx_word ocrx_word" id="w24" title="bbox 1110 74 1125 85; x_wconf 96">1</span>
+<span class="ocrx_word ocrx_word" id="w25" title="bbox 1112 165 1134 231; x_wconf 96">Wages,</span>
+<span class="ocrx_word ocrx_word" id="w26" title="bbox 1116 236 1136 271; x_wconf 96">tips,</span>
+<span class="ocrx_word ocrx_word" id="w27" title="bbox 1123 276 1140 321; x_wconf 96">other</span>
+<span class="ocrx_word ocrx_word" id="w28" title="bbox 1122 326 1139 379; x_wconf 96">comp.</span>
+<span class="ocrx_word ocrx_word" id="w29" title="bbox 1133 485 1154 545; x_wconf 96">99,080</span>
+<span class="ocrx_word ocrx_word" id="w30" title="bbox 1026 75 1041 86; x_wconf 96">2</span>
+<span class="ocrx_word ocrx_word" id="w31" title="bbox 1032 165 1050 231; x_wconf 96">Federal</span>
+<span class="ocrx_word ocrx_word" id="w32" title="bbox 1036 236 1054 299; x_wconf 96">income</span>
+<span class="ocrx_word ocrx_word" id="w33" title="bbox 1041 304 1055 330; x_wconf 96">tax</span>
+<span class="ocrx_word ocrx_word" id="w34" title="bbox 1043 335 1061 406; x_wconf 96">withheld</span>
+<span class="ocrx_word ocrx_word" id="w35" title="bbox 1049 485 1070 534; x_wconf 96">8,025</span>
+<span class="ocrx_word ocrx_word" id="w36" title="bbox 938 75 953 86; x_wconf 96">3</span>
+<span class="ocrx_word ocrx_word" id="w37" title="bbox 944 165 961 218; x_wconf 96">Social</span>
+<span class="ocrx_word ocrx_word" id="w38" title="bbox 944 223 966 290; x_wconf 96">security</span>
+<span class="ocrx_word ocrx_word" id="w39" title="bbox 948 295 966 352; x_wconf 96">wages</span>
+<span class="ocrx_word ocrx_word" id="w40" title="bbox 962 485 982 546; x_wconf 96">37,755</span>
+<span class="ocrx_word ocrx_word" id="w41" title="bbox 900 75 915 86; x_wconf 96">4</span>
+<span class="ocrx_word ocrx_word" id="w42" title="bbox 906 165 923 218; x_wconf 96">Social</span>
+<span class="ocrx_word ocrx_word" id="w43" title="bbox 906 223 928 290; x_wconf 96">security</span>
+<span class="ocrx_word ocrx_word" id="w44" title="bbox 914 295 929 321; x_wconf 96">tax</span>
+<span class="ocrx_word ocrx_word" id="w45" title="bbox 916 326 935 397; x_wconf 96">withheld</span>
+<span class="ocrx_word ocrx_word" id="w46" title="bbox 924 486 944 535; x_wconf 96">7,004</span>
+<span class="ocrx_word ocrx_word" id="w47" title="bbox 816 75 831 86; x_wconf 96">5</span>
+<span class="ocrx_word ocrx_word" id="w48" title="bbox 822 165 841 245; x_wconf 96">Medicare</span>
+<span class="ocrx_word ocrx_word" id="w49" title="bbox 824 250 841 307; x_wconf 96">wages</span>
+<span class="ocrx_word ocrx_word" id="w50" title="bbox 832 312 848 345; x_wconf 96">and</span>
+<span class="ocrx_word ocrx_word" id="w51" title="bbox 830 350 850 381; x_wconf 96">tips</span>
+<span class="ocrx_word ocrx_word" id="w52" title="bbox 840 486 861 546; x_wconf 96">67,841</span>
+<span class="ocrx_word ocrx_word" id="w53" title="bbox 729 75 743 86; x_wconf 96">6</span>
+<span class="ocrx_word ocrx_word" id="w54" title="bbox 734 165 754 245; x_wconf 96">Medicare</span>
+<span class="ocrx_word ocrx_word" id="w55" title="bbox 740 250 755 276; x_wconf 96">tax</span>
+<span class="ocrx_word ocrx_word" id="w56" title="bbox 742 281 760 353; x_wconf 96">withheld</span>
+<span class="ocrx_word ocrx_word" id="w57" title="bbox 752 486 772 535; x_wconf 96">1,575</span>
+</div></body></html>

@@ -1,75 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<alto xmlns="http://www.loc.gov/standards/alto/ns-v4#">
-<Description><MeasurementUnit>pixel</MeasurementUnit></Description>
-<Layout>
-<Page WIDTH="1000" HEIGHT="1414" PHYSICAL_IMG_NR="1">
-<PrintSpace>
-<String ID="s0" CONTENT="RegLoan" HPOS="75" VPOS="32" WIDTH="109" HEIGHT="29" STYLE="printed"/>
-<String ID="s1" CONTENT="Bank" HPOS="192" VPOS="34" WIDTH="64" HEIGHT="23" STYLE="printed"/>
-<String ID="s2" CONTENT="—" HPOS="263" VPOS="49" WIDTH="32" HEIGHT="9" STYLE="printed"/>
-<String ID="s3" CONTENT="Auto" HPOS="303" VPOS="38" WIDTH="60" HEIGHT="22" STYLE="printed"/>
-<String ID="s4" CONTENT="Loan" HPOS="371" VPOS="40" WIDTH="61" HEIGHT="21" STYLE="printed"/>
-<String ID="s5" CONTENT="Credit" HPOS="440" VPOS="41" WIDTH="75" HEIGHT="22" STYLE="printed"/>
-<String ID="s6" CONTENT="Application" HPOS="523" VPOS="43" WIDTH="140" HEIGHT="30" STYLE="printed"/>
-<String ID="s7" CONTENT="Document" HPOS="75" VPOS="79" WIDTH="82" HEIGHT="15" STYLE="printed"/>
-<String ID="s8" CONTENT="APP-0009" HPOS="161" VPOS="81" WIDTH="83" HEIGHT="16" STYLE="printed"/>
-<String ID="s9" CONTENT="Page" HPOS="735" VPOS="96" WIDTH="42" HEIGHT="18" STYLE="printed"/>
-<String ID="s10" CONTENT="1" HPOS="782" VPOS="97" WIDTH="10" HEIGHT="13" STYLE="printed"/>
-<String ID="s11" CONTENT="of" HPOS="797" VPOS="98" WIDTH="16" HEIGHT="13" STYLE="printed"/>
-<String ID="s12" CONTENT="1" HPOS="818" VPOS="98" WIDTH="10" HEIGHT="13" STYLE="printed"/>
-<String ID="s13" CONTENT="Applicant" HPOS="73" VPOS="133" WIDTH="92" HEIGHT="23" STYLE="printed"/>
-<String ID="s14" CONTENT="Name:" HPOS="170" VPOS="136" WIDTH="65" HEIGHT="17" STYLE="printed"/>
-<String ID="s15" CONTENT="Grace" HPOS="304" VPOS="133" WIDTH="51" HEIGHT="21" STYLE="handwritten"/>
-<String ID="s16" CONTENT="Smith" HPOS="362" VPOS="135" WIDTH="57" HEIGHT="21" STYLE="handwritten"/>
-<String ID="s17" CONTENT="Date" HPOS="74" VPOS="179" WIDTH="46" HEIGHT="17" STYLE="printed"/>
-<String ID="s18" CONTENT="of" HPOS="126" VPOS="181" WIDTH="19" HEIGHT="16" STYLE="printed"/>
-<String ID="s19" CONTENT="Birth:" HPOS="151" VPOS="181" WIDTH="51" HEIGHT="17" STYLE="printed"/>
-<String ID="s20" CONTENT="05/04/1981" HPOS="304" VPOS="179" WIDTH="118" HEIGHT="24" STYLE="handwritten"/>
-<String ID="s21" CONTENT="SSN" HPOS="74" VPOS="225" WIDTH="46" HEIGHT="17" STYLE="printed"/>
-<String ID="s22" CONTENT="(tokenized):" HPOS="126" VPOS="227" WIDTH="113" HEIGHT="22" STYLE="printed"/>
-<String ID="s23" CONTENT="TKN-505193" HPOS="304" VPOS="226" WIDTH="147" HEIGHT="26" STYLE="handwritten"/>
-<String ID="s24" CONTENT="Annual" HPOS="72" VPOS="271" WIDTH="69" HEIGHT="18" STYLE="printed"/>
-<String ID="s25" CONTENT="Income:" HPOS="147" VPOS="273" WIDTH="77" HEIGHT="18" STYLE="printed"/>
-<String ID="s26" CONTENT="$158,000" HPOS="303" VPOS="259" WIDTH="124" HEIGHT="33" STYLE="handwritten"/>
-<String ID="s27" CONTENT="Employer:" HPOS="73" VPOS="317" WIDTH="98" HEIGHT="23" STYLE="printed"/>
-<String ID="s28" CONTENT="Initech" HPOS="303" VPOS="321" WIDTH="118" HEIGHT="28" STYLE="handwritten"/>
-<String ID="s29" CONTENT="Loan" HPOS="73" VPOS="363" WIDTH="48" HEIGHT="17" STYLE="printed"/>
-<String ID="s30" CONTENT="Amount:" HPOS="126" VPOS="365" WIDTH="82" HEIGHT="18" STYLE="printed"/>
-<String ID="s31" CONTENT="$12,000" HPOS="303" VPOS="364" WIDTH="86" HEIGHT="24" STYLE="handwritten"/>
-<String ID="s32" CONTENT="Term" HPOS="72" VPOS="409" WIDTH="50" HEIGHT="17" STYLE="printed"/>
-<String ID="s33" CONTENT="(months):" HPOS="128" VPOS="411" WIDTH="91" HEIGHT="22" STYLE="printed"/>
-<String ID="s34" CONTENT="60" HPOS="302" VPOS="412" WIDTH="42" HEIGHT="23" STYLE="handwritten"/>
-<String ID="s35" CONTENT="Branch:" HPOS="72" VPOS="455" WIDTH="75" HEIGHT="18" STYLE="printed"/>
-<String ID="s36" CONTENT="Toronto" HPOS="302" VPOS="461" WIDTH="127" HEIGHT="26" STYLE="handwritten"/>
-<String ID="s37" CONTENT="Collateral" HPOS="71" VPOS="507" WIDTH="99" HEIGHT="19" STYLE="printed"/>
-<String ID="s38" CONTENT="(Vehicle)" HPOS="176" VPOS="510" WIDTH="91" HEIGHT="22" STYLE="printed"/>
-<String ID="s39" CONTENT="VIN" HPOS="76" VPOS="554" WIDTH="34" HEIGHT="16" STYLE="printed"/>
-<String ID="s40" CONTENT="Make" HPOS="257" VPOS="559" WIDTH="50" HEIGHT="16" STYLE="printed"/>
-<String ID="s41" CONTENT="Model" HPOS="367" VPOS="562" WIDTH="58" HEIGHT="16" STYLE="printed"/>
-<String ID="s42" CONTENT="Year" HPOS="486" VPOS="565" WIDTH="45" HEIGHT="16" STYLE="printed"/>
-<String ID="s43" CONTENT="Fuel" HPOS="557" VPOS="566" WIDTH="41" HEIGHT="17" STYLE="printed"/>
-<String ID="s44" CONTENT="Cond" HPOS="647" VPOS="569" WIDTH="50" HEIGHT="16" STYLE="printed"/>
-<String ID="s45" CONTENT="Value" HPOS="736" VPOS="571" WIDTH="54" HEIGHT="16" STYLE="printed"/>
-<String ID="s46" CONTENT="($)" HPOS="796" VPOS="572" WIDTH="25" HEIGHT="20" STYLE="printed"/>
-<String ID="s47" CONTENT="VIN43643AL" HPOS="77" VPOS="597" WIDTH="111" HEIGHT="17" STYLE="printed"/>
-<String ID="s48" CONTENT="Tesla" HPOS="257" VPOS="602" WIDTH="48" HEIGHT="15" STYLE="printed"/>
-<String ID="s49" CONTENT="Civic" HPOS="367" VPOS="605" WIDTH="42" HEIGHT="15" STYLE="printed"/>
-<String ID="s50" CONTENT="2019" HPOS="487" VPOS="608" WIDTH="44" HEIGHT="15" STYLE="printed"/>
-<String ID="s51" CONTENT="ICE" HPOS="557" VPOS="609" WIDTH="32" HEIGHT="15" STYLE="printed"/>
-<String ID="s52" CONTENT="CPO" HPOS="647" VPOS="612" WIDTH="42" HEIGHT="15" STYLE="printed"/>
-<String ID="s53" CONTENT="22,000" HPOS="737" VPOS="614" WIDTH="60" HEIGHT="19" STYLE="printed"/>
-<String ID="s54" CONTENT="VIN29908AL" HPOS="76" VPOS="639" WIDTH="111" HEIGHT="17" STYLE="printed"/>
-<String ID="s55" CONTENT="Toyota" HPOS="256" VPOS="644" WIDTH="60" HEIGHT="19" STYLE="printed"/>
-<String ID="s56" CONTENT="Corolla" HPOS="366" VPOS="647" WIDTH="61" HEIGHT="15" STYLE="printed"/>
-<String ID="s57" CONTENT="2016" HPOS="486" VPOS="650" WIDTH="44" HEIGHT="15" STYLE="printed"/>
-<String ID="s58" CONTENT="ICE" HPOS="556" VPOS="651" WIDTH="32" HEIGHT="15" STYLE="printed"/>
-<String ID="s59" CONTENT="Used" HPOS="646" VPOS="654" WIDTH="46" HEIGHT="15" STYLE="printed"/>
-<String ID="s60" CONTENT="19,000" HPOS="736" VPOS="656" WIDTH="60" HEIGHT="19" STYLE="printed"/>
-<String ID="s61" CONTENT="Authorized" HPOS="69" VPOS="689" WIDTH="105" HEIGHT="19" STYLE="printed"/>
-<String ID="s62" CONTENT="Signature:" HPOS="180" VPOS="692" WIDTH="99" HEIGHT="22" STYLE="printed"/>
-<String ID="s63" CONTENT="Grace" HPOS="320" VPOS="698" WIDTH="121" HEIGHT="36" STYLE="handwritten"/>
-<String ID="s64" CONTENT="Smith" HPOS="456" VPOS="702" WIDTH="131" HEIGHT="35" STYLE="handwritten"/>
-</PrintSpace>
-</Page>
-</Layout>
-</alto>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v4#"><Layout>
+<Page WIDTH="1000" HEIGHT="1414" PHYSICAL_IMG_NR="1"><PrintSpace>
+<String ID="s0" CONTENT="RegLoan" HPOS="47" VPOS="60" WIDTH="110" HEIGHT="31" STYLE="printed"/>
+<String ID="s1" CONTENT="Bank" HPOS="164" VPOS="55" WIDTH="65" HEIGHT="24" STYLE="printed"/>
+<String ID="s2" CONTENT="—" HPOS="235" VPOS="66" WIDTH="33" HEIGHT="10" STYLE="printed"/>
+<String ID="s3" CONTENT="Auto" HPOS="275" VPOS="51" WIDTH="61" HEIGHT="23" STYLE="printed"/>
+<String ID="s4" CONTENT="Loan" HPOS="343" VPOS="47" WIDTH="61" HEIGHT="23" STYLE="printed"/>
+<String ID="s5" CONTENT="Credit" HPOS="412" VPOS="42" WIDTH="75" HEIGHT="25" STYLE="printed"/>
+<String ID="s6" CONTENT="Application" HPOS="495" VPOS="35" WIDTH="141" HEIGHT="34" STYLE="printed"/>
+<String ID="s7" CONTENT="Document" HPOS="49" VPOS="108" WIDTH="82" HEIGHT="17" STYLE="printed"/>
+<String ID="s8" CONTENT="APP-0009" HPOS="135" VPOS="104" WIDTH="83" HEIGHT="17" STYLE="printed"/>
+<String ID="s9" CONTENT="Page" HPOS="708" VPOS="77" WIDTH="43" HEIGHT="19" STYLE="printed"/>
+<String ID="s10" CONTENT="1" HPOS="755" VPOS="76" WIDTH="11" HEIGHT="14" STYLE="printed"/>
+<String ID="s11" CONTENT="of" HPOS="770" VPOS="75" WIDTH="17" HEIGHT="14" STYLE="printed"/>
+<String ID="s12" CONTENT="1" HPOS="791" VPOS="75" WIDTH="11" HEIGHT="13" STYLE="printed"/>
+<String ID="s13" CONTENT="Applicant" HPOS="49" VPOS="150" WIDTH="92" HEIGHT="24" STYLE="printed"/>
+<String ID="s14" CONTENT="Name:" HPOS="146" VPOS="146" WIDTH="65" HEIGHT="19" STYLE="printed"/>
+<String ID="s15" CONTENT="Diego" HPOS="300" VPOS="133" WIDTH="57" HEIGHT="32" STYLE="handwritten"/>
+<String ID="s16" CONTENT="Patel" HPOS="364" VPOS="130" WIDTH="49" HEIGHT="22" STYLE="handwritten"/>
+<String ID="s17" CONTENT="Date" HPOS="52" VPOS="196" WIDTH="46" HEIGHT="18" STYLE="printed"/>
+<String ID="s18" CONTENT="of" HPOS="104" VPOS="195" WIDTH="19" HEIGHT="16" STYLE="printed"/>
+<String ID="s19" CONTENT="Birth:" HPOS="129" VPOS="192" WIDTH="51" HEIGHT="18" STYLE="printed"/>
+<String ID="s20" CONTENT="10/10/1984" HPOS="301" VPOS="169" WIDTH="191" HEIGHT="40" STYLE="handwritten"/>
+<String ID="s21" CONTENT="SSN" HPOS="53" VPOS="240" WIDTH="47" HEIGHT="18" STYLE="printed"/>
+<String ID="s22" CONTENT="(tokenized):" HPOS="105" VPOS="234" WIDTH="114" HEIGHT="25" STYLE="printed"/>
+<String ID="s23" CONTENT="TKN-460135" HPOS="303" VPOS="217" WIDTH="147" HEIGHT="30" STYLE="handwritten"/>
+<String ID="s24" CONTENT="Annual" HPOS="54" VPOS="283" WIDTH="69" HEIGHT="19" STYLE="printed"/>
+<String ID="s25" CONTENT="Income:" HPOS="129" VPOS="278" WIDTH="77" HEIGHT="20" STYLE="printed"/>
+<String ID="s26" CONTENT="$136,000" HPOS="304" VPOS="263" WIDTH="102" HEIGHT="27" STYLE="handwritten"/>
+<String ID="s27" CONTENT="Loan" HPOS="56" VPOS="328" WIDTH="49" HEIGHT="18" STYLE="printed"/>
+<String ID="s28" CONTENT="Amount:" HPOS="109" VPOS="323" WIDTH="83" HEIGHT="20" STYLE="printed"/>
+<String ID="s29" CONTENT="$59,000" HPOS="305" VPOS="294" WIDTH="110" HEIGHT="35" STYLE="handwritten"/>
+<String ID="s30" CONTENT="Branch:" HPOS="58" VPOS="370" WIDTH="75" HEIGHT="20" STYLE="printed"/>
+<String ID="s31" CONTENT="Leeds" HPOS="307" VPOS="349" WIDTH="100" HEIGHT="34" STYLE="handwritten"/>
+<String ID="s32" CONTENT="Employment:" HPOS="59" VPOS="411" WIDTH="128" HEIGHT="27" STYLE="printed"/>
+<String ID="s33" CONTENT="[x]" HPOS="209" VPOS="405" WIDTH="21" HEIGHT="21" STYLE="printed"/>
+<String ID="s34" CONTENT="Full-time" HPOS="237" VPOS="405" WIDTH="77" HEIGHT="19" STYLE="printed"/>
+<String ID="s35" CONTENT="[x]" HPOS="349" VPOS="398" WIDTH="21" HEIGHT="21" STYLE="printed"/>
+<String ID="s36" CONTENT="Self-employed" HPOS="377" VPOS="396" WIDTH="128" HEIGHT="25" STYLE="printed"/>
+<String ID="s37" CONTENT="Housing:" HPOS="61" VPOS="457" WIDTH="87" HEIGHT="25" STYLE="printed"/>
+<String ID="s38" CONTENT="[x]" HPOS="211" VPOS="449" WIDTH="20" HEIGHT="21" STYLE="printed"/>
+<String ID="s39" CONTENT="Own" HPOS="239" VPOS="451" WIDTH="41" HEIGHT="17" STYLE="printed"/>
+<String ID="s40" CONTENT="[ ]" HPOS="316" VPOS="444" WIDTH="20" HEIGHT="21" STYLE="printed"/>
+<String ID="s41" CONTENT="Rent" HPOS="344" VPOS="446" WIDTH="42" HEIGHT="17" STYLE="printed"/>
+<String ID="s42" CONTENT="Collateral" HPOS="63" VPOS="509" WIDTH="99" HEIGHT="21" STYLE="printed"/>
+<String ID="s43" CONTENT="(Vehicle)" HPOS="168" VPOS="504" WIDTH="90" HEIGHT="24" STYLE="printed"/>
+<String ID="s44" CONTENT="VIN" HPOS="69" VPOS="561" WIDTH="35" HEIGHT="16" STYLE="printed"/>
+<String ID="s45" CONTENT="Make" HPOS="250" VPOS="551" WIDTH="51" HEIGHT="17" STYLE="printed"/>
+<String ID="s46" CONTENT="Model" HPOS="360" VPOS="545" WIDTH="59" HEIGHT="18" STYLE="printed"/>
+<String ID="s47" CONTENT="Year" HPOS="479" VPOS="540" WIDTH="46" HEIGHT="17" STYLE="printed"/>
+<String ID="s48" CONTENT="Fuel" HPOS="550" VPOS="536" WIDTH="42" HEIGHT="17" STYLE="printed"/>
+<String ID="s49" CONTENT="Cond" HPOS="640" VPOS="531" WIDTH="51" HEIGHT="18" STYLE="printed"/>
+<String ID="s50" CONTENT="Value" HPOS="729" VPOS="527" WIDTH="55" HEIGHT="17" STYLE="printed"/>
+<String ID="s51" CONTENT="($)" HPOS="789" VPOS="524" WIDTH="26" HEIGHT="21" STYLE="printed"/>
+<String ID="s52" CONTENT="VIN10562AL" HPOS="72" VPOS="600" WIDTH="111" HEIGHT="19" STYLE="printed"/>
+<String ID="s53" CONTENT="Tesla" HPOS="252" VPOS="594" WIDTH="48" HEIGHT="16" STYLE="printed"/>
+<String ID="s54" CONTENT="Leaf" HPOS="362" VPOS="589" WIDTH="39" HEIGHT="16" STYLE="printed"/>
+<String ID="s55" CONTENT="2020" HPOS="482" VPOS="583" WIDTH="44" HEIGHT="16" STYLE="printed"/>
+<String ID="s56" CONTENT="EV" HPOS="552" VPOS="580" WIDTH="26" HEIGHT="15" STYLE="printed"/>
+<String ID="s57" CONTENT="CPO" HPOS="642" VPOS="575" WIDTH="42" HEIGHT="16" STYLE="printed"/>
+<String ID="s58" CONTENT="33,000" HPOS="732" VPOS="569" WIDTH="60" HEIGHT="20" STYLE="printed"/>
+<String ID="s59" CONTENT="Authorized" HPOS="67" VPOS="656" WIDTH="105" HEIGHT="22" STYLE="printed"/>
+<String ID="s60" CONTENT="Signature:" HPOS="178" VPOS="651" WIDTH="99" HEIGHT="25" STYLE="printed"/>
+<String ID="s61" CONTENT="Diego" HPOS="318" VPOS="646" WIDTH="121" HEIGHT="44" STYLE="handwritten"/>
+<String ID="s62" CONTENT="Patel" HPOS="453" VPOS="640" WIDTH="112" HEIGHT="37" STYLE="handwritten"/>
+</PrintSpace></Page></Layout></alto>

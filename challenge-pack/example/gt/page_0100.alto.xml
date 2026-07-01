@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v4#"><Layout>
+<Page WIDTH="1000" HEIGHT="1414" PHYSICAL_IMG_NR="1"><PrintSpace>
+<String ID="s0" CONTENT="RegLoan" HPOS="20" VPOS="134" WIDTH="97" HEIGHT="37" STYLE="printed"/>
+<String ID="s1" CONTENT="Bank" HPOS="120" VPOS="123" WIDTH="59" HEIGHT="27" STYLE="printed"/>
+<String ID="s2" CONTENT="—" HPOS="184" VPOS="129" WIDTH="29" HEIGHT="11" STYLE="printed"/>
+<String ID="s3" CONTENT="Auto" HPOS="217" VPOS="109" WIDTH="56" HEIGHT="26" STYLE="printed"/>
+<String ID="s4" CONTENT="Insurance" HPOS="278" VPOS="92" WIDTH="107" HEIGHT="33" STYLE="printed"/>
+<String ID="s5" CONTENT="ID" HPOS="390" VPOS="86" WIDTH="32" HEIGHT="22" STYLE="printed"/>
+<String ID="s6" CONTENT="Card" HPOS="426" VPOS="76" WIDTH="58" HEIGHT="26" STYLE="printed"/>
+<String ID="s7" CONTENT="Document" HPOS="25" VPOS="178" WIDTH="72" HEIGHT="21" STYLE="printed"/>
+<String ID="s8" CONTENT="INS-0010" HPOS="100" VPOS="167" WIDTH="67" HEIGHT="21" STYLE="printed"/>
+<String ID="s9" CONTENT="Page" HPOS="622" VPOS="91" WIDTH="43" HEIGHT="22" STYLE="printed"/>
+<String ID="s10" CONTENT="1" HPOS="667" VPOS="89" WIDTH="12" HEIGHT="13" STYLE="printed"/>
+<String ID="s11" CONTENT="of" HPOS="682" VPOS="86" WIDTH="17" HEIGHT="14" STYLE="printed"/>
+<String ID="s12" CONTENT="1" HPOS="702" VPOS="84" WIDTH="12" HEIGHT="13" STYLE="printed"/>
+<String ID="s13" CONTENT="Insurer:" HPOS="48" VPOS="223" WIDTH="65" HEIGHT="23" STYLE="printed"/>
+<String ID="s14" CONTENT="SafeDrive" HPOS="267" VPOS="187" WIDTH="90" HEIGHT="27" STYLE="printed"/>
+<String ID="s15" CONTENT="Policy" HPOS="52" VPOS="257" WIDTH="53" HEIGHT="25" STYLE="printed"/>
+<String ID="s16" CONTENT="No:" HPOS="108" VPOS="252" WIDTH="32" HEIGHT="18" STYLE="printed"/>
+<String ID="s17" CONTENT="P1642970" HPOS="272" VPOS="220" WIDTH="93" HEIGHT="27" STYLE="printed"/>
+<String ID="s18" CONTENT="Insured:" HPOS="56" VPOS="288" WIDTH="70" HEIGHT="24" STYLE="printed"/>
+<String ID="s19" CONTENT="Omar" HPOS="277" VPOS="260" WIDTH="53" HEIGHT="21" STYLE="printed"/>
+<String ID="s20" CONTENT="Park" HPOS="333" VPOS="253" WIDTH="44" HEIGHT="20" STYLE="printed"/>
+<String ID="s21" CONTENT="VIN:" HPOS="60" VPOS="326" WIDTH="39" HEIGHT="19" STYLE="printed"/>
+<String ID="s22" CONTENT="VIN22980AL" HPOS="282" VPOS="285" WIDTH="117" HEIGHT="30" STYLE="printed"/>
+<String ID="s23" CONTENT="Coverage:" HPOS="64" VPOS="353" WIDTH="90" HEIGHT="29" STYLE="printed"/>
+<String ID="s24" CONTENT="Comprehensive" HPOS="287" VPOS="316" WIDTH="144" HEIGHT="37" STYLE="printed"/>
+<String ID="s25" CONTENT="Effective:" HPOS="68" VPOS="388" WIDTH="82" HEIGHT="25" STYLE="printed"/>
+<String ID="s26" CONTENT="01/06/2025" HPOS="292" VPOS="356" WIDTH="103" HEIGHT="28" STYLE="printed"/>
+<String ID="s27" CONTENT="Expires:" HPOS="72" VPOS="423" WIDTH="73" HEIGHT="27" STYLE="printed"/>
+<String ID="s28" CONTENT="12/2025" HPOS="297" VPOS="395" WIDTH="75" HEIGHT="23" STYLE="printed"/>
+</PrintSpace></Page></Layout></alto>
