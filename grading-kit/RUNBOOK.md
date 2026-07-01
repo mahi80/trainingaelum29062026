@@ -139,9 +139,13 @@ Track each consultant's progress at the two weekly check-ins, not just at the en
    and **flags any branch that modified `grading-kit/`** (candidates must not — red flag).
    Output is a Markdown table + a CSV.
 2. **Update the tracker** — open [`../consultant-weekly-tracker.xlsx`](../consultant-weekly-tracker.xlsx)
-   (repo root). One row per consultant: paste the commit columns from `status.csv`, then set
-   the **Wk1 / Wk2 RAG** (Green/Amber/Red), `% complete`, and blockers. Expected weekly
-   milestones are on the **Weekly Checklist** tab (Week 1 → MUST slice; Week 2 → Target+).
+   (repo root; ships with 3 shaded EXAMPLE consultants — overwrite them). Two views:
+   - **Weekly Status** tab: one row per consultant — paste commit columns from `status.csv`,
+     set **Wk1 / Wk2 RAG** (Green/Amber/Red), `% complete`, blockers (`Due` and `Pass?` compute).
+   - **Milestone Matrix** tab: the granular view — set each of the 11 capabilities to
+     Done / WIP / Blocked / Not started per consultant; `% Done` computes automatically.
+   The **Weekly Checklist** tab defines what "on track" means each week (Week 1 → MUST slice;
+   Week 2 → Target+).
 3. **Read the cohort Dashboard** tab (on-track / at-risk / behind, passing count, average
    score) to decide who needs a nudge or an early conversation.
 4. At the end, enter **Tier reached** + **Score /100** (from §7) per consultant; `Pass?`
